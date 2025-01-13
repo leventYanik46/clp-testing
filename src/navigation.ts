@@ -11,25 +11,25 @@ export const headerData = {
       links: [
         {
           text: 'General Counsel Services',
-          href: getPermalink('/practices/general-counsel-services'),
+          href: getPermalink('/en/practices/general-counsel-services'),
         },
 
         {
           text: 'Corporate Law',
-          href: getPermalink('/practices/corporate-law'),
+          href: getPermalink('/en/practices/corporate-law'),
         },
       
         {
           text: 'Business Litigation',
-          href: getPermalink('/practices/business-litigation'),
+          href: getPermalink('/en/practices/business-litigation'),
         },
         {
           text: 'Business Immigration Law',
-          href: getPermalink('/practices/business-immigration'),
+          href: getPermalink('/en/practices/business-immigration'),
         },
         {
           text: 'Immigration Law',
-          href: getPermalink('/practices/immigration-law'),
+          href: getPermalink('/en/practices/immigration-law'),
         },
       ]
     },
@@ -38,32 +38,29 @@ export const headerData = {
       links: [
         {
           text: 'Cagatay Ersoy',
-          href: getPermalink('/our-team/cagatay'),
+          href: getPermalink('/en/our-team/cagatay'),
         },
-
         {
           text: 'Sena Sahin',
-          href: getPermalink('/our-team/sena'),
+          href: getPermalink('/en/our-team/sena'),
         },
-      
         {
           text: 'Shafeek Seddiq',
-          href: getPermalink('/our-team/shafeek'),
+          href: getPermalink('/en/our-team/shafeek'),
         },
-
         {
           text: 'Murat Yanik',
-          href: getPermalink('/our-team/murat'),
+          href: getPermalink('/en/our-team/murat/murat'),
         },
       ]
     },
     {
       text: 'Our Locations',
-      href: getPermalink('/locations'),
+      href: getPermalink('/en/locations'),
     },  
     {
       text: 'Contact Us',
-      href: getPermalink('/contact'),
+      href: getPermalink('/en/contact'),
     },
   ],
   //actions: [{ text: "Contact Us", href: 'https://github.com/onwidget/astrowind',variant: 'primary', target: '_blank' }],

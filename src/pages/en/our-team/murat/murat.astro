@@ -10,7 +10,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'cagata-ersoy',
+  title: 'murat',
 };
 ---
 
@@ -18,18 +18,16 @@ const metadata = {
   <Fragment slot="header">
     <Header
       links={[
-        { text: 'Home', href: '/clp-astrowind' },
-        { text: 'About Me', href: '#about' },
-        { text: 'Academic Works', href: '#resume' },
-        { text: 'Publications', href: '#porfolio' },
-        { text: 'Practice Areas', href: '#blog' },
-        { text: 'Media', href: '' },
-        { text: 'cv', href: '' },
+        { text: 'Home', href: '/en' },
+        { text: 'About Me', href: '/en/our-team/murat/murat' },
+        { text: 'Academic Works', href: '/en/our-team/murat/academic-works' },
+        { text: 'Publications', href: '/en/our-team/murat/publications' },
+        { text: 'Media & News', href: '/en/our-team/murat/media-news' },
       ]}
       actions={[
         {
           text: 'Contact Me',
-          href: '/contact',
+          href: '/en/contact',
         },
       ]}
       isSticky
@@ -67,13 +65,13 @@ const metadata = {
       </div>
       <div class="flex flex-col sm:flex-row items-center gap-4 mt-8">
         <a 
-          href={getPermalink('/contact')} 
+          href={getPermalink('/en/contact')} 
           class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
         >
           Contact Me
         </a>
         <a 
-          href={getPermalink('/contact')} 
+          href={getPermalink('/en/contact')} 
           class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
         >
           See More
@@ -194,7 +192,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Contact Me',
-        href: '/',
+        href: '/en/contact',
       },
     ]}
   />
