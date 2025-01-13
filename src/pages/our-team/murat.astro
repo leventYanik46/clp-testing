@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
@@ -9,40 +10,60 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'murat',
+  title: 'cagata-ersoy',
 };
 ---
 
 <Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '/clp-astrowind' },
+        { text: 'About Me', href: '#about' },
+        { text: 'Academic Works', href: '#resume' },
+        { text: 'Publications', href: '#porfolio' },
+        { text: 'Practice Areas', href: '#blog' },
+        { text: 'Media', href: '' },
+        { text: 'cv', href: '' },
+      ]}
+      actions={[
+        {
+          text: 'Contact Me',
+          href: '/contact',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
 
-    <Content
+  <Content
     id="about"
-    columns={3}
+    columns={2}
     image={{
       src: '~/assets/images/cagatay-profile.png',
       alt: 'Colorful Image',
       loading: 'eager',
-      class: 'w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto', // Added responsive classes
+      class: 'w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto',
     }}
   >
     <Fragment slot="content">
-      <h1 class="text-4xl md:text-5xl font-bold tracking-tight dark:text-white sm:text-6xl mb-4">Murat Yanik</h1>
-      <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">Graphic Designer</h2>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight dark:text-white sm:text-6xl mb-4">Cagatay Ersoy</h1>
+      <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">Attorney At Law</h2>
       <div class="prose prose-lg dark:prose-invert max-w-none mb-8">
         <p class="mb-4">
-          I'm a Graphic Designer passionate about crafting visual stories. With 5 years of experience and a degree from
-          New York University's School of Design, I infuse vitality into brands and designs, transforming concepts into captivating
-          realities.
+          This area will be an autobiography of Cagatay Ersoy. Which he should write himself.
+          Shafeek is a proactive, results-driven, and seasoned leader and lawyer with over 20 years of legal experience. He works with clients on estate planning, business formation, partnerships, and drafting various legal documents. In addition, Shafeek serves as counsel and advice healthcare organizations on a variety of healthcare compliance, operation and management matters.
         </p>
         <p class="mb-4">
-          Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-          pixel becomes a brushstroke in the canvas of imagination.
+          Upon graduating law school, Shafeek practiced law with one of the largest firms in Washington D.C. Later, he opened his own law office in Fairfax, Virginia. In 2008, Shafeek joined the U.S. civilian surge in Afghanistan and served as a senior legal advisor and program manager on various U.S. efforts to fight terrorism, money laundering and legal reform efforts in Afghanistan.
         </p>
         <p class="mb-4">
-          I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-          details of typography, or the vibrant hues of nature during my outdoor escapades.
+          Upon returning home, Shafeek founded Seddiq Law Firm to serve the Northern Virginia community again, equipped with a much greater appreciation for life, liberty and the American Dream. And when not working, Shafeek spends time with his wife, and three children and cooks for them.
         </p>
-        <p class="mb-6">If you're curious to dive deeper into my work, you can follow me on:</p>
+        <p class="mb-4">
+          Shafeek received his Bachelor of Science degree from Post University in Waterbury, Connecticut, and a Juris Doctor cum laude from Touro College – Jacob D. Fuchsberg Law Center in Central Islip, New York.
+        </p>
+        <p class="mb-6">Licensed to practice law in Virginia and Washington, DC.</p>
       </div>
       <div class="flex flex-col sm:flex-row items-center gap-4 mt-8">
         <a 
@@ -51,10 +72,15 @@ const metadata = {
         >
           Contact Me
         </a>
+        <a 
+          href={getPermalink('/contact')} 
+          class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
+        >
+          See More
+        </a>
       </div>
     </Fragment>
   </Content>
-  <!-- Steps Widget ****************** -->
 
   <!-- Steps Widget ****************** -->
 
@@ -95,169 +121,6 @@ const metadata = {
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    title="Services"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
-    columns={3}
-    defaultIcon="tabler:point-filled"
-    items={[
-      {
-        title: 'Graphic design',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
-      },
-      {
-        title: 'Branding and identity',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
-      },
-      {
-        title: 'User-centered design',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
-      },
-      {
-        title: 'Adobe Creative Suite',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
-      },
-      {
-        title: 'Typography',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
-      },
-      {
-        title: 'Color theory',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
-      },
-      {
-        title: 'Print and digital design',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
-      },
-      {
-        title: 'Attention to detail',
-        description: 'Diligent in maintaining precision and quality in all design work.',
-      },
-      {
-        title: 'Adaptability',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
-      },
-    ]}
-  />
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
-    isReversed
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
-      },
-      {
-        title: 'Role:',
-        description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'Tech Design Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Designed a captivating event poster for an art and music festival, "ArtWave Fusion," aiming to showcase the synergy between visual art and music genres.',
-      },
-      {
-        title: 'Role:',
-        description: `Translated the festival's creative theme into a visually striking poster. Used bold typography, vibrant colors, and abstract elements to depict the fusion of art and music. Ensured the design captured the festival's vibrant atmosphere.`,
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Art and Music Poster Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 2: <br /><span class="text-2xl">Event poster for art & music festival</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description: `Redesigned the e-commerce website for an eco-conscious fashion brand, GreenVogue. The objective was to align the brand's online presence with its sustainable ethos and improve user experience.`,
-      },
-      {
-        title: 'Role:',
-        description: `Conducted a thorough analysis of the brand's values and customer base to inform the design direction. Created a visually appealing interface with intuitive navigation, highlighting sustainable materials, and integrating a user-friendly shopping experience.`,
-      },
-    ]}
-    image={{
-      src: 'https://plus.unsplash.com/premium_photo-1683288295841-782fa47e4770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Fashion e-commerce Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 3: <br /><span class="text-2xl">E-commerce website redesign for fashion brand</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <!-- Testimonials Widget *********** -->
 
@@ -325,12 +188,12 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Let's create together"
-    subtitle="Ready to transform your vision into captivating designs?"
+    title="Let's Work Together"
+    subtitle="Looking for legal representation?"
     actions={[
       {
         variant: 'primary',
-        text: 'Hire me',
+        text: 'Contact Me',
         href: '/',
       },
     ]}

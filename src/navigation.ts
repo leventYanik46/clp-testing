@@ -50,6 +50,11 @@ export const headerData = {
           text: 'Shafeek Seddiq',
           href: getPermalink('/our-team/shafeek'),
         },
+
+        {
+          text: 'Murat Yanik',
+          href: getPermalink('/our-team/murat'),
+        },
       ]
     },
     {
