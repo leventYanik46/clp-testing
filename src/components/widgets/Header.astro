@@ -7,7 +7,6 @@ import Image from '~/components/common/Image.astro';
 import { getHomePermalink } from '~/utils/permalinks';
 import { trimSlash } from '~/utils/permalinks';
 import type { CallToAction } from '~/types';
-import LangSwitcher from '~/components/common/languageSwitcher.astro';
 
 
 interface Link {
@@ -37,7 +36,6 @@ const {
   actions = [],
   isSticky = false,
   isFullWidth = false,
-  showLangSelect = false,
   position = 'center',
 } = Astro.props;
 
@@ -132,16 +130,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         'hidden md:self-center md:flex items-center md:mb-0 fixed w-full md:w-auto md:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 md:p-0 md:justify-self-end',
       ]}
     >
-      <div class="items-center flex justify-between w-full md:w-auto">
-        <div class="flex">
-          {
-            showLangSelect && (
-              <div class="relative">
-                
-              </div>
-            )
-          }
-        </div>
+
         {
           actions?.length ? (
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
