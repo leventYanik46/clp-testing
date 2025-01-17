@@ -36,9 +36,6 @@ i18n:
     tr:
       language: Türkçe
       textDirection: ltr
-    es:
-      language: Español
-      textDirection: ltr
 
 
 apps:
