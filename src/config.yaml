@@ -9,34 +9,30 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Capitol Law Partners
+  description: "\U0001F680 Law Firm providing legal services in the practice areas of Corporate, Commercial, Real Estate, Intellectual Property, and Litigation."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Capitol Law Partners
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
     type: website
-  twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+  instagram:
+    handle: 'capitollawpartners'
+    site: 'https://www.instagram.com/capitollawpartners/'
+    cardType: summary_large_image
+  facebook:
+    handle: 'CapitolLaw'
+    site: 'https://www.facebook.com/CapitolLaw/'
     cardType: summary_large_image
 
 i18n:
-  defaultLanguage: en
-  languages:
-    en:
-      language: English
-      textDirection: ltr
-    tr:
-      language: Türkçe
-      textDirection: ltr
-
+  language: en
+  textDirection: ltr
 
 apps:
   blog:
@@ -76,4 +72,4 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light' # Values: "light"
