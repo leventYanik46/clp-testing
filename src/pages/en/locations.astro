@@ -1,7 +1,9 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
+import Features4 from '~/components/widgets/Features4.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'contact',
@@ -9,24 +11,79 @@ const metadata = {
 ---
 <Layout metadata={metadata}>
 <HeroText tagline="Find Us" title="Our Locations" />
-<Features2
+
+<Features4
 columns={4}
 items={[
   {
-    title: 'EE.UU',
-    description: '1234 Lorem Ipsum St, 12345, Miami',
+    title: 'Virginia Office',
+    description: '13873 Park Center Rd, Herndon, VA 20171',
   },
   {
-    title: 'Spain',
-    description: '5678 Lorem Ipsum St, 56789, Madrid',
+    title: 'Washington DC Office',
+    description: '1200 G Street, NW, STE 800, Washington, DC 20005',
   },
   {
-    title: 'Australia',
-    description: '9012 Lorem Ipsum St, 90123, Sydney',
+    title: 'New York Office',
+    description: '14 Wall Street 20th Floor, New York, NY 10005',
   },
   {
-    title: 'Brazil',
-    description: '3456 Lorem Ipsum St, 34567, São Paulo',
+    title: 'İstanbul Office:',
+    description: 'Trump Towers, Residence 2901, 34381, Şişli/İstanbul Türkiye',
+  },
+]}
+/>
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact Us',
+        href: '/en/contact',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Capitol <span class="sm:whitespace-nowrap">Law Patners</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Be very surprised by these huge numbers you are seeing on this page. <br class="hidden md:inline" />Don't
+      waste more time! :P
+    </Fragment>
+  </CallToAction>
+<Features2
+title="We are here to help!"
+items={[
+  {
+    title: 'General support',
+    description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
+  },
+  {
+    title: 'Contact sales',
+    description:
+      'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
+  },
+  {
+    title: 'Technical support',
+    description:
+      'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
+  },
+  {
+    title: 'Phone',
+    description: '+1 (234) 567-890',
+    icon: 'tabler:headset',
+  },
+  {
+    title: 'Email',
+    description: 'contact@support.com',
+    icon: 'tabler:mail',
+  },
+  {
+    title: 'Whatsapp',
+    description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+    icon: 'tabler:message',
   },
 ]}
 />
