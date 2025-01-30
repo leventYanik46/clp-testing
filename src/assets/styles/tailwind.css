@@ -15,6 +15,12 @@
   .text-muted {
     color: var(--aw-color-text-muted);
   }
+  .bg-deep-navy {
+    background-color: #0D1B2A;
+  }
+  .text-deep-navy {
+    color: #0D1B2A;
+  }
 }
 
 @layer components {
