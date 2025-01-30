@@ -1,10 +1,9 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import Features4 from '~/components/widgets/Features4.astro';
-import Features2 from '~/components/widgets/Features2.astro';
+import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-
+import Features2 from '~/components/widgets/Features2.astro';
 const metadata = {
   title: 'contact',
 };
@@ -12,79 +11,103 @@ const metadata = {
 <Layout metadata={metadata}>
 <HeroText tagline="Find Us" title="Our Locations" />
 
-<Features4
-columns={4}
-items={[
-  {
-    title: 'Virginia Office',
-    description: '13873 Park Center Rd, Herndon, VA 20171',
-  },
-  {
-    title: 'Washington DC Office',
-    description: '1200 G Street, NW, STE 800, Washington, DC 20005',
-  },
-  {
-    title: 'New York Office',
-    description: '14 Wall Street 20th Floor, New York, NY 10005',
-  },
-  {
-    title: 'İstanbul Office:',
-    description: 'Trump Towers, Residence 2901, 34381, Şişli/İstanbul Türkiye',
-  },
-]}
-/>
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Contact Us',
-        href: '/en/contact',
+<ItemGrid3
+  items={[
+    {
+      title: 'Virginia Office',
+      description: '13873 Park Center Rd, Herndon, VA 20171',
+      image: {
+        src: '~/assets/images/map-herndon.jpg',
+        alt: 'Maps location image',
       },
-    ]}
-  >
-    <Fragment slot="title">
-      Capitol <span class="sm:whitespace-nowrap">Law Patners</span>
-    </Fragment>
+    },
+    {
+      title: 'Washington DC Office',
+      description: '1200 G Street, NW, STE 800, Washington, DC 20005',
+      image: {
+        src: '~/assets/images/map-washington.png',
+        alt: 'Maps location image',
+      },
+    },
+    {
+      title: 'New York Office',
+      description: '14 Wall Street 20th Floor, New York, NY 10005',
+      image: {
+        src: '~/assets/images/map-newyork.png',
+        alt: 'Maps location image',
+      },
+    },
+    {
+      title: 'İstanbul Office:',
+      description: 'Trump Towers, Residence 2901, 34381, Şişli/İstanbul Türkiye',
+      image: {
+        src: '~/assets/images/map-istanbul-1.png',
+        alt: 'Maps location image',
+      },
+    },
+  ]}
+  columns={4}
+  classes={{
+    container: 'gap-4 md:gap-6',
+    panel:
+      'rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white p-6',
+    icon: 'w-16 h-16 mb-6 text-primary',
+  }}
+/>
 
-    <Fragment slot="subtitle">
-      Be very surprised by these huge numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
-  </CallToAction>
+<!-- CallToAction Widget *********** -->
+
+<CallToAction
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Contact Us',
+      href: '/en/contact',
+    },
+  ]}
+>
+  <Fragment slot="title">
+    Capitol <span class="sm:whitespace-nowrap">Law Patners</span>
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    Discover the difference our expertise can make in your legal matters. <br class="hidden md:inline" />
+    Contact us today!
+  </Fragment>
+</CallToAction>
+
 <Features2
-title="We are here to help!"
-items={[
-  {
-    title: 'General support',
-    description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-  },
-  {
-    title: 'Contact sales',
-    description:
-      'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-  },
-  {
-    title: 'Technical support',
-    description:
-      'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-  },
-  {
-    title: 'Phone',
-    description: '+1 (234) 567-890',
-    icon: 'tabler:headset',
-  },
-  {
-    title: 'Email',
-    description: 'contact@support.com',
-    icon: 'tabler:mail',
-  },
-  {
-    title: 'Whatsapp',
-    description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-    icon: 'tabler:message',
-  },
-]}
+  title="We are here to help!"
+  items={[
+    {
+      title: 'General support',
+      description: `Chat with us for inquiries related to legal consultations, case evaluations, contract reviews, compliance matters, or general questions about our legal services.`,
+    },
+    {
+      title: 'Speak with an Attorney',
+      description:
+        'Need direct legal advice? Reach out to our attorneys for personalized consultations and professional legal representation.',
+    },
+    {
+      title: 'Immigration Case Assistance',
+      description:
+        "Need help with your immigration case? Whether you're applying for a visa, green card, citizenship, or facing immigration challenges, our team is here to guide you through the process.",
+    },
+    {
+      title: 'Phone',
+      description: '+1 (202) 440-2272',
+      icon: 'tabler:headset',
+    },
+    {
+      title: 'Email',
+      description: 'contact@support.com',
+      icon: 'tabler:mail',
+    },
+    {
+      title: 'Whatsapp',
+      description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+      icon: 'tabler:message',
+    },
+  ]}
 />
 </Layout>

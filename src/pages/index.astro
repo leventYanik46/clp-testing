@@ -29,7 +29,7 @@ const metadata = {
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
       },
-      { text: "Free Evaluation", href: '#features',variant:'primary' },
+      { text: "Free Evaluation", href: '/en/evaluations', variant: 'primary' },
     ]}
   >
   <!--Your Trusted Advocates in Justice—Dedicated to Prioritizing You. 
@@ -39,10 +39,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">Your Esteemed Advocates in Justice</span> </span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Your Esteemed Advocates in Justice</span>
+      <span class="hidden sm:inline font-semibold">Your Esteemed Advocates in Justice</span>
       Dedicated to Prioritizing You with Commitment and Time-Honored Expertise.
     </Fragment> 
   </Hero>
@@ -240,36 +237,38 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Call To Action=Get The Legal Representation You Deserve Today"
-    items={[
-      {
-        title: 'Step 1: <span class="font-medium">Not sure about this part yet.</span>',
-        description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
-        description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
-      },
-      {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
-        description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
-      },
-      {
-        title: 'Ready!',
-        icon: 'tabler:check',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
+  title="Get The Legal Representation You Deserve Today"
+  items={[
+    {
+      title: 'Step 1: <span class="font-medium">Fill Out The <a href="/en/contact" class="hover:underline font-bold"> Contact Us </a> Form</span>',
+      description:
+        "Start by providing us with details about your legal concerns through our contact form. Our team will review your inquiry and connect you with the right legal expert.",
+      icon: 'tabler:file-text',
+    },
+    {
+      title: 'Step 2: <span class="font-medium">Schedule a Free Evaluation</span>',
+      description:
+        "Once we receive your information, we'll schedule a free case evaluation to understand your situation and outline potential legal solutions.",
+      icon: 'tabler:calendar-event',
+    },
+    {
+      title: 'Step 3: <span class="font-medium">Book a Consultation</span>',
+      description:
+        "Meet with our experienced attorneys for a personalized consultation. Whether you need assistance with corporate law, litigation, immigration, or estate planning, we’ll guide you through your legal options.",
+      icon: 'tabler:scale',
+    },
+    {
+      title: 'Ready!',
+      description:
+        "With a clear legal strategy in place, you're on your way to resolving your case with confidence. Our team will be by your side every step of the way.",
+      icon: 'tabler:check',
+    },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+    alt: 'Steps image',
+  }}
+/>
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
@@ -338,8 +337,8 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Discover the difference our expertise can make in your legal matters. <br class="hidden md:inline" />
+      Contact us today!
     </Fragment>
   </CallToAction>
 </Layout>

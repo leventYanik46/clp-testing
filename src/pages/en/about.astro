@@ -1,7 +1,7 @@
 ---
 import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-
+import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
 import Hero3 from '~/components/widgets/hero3.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
@@ -28,9 +28,16 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="subtitle">
-      Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. 
-      Praesent lacinia diam et ante imperdiet euismod. Morbi faucibus luctus quam, sit amet aliquet felis tempor id. 
-      Cras augue massa, ornare quis dignissim a, molestie vel nulla.
+      At <strong>Capitol Law Partners</strong>, we are committed to delivering exceptional legal services with integrity, dedication, and results-driven advocacy.
+      <span class="hidden sm:inline">
+        With decades of experience, our firm has built a reputation for excellence in corporate law, business litigation, immigration, and estate planning.
+        <br />
+        <br />
+        Navigating legal challenges can be overwhelming, which is why we prioritize clear communication, strategic solutions, and personalized representation to protect your interests.
+      </span>
+        <br />
+        <br />
+      Let us help you move forward with <strong>confidence</strong>.
     </Fragment>
   </Hero3>
 
@@ -50,7 +57,7 @@ const metadata = {
 
   <Features3
     title="Our Practice Areas"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    subtitle="Expert legal solutions tailored to your needs. From corporate law to immigration and estate planning, our attorneys provide strategic guidance and dedicated advocacy to protect your interests."
     columns={3}
     isBeforeContent={true}
     items={[
@@ -63,7 +70,7 @@ const metadata = {
       {
         title: 'Corparate Law',
         description:
-          '// Expert guidance on corporate governance, mergers and acquisitions, regulatory compliance, and business structuring to ensure legal security and growth.',
+          'Expert guidance on corporate governance, mergers and acquisitions, regulatory compliance, and business structuring to ensure legal security and growth.',
         icon: 'tabler:building-skyscraper',
       },
       {
@@ -82,34 +89,6 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-//         General Counsel Services
-// Seamlessly integrating legal expertise with strategic business solutions to enhance productivity, compliance, and operational efficiency.
-
-// Corporate Law
-// Expert guidance on corporate governance, mergers and acquisitions, regulatory compliance, and business structuring to ensure legal security and growth.
-
-// Business Immigration
-// Providing comprehensive immigration solutions for businesses, ensuring compliance with evolving immigration laws while facilitating global talent mobility.
-
-// Business Litigation
-// Strategic dispute resolution and litigation services to protect your business interests and mitigate risks effectively.
-
-// Estate Planning
-// Tailored estate planning strategies, including wills, trusts, and asset distribution, to secure your legacy and protect your family’s future.
-
-// Real Estate
-// Navigating complex real estate transactions with confidence—legal support for acquisitions, leasing, contracts, and property development.
-
-// Immigration
-// Comprehensive legal assistance for individuals and businesses navigating immigration laws, visas, green cards, and citizenship processes.
-
-// Asset Protection
-// Implementing legal strategies to safeguard your wealth, business, and personal assets from potential liabilities and risks.
-
-// Corporate Transparency Act
-// Ensuring compliance with the latest Corporate Transparency Act regulations, helping businesses maintain transparency while meeting legal obligations.
-
-
         title: 'Business Litigation',
         description:
           "Strategic dispute resolution and litigation services to protect your business interests and mitigate risks effectively.",
@@ -154,26 +133,27 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
-    items={[
-      {
-        title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
-      },
-      {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-      },
-    ]}
-  />
+  title="Our Values"
+  subtitle="At Capitol Law Partners, our core values define who we are and how we serve our clients. We are committed to providing ethical, client-focused legal services with a dedication to excellence and continuous improvement."
+  items={[
+    {
+      title: 'Client-Centered Advocacy',
+      description:
+        'We prioritize our clients’ needs, offering personalized legal strategies and dedicated representation to ensure the best possible outcomes.',
+    },
+    {
+      title: 'Excellence & Growth',
+      description:
+        'We continuously refine our legal expertise, staying ahead of industry trends to provide innovative solutions and superior service.',
+    },
+    {
+      title: 'Integrity & Ethics',
+      description:
+        'Our firm upholds the highest ethical standards, ensuring honesty, transparency, and fairness in every legal matter we handle.',
+    },
+  ]}
+/>
+
 
   <!-- Steps2 Widget ****************** -->
 
@@ -208,49 +188,69 @@ const metadata = {
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
-    items={[
-      {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+  <ItemGrid3
+  items={[
+    {
+      title: 'Virginia Office',
+      description: '13873 Park Center Rd, Herndon, VA 20171',
+      image: {
+        src: '~/assets/images/map-herndon.jpg',
+        alt: 'Maps location image',
       },
-      {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+    },
+    {
+      title: 'Washington DC Office',
+      description: '1200 G Street, NW, STE 800, Washington, DC 20005',
+      image: {
+        src: '~/assets/images/map-washington.png',
+        alt: 'Maps location image',
       },
-      {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
+    },
+    {
+      title: 'New York Office',
+      description: '14 Wall Street 20th Floor, New York, NY 10005',
+      image: {
+        src: '~/assets/images/map-newyork.png',
+        alt: 'Maps location image',
       },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+    },
+    {
+      title: 'İstanbul Office:',
+      description: 'Trump Towers, Residence 2901, 34381, Şişli/İstanbul Türkiye',
+      image: {
+        src: '~/assets/images/map-istanbul-1.png',
+        alt: 'Maps location image',
       },
-    ]}
-  />
-
+    },
+  ]}
+  columns={4}
+  classes={{
+    container: 'gap-4 md:gap-6',
+    panel:
+      'rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white p-6',
+    icon: 'w-16 h-16 mb-6 text-primary',
+  }}
+/>
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Technical Support"
+    title="We are here to help!"
     tagline="Contact us"
     columns={2}
     items={[
       {
         title: 'Chat with us',
         description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
+          "Get quick answers and personalized support from our legal team. Whether you have questions about our services or need initial guidance, we're here to assist you.",
         icon: 'tabler:messages',
       },
       {
         title: 'Call us',
         description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
+          "Speak directly with our attorneys for expert legal advice and consultation. We’re ready to help you navigate your legal concerns with clarity and confidence. <br /> <br />+1 (202) 440-2272",
         icon: 'tabler:headset',
       },
+      
     ]}
   />
 </Layout>

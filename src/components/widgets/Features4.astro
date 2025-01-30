@@ -2,7 +2,6 @@
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
 import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
-import ImageGrid from '~/components/ui/ImageGrid.astro';
 import type { Features as Props } from '~/types';
 const {
   title = await Astro.slots.render('title'),
@@ -19,37 +18,14 @@ const {
 
 <WidgetWrapper id={id} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
-  <ImageGrid
-    items={[
-      {
-        src: '~/assets/images/map-herndon.jpg',
-        alt: 'Maps location image',
-        href: 'https://www.google.com/maps/place/Capitol+Law+Partners',
-      },
-      {
-        src: '~/assets/images/map-herndon.jpg',
-        alt: 'Maps location image',
-        href: 'https://www.google.com/maps/place/5678+Lorem+Ipsum+St,+Madrid/',
-      },
-      {
-        src: '~/assets/images/map-herndon.jpg',
-        alt: 'Maps location image',
-        href: 'https://www.google.com/maps/place/9012+Lorem+Ipsum+St,+Sydney/',
-      },
-      {
-        src: '~/assets/images/map-herndon.jpg',
-        alt: 'Maps location image',
-        href: 'https://www.google.com/maps/place/3456+Lorem+Ipsum+St,+São+Paulo/',
-      },
-    ]}
-    columns={columns}
-    classes={{
-      image: 'w-full h-auto',
-    }}
-  />
-  <div class="mt-8"></div> <!-- Add space between the image grid and the item grid -->
   <ItemGrid3
-    items={items}
+    items={items.map(item => ({
+      ...item,
+      image: {
+        src: '~/assets/images/map-herndon.jpg',
+        alt: 'Maps location image',
+      },
+    }))}
     columns={columns}
     defaultIcon={defaultIcon}
     classes={{

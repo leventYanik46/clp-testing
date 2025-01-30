@@ -1,0 +1,73 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Features from '~/components/widgets/Features.astro';
+
+const metadata = {
+  title: 'Evaluations',
+};
+---
+<Layout metadata={metadata}>
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="Practice Areas"
+    tagline="Practice Areas"
+    title="What We Offer as Capitol Law Partners"
+    subtitle="Short about us sentence to deliver a clear message for people who won't read the about us section. I mean who even reads that."
+    items={[
+      {
+        title: '<a href="#" class="hover:underline">General Counsel Services</a>',
+        description:
+          'Seamlessly integrating legal expertise with strategic business solutions to enhance productivity, compliance, and operational efficiency.',
+        icon: 'tabler:gavel',
+      },
+      {
+        title: '<a href="#" class="hover:underline">Corporate Law</a>',
+        description:
+          'Expert guidance on corporate governance, mergers and acquisitions, regulatory compliance, and business structuring to ensure legal security and growth.',
+        icon: 'tabler:building-skyscraper',
+      },
+      {
+        title: '<a href="#" class="hover:underline">Business Immigration</a>',
+        description:
+          'Providing comprehensive immigration solutions for businesses, ensuring compliance with evolving immigration laws while facilitating global talent mobility.',
+        icon: 'tabler:briefcase',
+      },
+      {
+        title: '<a href="#" class="hover:underline">Business Litigation</a>',
+        description:
+          "Strategic dispute resolution and litigation services to protect your business interests and mitigate risks effectively.",
+        icon: 'tabler:arrows-right-left',
+      },
+      {
+        title: '<a href="#" class="hover:underline">Estate Planning</a>',
+        description: "Tailored estate planning strategies, including wills, trusts, and asset distribution, to secure your legacy and protect your family’s future.",
+        icon: 'tabler:home',
+      },
+      {
+        title: '<a href="#" class="hover:underline">Real Estate</a>',
+        description:
+          'Navigating complex real estate transactions with confidence—legal support for acquisitions, leasing, contracts, and property development.',
+        icon: 'tabler:building-estate',
+      },
+      {
+        title: '<a href="#" class="hover:underline">Immigration</a>',
+        description:
+          'Comprehensive legal assistance for individuals and businesses navigating immigration laws, visas, green cards, and citizenship processes.',
+        icon: 'tabler:globe-filled',
+      },
+      {
+        title: '<a href="#" class="hover:underline">Asset Protection</a>',
+        description:
+          'Implementing legal strategies to safeguard your wealth, business, and personal assets from potential liabilities and risks.',
+        icon: 'tabler:affiliate',
+      },
+      {
+        title: '<a href="#" class="hover:underline">Corporate Transparency Act</a>',
+        description:
+          'Ensuring compliance with the latest Corporate Transparency Act regulations, helping businesses maintain transparency while meeting legal obligations.',
+        icon: 'tabler:file-certificate',
+      },
+    ]}
+  />
+</Layout>
