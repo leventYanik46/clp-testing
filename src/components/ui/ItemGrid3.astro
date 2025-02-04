@@ -54,7 +54,9 @@ const {
             </a>
           )}
           {(icon || defaultIcon) && (
-            <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
+            <a href={icon.href} target="_blank" rel="noopener noreferrer">
+              <Icon name={icon.name || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
+            </a>
           )}
           <div class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</div>
           {description && (
