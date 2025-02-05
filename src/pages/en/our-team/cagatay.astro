@@ -2,7 +2,6 @@
 import Layout from '~/layouts/PageLayout.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-import Features3 from '~/components/widgets/Features3.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
@@ -46,17 +45,18 @@ const metadata = {
     </div>
     <div class="flex flex-col sm:flex-row items-center gap-4 mt-8">
       <a 
+      href={getPermalink('/contact')} 
+      class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
+    >
+      Schedule a Consultation
+    </a>
+      <a 
         href={getPermalink('/contact')} 
         class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
       >
         Contact Me
       </a>
-      <a 
-        href={getPermalink('/contact')} 
-        class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
-      >
-        See More
-      </a>
+
     </div>
   </Fragment>
 </Content>

@@ -1,0 +1,89 @@
+---
+import type { Form as Props } from '~/types';
+import Button from '~/components/ui/Button.astro';
+
+const { inputs, textarea, disclaimer, button = 'Contact us', description = '', classes = {} } = Astro.props;
+---
+
+<form>
+  {
+    inputs &&
+      inputs.map(
+        ({ type = 'text', name, label = '', autocomplete = 'on', placeholder = '' }) =>
+          name && (
+            <div class={`mb-6 ${classes?.inputContainer ?? ''}`}>
+              {label && (
+                <label for={name} class={`block text-sm font-medium ${classes?.label ?? ''}`}>
+                  {label}
+                </label>
+              )}
+              <input
+                type={type}
+                name={name}
+                id={name}
+                autocomplete={autocomplete}
+                placeholder={placeholder}
+                class={`py-3 px-4 block w-[20rem] text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 ${classes?.input ?? ''}`}
+              />
+            </div>
+          )
+      )
+  }
+
+  {
+    textarea && textarea.map(
+      ({ label }) => (
+        <div class={`mb-6 ${classes?.textareaContainer ?? ''}`}>
+          <label for="textarea" class={`block text-sm font-medium ${classes?.label ?? ''}`}>
+            {label}
+          </label>
+          <textarea
+            id="textarea"
+            name="textarea"
+            rows={4}
+            placeholder=""
+            class={`py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 ${classes?.textarea ?? ''}`}
+          />
+        </div>
+      )
+    )
+  }
+
+  {
+    disclaimer && (
+      <div class={`mt-3 flex items-start ${classes?.disclaimerContainer ?? ''}`}>
+        <div class="flex mt-0.5">
+          <input
+            id="disclaimer"
+            name="disclaimer"
+            type="checkbox"
+            class={`cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 ${classes?.disclaimer ?? ''}`}
+          />
+        </div>
+        <div class="ml-3">
+          <label for="disclaimer" class={`cursor-pointer select-none text-sm text-gray-600 dark:text-gray-400 ${classes?.disclaimerLabel ?? ''}`}>
+            {disclaimer.label}
+          </label>
+        </div>
+      </div>
+    )
+  }
+
+  {
+    button && (
+      <div class={`mt-10 grid place-items-center ${classes?.buttonContainer ?? ''}`}>
+        <Button variant="primary" type="submit" class="w-40">
+          {button}
+        </Button>
+      </div>
+    )
+  }
+
+  {
+    description && (
+      <div class={`mt-3 text-center ${classes?.descriptionContainer ?? ''}`}>
+        <p class={`text-sm text-gray-600 dark:text-gray-400 ${classes?.description ?? ''}`}>{description}</p>
+      </div>
+    )
+  }
+</form>

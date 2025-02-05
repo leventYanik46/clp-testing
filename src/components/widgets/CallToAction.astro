@@ -3,21 +3,30 @@ import WidgetWrapper from '../ui/WidgetWrapper.astro';
 import type { CallToAction, Widget } from '~/types';
 import Headline from '~/components/ui/Headline.astro';
 import Button from '~/components/ui/Button.astro';
+import Image from '~/components/common/Image.astro';
 
 interface Props extends Widget {
   title?: string;
   subtitle?: string;
   tagline?: string;
+  bottomtag?: string;
   callToAction?: CallToAction;
   actions?: string | CallToAction[];
+  image?: {
+    src: string;
+    alt: string;
+    width?: number;
+    height?: number;
+  };
 }
 
 const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
   tagline = await Astro.slots.render('tagline'),
+  bottomtag = await Astro.slots.render('bottomtag'),
   actions = await Astro.slots.render('actions'),
-
+  image,
   id,
   classes = {},
   bg = await Astro.slots.render('bg'),
@@ -38,6 +47,22 @@ const {
         subtitle: 'text-xl text-muted dark:text-slate-400',
       }}
     />
+    {image && (
+      <div class="my-6">
+        <Image
+          src={image.src}
+          alt={image.alt}
+          width={image.width ?? 600}
+          height={image.height ?? 400}
+          class="mx-auto rounded-md shadow-lg"
+        />
+      </div>
+    )}
+    {bottomtag && (
+      <div class="text-xl text-muted dark:text-slate-400 mt-4">
+        {bottomtag}
+      </div>
+    )}
     {
       actions && (
         <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-6">

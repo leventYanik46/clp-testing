@@ -13,12 +13,10 @@ export const headerData = {
           text: 'General Counsel Services',
           href: getPermalink('/en/practices/general-counsel-services'),
         },
-
         {
           text: 'Corporate Law',
           href: getPermalink('/en/practices/corporate-law'),
         },
-      
         {
           text: 'Business Litigation',
           href: getPermalink('/en/practices/business-litigation'),
@@ -30,6 +28,22 @@ export const headerData = {
         {
           text: 'Immigration Law',
           href: getPermalink('/en/practices/immigration-law'),
+        },
+        {
+          text: 'Estate Planning',
+          href: getPermalink('/en/practices/estate-planning'),
+        },
+        {
+          text: 'Real Estate',
+          href: getPermalink('/en/practices/real-estate'),
+        },
+        {
+          text: 'Asset Protection',
+          href: getPermalink('/en/practices/asset-protection'),
+        },
+        {
+          text: 'Corporate Transparency Act',
+          href: getPermalink('/en/practices/corporate-transparency-act'),
         },
       ]
     },
@@ -69,47 +83,42 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'About Us',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Our Story', href: getPermalink('/en/about') },
+        { text: 'Our Locations', href: getPermalink('/en/locations') },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Our Team',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Cagatay Ersoy', href: getPermalink('/en/our-team/cagatay') },
+        { text: 'Sena Sahin', href: getPermalink('/en/our-team/sena') },
+        { text: 'Shafeek Seddiq', href: getPermalink('/en/our-team/Shafeek') },
+      ],
+    },
+    
+    {
+      title: 'Practice Areas',
+      links: [
+        { text: 'General Counsel Services', href: getPermalink('/en/practices/general-counsel-services') },
+        { text: 'Corporate Law', href: getPermalink('/en/practices/corporate-law') },
+        { text: 'Business Litigation', href: getPermalink('/en/practices/business-litigation') },
+        { text: 'Business Immigration Law', href: getPermalink('/en/practices/business-immigration') },
+        { text: 'Immigration Law', href: getPermalink('/en/practices/immigration-law') },
+        { text: 'Estate Planning', href: getPermalink('/en/practices/estate-planning') },
+        { text: 'Real Estate', href: getPermalink('/en/practices/real-estate') },
+        { text: 'Asset Protection', href: getPermalink('/en/practices/asset-protection') },
+        { text: 'Corporate Transparency Act', href: getPermalink('/en/practices/corporate-transparency-act') },
       ],
     },
     {
-      title: 'Support',
+      title: 'Resources',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Blog', href: getBlogPermalink() },
+        { text: 'FAQs', href: getPermalink('/en/faqs') },
+        { text: 'Contact Us', href: getPermalink('/en/contact') },
+        { text: 'Free Evalutaions', href: getPermalink('/en/contact') },
       ],
     },
   ],

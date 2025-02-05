@@ -1,7 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import Contact from '~/components/widgets/Contact.astro';
+import EValForm from '~/components/widgets/EvaluationForm.astro';
 const metadata = {
     title: 'EB-1',
   };
@@ -9,11 +9,11 @@ const metadata = {
   <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="EB-1" title="" />
-  <Contact
+  <HeroText tagline="EB-1" title="EB-1 Evaluation" />
+  <EValForm
     id="form"
     title="Find out if you qualify for the EB-1 visa today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking for right there! If not, our support team is delighted to help you."
+    subtitle="Our seasoned attorneys will carefully review your information to assess your eligibility for the prestigious EB-1 visa.<br /> <br />The <strong>EB-1 visa</strong> is a first-preference employment-based green card for individuals with <strong>extraordinary ability</strong>, <strong>outstanding professors and researchers</strong>, and <strong>multinational executives or managers</strong>. It provides a fast-track path to permanent residency, often without the need for employer sponsorship." 
     inputs={[
       {
         type: 'text',
@@ -25,14 +25,66 @@ const metadata = {
         name: 'email',
         label: 'Email',
       },
+      {
+        type: 'text',
+        name: 'phone',
+        label: 'Phone Number:*',
+      },
     ]}
-    textarea={{
-      label: 'Message',
-    }}
+    textarea={[
+      {
+        label: 'Country of Residence/State:*',
+      },
+      {
+        label: 'Field of Expertise:*',
+      },
+      {
+        label: 'Current Employer:*',
+      },
+      {
+        label: 'Job Title:*',
+      },
+      {
+        label: 'If in the United States, the Visa Status:*',
+      },
+      {
+        label: 'Have you received any nationally or internationally recognized prizes or awards for excellence? If yes, please list your awards.*',
+      },
+      {
+        label: 'Do you have any memberships in associations in the field which demand outstanding achievement of their members? If yes, please list your memberships.*',
+      },
+      {
+        label: 'Do you have any published material about you and your work in professional or major trade publications or other major media? If yes, please list the articles about you and the publications. (must include date, and author such published material)*',
+      },
+      {
+        label: 'Have you judged the work of others, either individually or on a panel? If yes, please list the judging task (Peer-Review or Event).*',
+      },
+      {
+        label: 'Do you have any original scientific, scholarly, artistic, athletic, or business-related contributions of major significance to the field? If yes, please explain.*',
+      },
+      {
+        label: 'Have you authored scholarly articles in professional or major trade publications or other major media? If yes, please list your authored articles and the publications.*',
+      },
+      {
+        label: 'If you are in Performing Arts or Visual Arts, has your work been displayed at artistic exhibitions or showcases? Please list the events.*',
+      },
+      {
+        label: 'Have you performed a leading or a critical role for distinguished organizations? If yes, please include your title and the Company name.*',
+      },
+      {
+        label: 'Do you command a high salary or other significantly high remuneration in relation to others in the field?*',
+      },
+      {
+        label: ' Do you have any commercial successes in the performing arts? If yes, explain. *',
+      },
+      {
+        label: 'Current Annual Salary*',
+      }
+    ]}
     disclaimer={{
       label:
         'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
     }}
     description="Our support team typically responds within 24 business hours."
-  />
+    />
   </Layout>

@@ -1,7 +1,7 @@
 site:
   name: CAPITOL LAW PARTNERS
   site: 'https://capitollaw-coders-club.github.io'
-  base: '/clp-astrowind'
+  base: '/capitol-law-partners'
   trailingSlash: false
 
   googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Capitol Law Partners
-  description: "\U0001F680 Law Firm providing legal services in the practice areas of Corporate, Commercial, Real Estate, Intellectual Property, and Litigation."
+  description: "Capitol Law Partners - Law Firm providing legal services in the practice areas of Corporate, Commercial, Real Estate, Intellectual Property, and Litigation."
   robots:
     index: true
     follow: true

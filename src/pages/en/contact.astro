@@ -17,7 +17,7 @@ const metadata = {
   <ContactUs
     id="form"
     title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking for right there! If not, our support team is delighted to help you."
+    subtitle="Get expert legal guidance tailored to your needs. Contact us now to start your journey!"
     inputs={[
       {
         type: 'text',
@@ -29,6 +29,11 @@ const metadata = {
         name: 'email',
         label: 'Email',
       },
+      {
+        type: 'text',
+        name: 'phone',
+        label: 'Phone Number:',
+      },
     ]}
     textarea={{
       label: 'Message',
@@ -37,7 +42,7 @@ const metadata = {
       label:
         'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
     }}
-    description="Our support team typically responds within 24 business hours."
+    description="Our team typically responds within 24 business hours."
   />
 
   <!-- Features2 Widget ************** -->
@@ -66,7 +71,7 @@ const metadata = {
     },
     {
       title: 'Email',
-      description: 'contact@support.com',
+      description: 'reyhan@capitollawpartners.com',
       icon: 'tabler:mail',
     },
     {
@@ -76,7 +81,6 @@ const metadata = {
     },
   ]}
 />
-
 <ItemGrid3
   items={[
     {
@@ -85,6 +89,7 @@ const metadata = {
       image: {
         src: '~/assets/images/map-herndon.jpg',
         alt: 'Maps location image',
+        href: 'https://www.google.com/maps/place/13873+Park+Center+Rd,+Herndon,+VA+20171',
       },
     },
     {
@@ -93,6 +98,7 @@ const metadata = {
       image: {
         src: '~/assets/images/map-washington.png',
         alt: 'Maps location image',
+        href: 'https://www.google.com/maps/place/1200+G+St+NW,+Washington,+DC+20005',
       },
     },
     {
@@ -101,6 +107,7 @@ const metadata = {
       image: {
         src: '~/assets/images/map-newyork.png',
         alt: 'Maps location image',
+        href: 'https://www.google.com/maps/place/14+Wall+St+20th+Floor,+New+York,+NY+10005',
       },
     },
     {
@@ -109,6 +116,7 @@ const metadata = {
       image: {
         src: '~/assets/images/map-istanbul-1.png',
         alt: 'Maps location image',
+        href: 'https://www.google.com/maps/place/Trump+Towers,+Residence+2901,+34381,+Şişli/İstanbul+Türkiye',
       },
     },
   ]}
