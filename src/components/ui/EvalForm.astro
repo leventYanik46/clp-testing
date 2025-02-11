@@ -2,7 +2,7 @@
 import type { Form as Props } from '~/types';
 import Button from '~/components/ui/Button.astro';
 
-const { inputs, textarea, disclaimer, button = 'Contact us', description = '', classes = {} } = Astro.props;
+const { inputs, textareas = [], disclaimer, button = 'Contact us', description = '' } = Astro.props;
 ---
 
 <form>
@@ -11,9 +11,9 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', c
       inputs.map(
         ({ type = 'text', name, label = '', autocomplete = 'on', placeholder = '' }) =>
           name && (
-            <div class={`mb-6 ${classes?.inputContainer ?? ''}`}>
+            <div class="mb-6">
               {label && (
-                <label for={name} class={`block text-sm font-medium ${classes?.label ?? ''}`}>
+                <label for={name} class="block text-sm font-medium">
                   {label}
                 </label>
               )}
@@ -23,7 +23,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', c
                 id={name}
                 autocomplete={autocomplete}
                 placeholder={placeholder}
-                class={`py-3 px-4 block w-[20rem] text-md rounded-lg border border-gray-200 bg-white ${classes?.input ?? ''}`}
+                class="py-3 px-4 block w-[20rem] text-md rounded-lg border border-gray-200 bg-white"
               />
             </div>
           )
@@ -31,18 +31,18 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', c
   }
 
   {
-    textarea && textarea.map(
-      ({ label }) => (
-        <div class={`mb-6 ${classes?.textareaContainer ?? ''}`}>
-          <label for="textarea" class={`block text-sm font-medium ${classes?.label ?? ''}`}>
+    textareas && textareas.map(
+      ({ label, name, placeholder = '', rows = 4 }) => (
+        <div class="mb-6">
+          <label for={name} class="block text-sm font-medium">
             {label}
           </label>
           <textarea
-            id="textarea"
-            name="textarea"
-            rows={4}
-            placeholder=""
-            class={`py-3 px-4 block w-full text-md rounded-lg border border-gray-200 bg-white ${classes?.textarea ?? ''}`}
+            id={name}
+            name={name}
+            rows={rows}
+            placeholder={placeholder}
+            class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 bg-white"
           />
         </div>
       )
@@ -51,17 +51,17 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', c
 
   {
     disclaimer && (
-      <div class={`mt-3 flex items-start ${classes?.disclaimerContainer ?? ''}`}>
+      <div class="mt-3 flex items-start">
         <div class="flex mt-0.5">
           <input
             id="disclaimer"
             name="disclaimer"
             type="checkbox"
-            class={`cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 bg-white ${classes?.disclaimer ?? ''}`}
+            class="cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 bg-white"
           />
         </div>
         <div class="ml-3">
-          <label for="disclaimer" class={`cursor-pointer select-none text-sm text-gray-600 ${classes?.disclaimerLabel ?? ''}`}>
+          <label for="disclaimer" class="cursor-pointer select-none text-sm text-gray-600">
             {disclaimer.label}
           </label>
         </div>
@@ -71,7 +71,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', c
 
   {
     button && (
-      <div class={`mt-10 grid place-items-center ${classes?.buttonContainer ?? ''}`}>
+      <div class="mt-10 grid place-items-center">
         <Button variant="primary" type="submit" class="w-40">
           {button}
         </Button>
@@ -81,8 +81,8 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', c
 
   {
     description && (
-      <div class={`mt-3 text-center ${classes?.descriptionContainer ?? ''}`}>
-        <p class={`text-sm text-gray-600 ${classes?.description ?? ''}`}>{description}</p>
+      <div class="mt-3 text-center">
+        <p class="text-sm text-gray-600">{description}</p>
       </div>
     )
   }

@@ -207,6 +207,7 @@ export interface Collapse {
 
 export interface Form {
   inputs?: Array<Input>;
+  textareas?: Array<Textarea>;
   textarea?: Textarea;
   disclaimer?: Disclaimer;
   button?: string;
