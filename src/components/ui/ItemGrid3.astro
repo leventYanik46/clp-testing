@@ -41,7 +41,7 @@ const {
           )}
         >
           {image && (
-            <a href={image.href} target="_blank" rel="noopener noreferrer">
+            <a href={(image as any).href || '#'} target="_blank" rel="noopener noreferrer">
               <Image
                 class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg mb-4 transition-transform transform hover:scale-105"
                 width={400}
@@ -54,8 +54,11 @@ const {
             </a>
           )}
           {(icon || defaultIcon) && (
-            <a href={icon.href} target="_blank" rel="noopener noreferrer">
-              <Icon name={icon.name || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
+            <a href={typeof icon === 'object' && icon !== null ? ((icon as any).href || '#') : '#'} target="_blank" rel="noopener noreferrer">
+              <Icon 
+                name={typeof icon === 'object' && icon !== null ? ((icon as any).name || defaultIcon) : (icon || defaultIcon)}
+                class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} 
+              />
             </a>
           )}
           <div class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</div>
