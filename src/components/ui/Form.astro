@@ -85,12 +85,13 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
   }
 </form>
 
-<!-- JavaScript for handling form submission -->
 <script>
-  document.getElementById('contactForm').addEventListener('submit', async function (event) {
+  document.getElementById('contactForm')?.addEventListener('submit', async function (event) {
     event.preventDefault();
 
-    const formData = new FormData(this);
+    // Ensure TypeScript recognizes `this` as an HTMLFormElement
+    const form = event.currentTarget as HTMLFormElement;
+    const formData = new FormData(form);
     const formObject = Object.fromEntries(formData.entries());
 
     try {
@@ -103,7 +104,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
       const result = await response.json();
       if (result.success) {
         alert('Your message has been sent successfully!');
-        this.reset(); // Reset form on success
+        form.reset(); // Corrected way to reset the form
       } else {
         alert('Error sending message: ' + result.error);
       }
