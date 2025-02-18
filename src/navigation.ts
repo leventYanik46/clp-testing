@@ -45,7 +45,7 @@ export const headerData = {
           text: 'Corporate Transparency Act',
           href: getPermalink('/en/practices/corporate-transparency-act'),
         },
-      ]
+      ],
     },
     {
       text: 'Our Team',
@@ -66,18 +66,18 @@ export const headerData = {
           text: 'Murat Yanik',
           href: getPermalink('/en/our-team/murat/murat'),
         },
-      ]
+      ],
     },
     {
       text: 'Our Locations',
       href: getPermalink('/en/locations'),
-    },  
+    },
     {
       text: 'Contact Us',
       href: getPermalink('/en/contact'),
     },
   ],
-  actions: [{ text: "Contact Us", href: '/en/contact',variant: 'primary' }],
+  actions: [{ text: 'Contact Us', href: '/en/contact', variant: 'primary' }],
 };
 
 export const footerData = {
@@ -94,10 +94,9 @@ export const footerData = {
       links: [
         { text: 'Cagatay Ersoy', href: getPermalink('/en/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/en/our-team/sena') },
-        { text: 'Shafeek Seddiq', href: getPermalink('/en/our-team/Shafeek') },
+        { text: 'Shafeek Seddiq', href: getPermalink('/en/our-team/shafeek') },
       ],
     },
-    
     {
       title: 'Practice Areas',
       links: [
@@ -118,7 +117,7 @@ export const footerData = {
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'FAQs', href: getPermalink('/en/faqs') },
         { text: 'Contact Us', href: getPermalink('/en/contact') },
-        { text: 'Free Evalutaions', href: getPermalink('/en/contact') },
+        { text: 'Free Evaluations', href: getPermalink('/en/contact') },
       ],
     },
   ],
