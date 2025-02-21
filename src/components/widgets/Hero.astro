@@ -56,7 +56,7 @@ const {
  
   <!-- Actions section - immediately below image -->
   {actions && (
-    <div class="relative py-8 md:py12 bg-white dark:bg-gray-900 -mt-[2rem] md:-mt-[3rem]">
+    <div class="relative py-8 md:py12 bg-white\ -mt-[2rem] md:-mt-[3rem]">
       <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
         {Array.isArray(actions) ? (
           actions.map((action) => (
@@ -77,20 +77,20 @@ const {
       <div class="text-center max-w-5xl mx-auto">
         {tagline && (
           <p
-            class="text-sm md:text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+            class="text-sm md:text-base text-secondary font-bold tracking-wide uppercase intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
             set:html={tagline}
           />
         )}
         {title && (
           <h1
-            class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+            class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
             set:html={title}
           />
         )}
         <div class="max-w-3xl mx-auto">
           {subtitle && (
             <p
-              class="text-lg sm:text-xl text-muted mb-6 dark:text-slate-300 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+              class="text-lg sm:text-xl text-muted mb-6 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
               set:html={subtitle}
             />
           )}
