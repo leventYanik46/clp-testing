@@ -1,15 +1,16 @@
 import { google } from "googleapis";
 import nodemailer from "nodemailer";
 import dotenv from 'dotenv';
+import type { Handler } from '@netlify/functions';
 
 dotenv.config()
 
-export const handler = async (event) => {
+export const handler: Handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed"}
   }
   try {
-    const { name, email, phone, message } = JSON.parse(event.body);
+    const { name, email, phone, message } = JSON.parse(event.body || "{}");
     if (!name || !email || !phone || !message) {
       return { statusCode: 400, body: JSON.stringify({ error: "Missing required fields" }) };
     }
@@ -54,7 +55,7 @@ export const handler = async (event) => {
       subject: `Client: ${name}`,
       text: `Email: ${email}\nPhone: ${phone}\nMessage:\n${message}\n------------------------\nSent from your website contact form.`,
     };
-    // await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions);
     return { statusCode: 200, body: JSON.stringify({ success: true }) };
   } catch (error) {
     console.error("ERROR sending email:", error);
