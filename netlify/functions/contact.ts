@@ -1,18 +1,18 @@
-import { google } from "googleapis";
-import nodemailer from "nodemailer";
+import { google } from 'googleapis';
+import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 import type { Handler } from '@netlify/functions';
 
-dotenv.config()
+dotenv.config();
 
 export const handler: Handler = async (event) => {
-  if (event.httpMethod !== "POST") {
-    return { statusCode: 405, body: "Method Not Allowed"}
+  if (event.httpMethod !== 'POST') {
+    return { statusCode: 405, body: 'Method Not Allowed' };
   }
   try {
-    const { name, email, phone, message } = JSON.parse(event.body || "{}");
+    const { name, email, phone, message } = JSON.parse(event.body || '{}');
     if (!name || !email || !phone || !message) {
-      return { statusCode: 400, body: JSON.stringify({ error: "Missing required fields" }) };
+      return { statusCode: 400, body: JSON.stringify({ error: 'Missing required fields' }) };
     }
 
     // OAuth2 Credentials (Set these in your environment variables)
@@ -22,24 +22,25 @@ export const handler: Handler = async (event) => {
     const SENDER_EMAIL = process.env.GOOGLE_EMAIL; // Your Gmail account
 
     if (!CLIENT_ID || !CLIENT_SECRET || !REFRESH_TOKEN || !SENDER_EMAIL) {
-      return { statusCode: 500, body: JSON.stringify({ error: "Missing OAuth2 credentials" }) };
+      return { statusCode: 500, body: JSON.stringify({ error: 'Missing OAuth2 credentials' }) };
     }
 
     const oAuth2Client = new google.auth.OAuth2(
       CLIENT_ID,
       CLIENT_SECRET,
-      "https://developers.google.com/oauthplayground"
+      'https://developers.google.com/oauthplayground'
     );
     oAuth2Client.setCredentials({ refresh_token: REFRESH_TOKEN });
 
-
     const accessToken = await oAuth2Client.getAccessToken();
-    if (!accessToken.token) { throw new Error("Failed to retrieve access token."); }
+    if (!accessToken.token) {
+      throw new Error('Failed to retrieve access token.');
+    }
 
     const transporter = nodemailer.createTransport({
-      host: "gmail",
+      host: 'gmail',
       auth: {
-        type: "OAuth2",
+        type: 'OAuth2',
         user: SENDER_EMAIL,
         clientId: CLIENT_ID,
         clientSecret: CLIENT_SECRET,
@@ -58,7 +59,7 @@ export const handler: Handler = async (event) => {
     await transporter.sendMail(mailOptions);
     return { statusCode: 200, body: JSON.stringify({ success: true }) };
   } catch (error) {
-    console.error("ERROR sending email:", error);
+    console.error('ERROR sending email:', error);
     return { statusCode: 500, body: JSON.stringify({ error: error.message }) };
   }
-}
+};

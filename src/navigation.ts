@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink} from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -128,7 +128,11 @@ export const footerData = {
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/capitollawpartners/' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/CapitolLaw/' },
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/company/capitollawpartners' },
+    {
+      ariaLabel: 'LinkedIn',
+      icon: 'tabler:brand-linkedin',
+      href: 'https://www.linkedin.com/company/capitollawpartners',
+    },
   ],
   footNote: `
     <strong>

@@ -2,6 +2,7 @@
 title: 'Privacy Policy'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
+
 Last updated: January 1, 2020
 
 ## Welcome to the Capitol Law Partners Website
@@ -48,14 +49,16 @@ We collect information in three main ways, which help us better serve our visito
 
 #### Directly from You
 
-When you decide to contact us using one of the online forms, you may supply personal information (such as name, email address, or phone number).  
-- **Please do not provide or submit any sensitive information**—for example, date of birth, Social Security number, driver’s license, credit card, bank accounts, or other financial data.  
-- We use the information you voluntarily provide to review your inquiry and possibly contact you for a consultation or future communication.  
+When you decide to contact us using one of the online forms, you may supply personal information (such as name, email address, or phone number).
+
+- **Please do not provide or submit any sensitive information**—for example, date of birth, Social Security number, driver’s license, credit card, bank accounts, or other financial data.
+- We use the information you voluntarily provide to review your inquiry and possibly contact you for a consultation or future communication.
 - If you wish to stop receiving future communications, you can contact us anytime at [info@capitollawpartners.com](mailto:info@capitollawpartners.com) or call us at (**202**) 440-2272 and request to unsubscribe.
 
 #### Web Server Logs
 
-When you visit the Capitol Law Partners website, we may track information about your visit (stored on our web server). This can include your IP address, time of visit, referring website, and which pages you viewed.  
+When you visit the Capitol Law Partners website, we may track information about your visit (stored on our web server). This can include your IP address, time of visit, referring website, and which pages you viewed.
+
 - We use this information to better understand how our website is being used and how we can improve it to provide better information.
 
 #### Cookies
@@ -92,4 +95,3 @@ Phone: (**202**) 440-2272
 Email: [info@capitollawpartners.com](mailto:info@capitollawpartners.com)
 
 _Last updated: January 17, 2025_
-

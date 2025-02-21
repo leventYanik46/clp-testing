@@ -19,9 +19,7 @@ const { tags, class: className = 'text-sm', title = undefined, isCategory = fals
     <>
       <>
         {title !== undefined && (
-          <span class="align-super font-normal underline underline-offset-4 decoration-2 ">
-            {title}
-          </span>
+          <span class="align-super font-normal underline underline-offset-4 decoration-2 ">{title}</span>
         )}
       </>
       <ul class={className}>
@@ -30,10 +28,7 @@ const { tags, class: className = 'text-sm', title = undefined, isCategory = fals
             {!APP_BLOG?.tag?.isEnabled ? (
               tag.title
             ) : (
-              <a
-                href={getPermalink(tag.slug, isCategory ? 'category' : 'tag')}
-                class="text-muted hover:text-primary "
-              >
+              <a href={getPermalink(tag.slug, isCategory ? 'category' : 'tag')} class="text-muted hover:text-primary ">
                 {tag.title}
               </a>
             )}

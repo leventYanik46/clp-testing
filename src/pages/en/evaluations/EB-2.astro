@@ -3,10 +3,11 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import EValForm from '~/components/widgets/EvaluationForm.astro';
 const metadata = {
-    title: 'EB-2',
-  };
-  ---
-  <Layout metadata={metadata}>
+  title: 'EB-2',
+};
+---
+
+<Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
   <HeroText tagline="EB-2/NIW" title="EB-2 Evaluation" />
@@ -39,22 +40,27 @@ const metadata = {
         label: 'What is your field of expertise or specialization?:*',
       },
       {
-        label: 'Does your work, as well as your planned work, have substantial merit AND national importance? Please explain in a few sentences. ("Substantial merit" refers to merit in a range of areas such as business, entrepreneurialism, science, technology, culture, health, or education. For "national importance," the requirement can be met if an undertaking will have national or even global implications within a particular field, such as those resulting from improved manufacturing processes or medical advances.):*',
+        label:
+          'Does your work, as well as your planned work, have substantial merit AND national importance? Please explain in a few sentences. ("Substantial merit" refers to merit in a range of areas such as business, entrepreneurialism, science, technology, culture, health, or education. For "national importance," the requirement can be met if an undertaking will have national or even global implications within a particular field, such as those resulting from improved manufacturing processes or medical advances.):*',
       },
       {
-        label: 'Are you well-positioned to advance that endeavor considering the following factors: Education, skills, knowledge, record of success in related or similar efforts; a model or plan for future activities; any progress toward achieving the proposed endeavor?:*',
+        label:
+          'Are you well-positioned to advance that endeavor considering the following factors: Education, skills, knowledge, record of success in related or similar efforts; a model or plan for future activities; any progress toward achieving the proposed endeavor?:*',
       },
       {
         label: 'How does your work address a specific need or gap in your field that benefits the United States?:*',
       },
       {
-        label: 'Have you conducted any research or projects that have practical applications or implications for the United States?:*',
+        label:
+          'Have you conducted any research or projects that have practical applications or implications for the United States?:*',
       },
       {
-        label: 'Can you demonstrate how your work has the potential to create jobs, improve economic competitiveness, or advance technological innovation in the United States?:*',
+        label:
+          'Can you demonstrate how your work has the potential to create jobs, improve economic competitiveness, or advance technological innovation in the United States?:*',
       },
       {
-        label: 'How does your expertise compare to others in your field, and how does it uniquely benefit the United States?:*',
+        label:
+          'How does your expertise compare to others in your field, and how does it uniquely benefit the United States?:*',
       },
       {
         label: 'Please provide link(s) to your Scopus, Google Scholar, or ResearchGate profile:*',
@@ -68,5 +74,5 @@ const metadata = {
         'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
     }}
     description="Our support team typically responds within 24 business hours."
-    />
-  </Layout>
+  />
+</Layout>

@@ -54,10 +54,16 @@ const {
             </a>
           )}
           {(icon || defaultIcon) && (
-            <a href={typeof icon === 'object' && icon !== null ? ((icon as any).href || '#') : '#'} target="_blank" rel="noopener noreferrer">
-              <Icon 
-                name={typeof icon === 'object' && icon !== null ? ((icon as any).name || defaultIcon) : (icon || defaultIcon)}
-                class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} 
+            <a
+              href={typeof icon === 'object' && icon !== null ? (icon as any).href || '#' : '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon
+                name={
+                  typeof icon === 'object' && icon !== null ? (icon as any).name || defaultIcon : icon || defaultIcon
+                }
+                class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)}
               />
             </a>
           )}

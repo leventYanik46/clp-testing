@@ -1,17 +1,18 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import CallToAction from "~/components/widgets/CallToAction.astro";
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Schedule Appointment',
 };
 ---
+
 <Layout metadata={metadata}>
   <CallToAction
     title="Let's Work Together"
     subtitle="Schedule an Appointment with Cagatay Ersoy"
     tagline="Cagatay Ersoy"
-    bottomtag='Business Immigration | Immigration Law'
+    bottomtag="Business Immigration | Immigration Law"
     actions={[
       {
         variant: 'primary',
@@ -26,21 +27,21 @@ const metadata = {
     }}
   />
   <CallToAction
-  title="Let's Work Together"
-  subtitle="Schedule an Appointment with Sena Sahin"
-  tagline="Sena Sahin"
-  bottomtag='Business Immigration | Immigration Law'
-  actions={[
-    {
-      variant: 'primary',
-      text: 'Schedule an appointment',
-      href: 'https://calendly.com/attorneysahin',
-      target: '_blank',
-    },
-  ]}
-  image={{
-    src: '~/assets/images/sena-profile-alternate-cta.png',
-    alt: 'Schedule an appointment',
-  }}
-/>
+    title="Let's Work Together"
+    subtitle="Schedule an Appointment with Sena Sahin"
+    tagline="Sena Sahin"
+    bottomtag="Business Immigration | Immigration Law"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Schedule an appointment',
+        href: 'https://calendly.com/attorneysahin',
+        target: '_blank',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/sena-profile-alternate-cta.png',
+      alt: 'Schedule an appointment',
+    }}
+  />
 </Layout>

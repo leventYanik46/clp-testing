@@ -31,8 +31,8 @@ const { inputs, textareas = [], disclaimer, button = 'Contact us', description =
   }
 
   {
-    textareas && textareas.map(
-      ({ label, name, placeholder = '', rows = 4 }) => (
+    textareas &&
+      textareas.map(({ label, name, placeholder = '', rows = 4 }) => (
         <div class="mb-6">
           <label for={name} class="block text-sm font-medium">
             {label}
@@ -45,8 +45,7 @@ const { inputs, textareas = [], disclaimer, button = 'Contact us', description =
             class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 bg-white"
           />
         </div>
-      )
-    )
+      ))
   }
 
   {

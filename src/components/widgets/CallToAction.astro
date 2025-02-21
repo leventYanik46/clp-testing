@@ -34,9 +34,7 @@ const {
 ---
 
 <WidgetWrapper id={id} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
-  <div
-    class="max-w-3xl mx-auto text-center p-6 rounded-md shadow-xl"
-  >
+  <div class="max-w-3xl mx-auto text-center p-6 rounded-md shadow-xl">
     <Headline
       title={title}
       subtitle={subtitle}
@@ -47,22 +45,20 @@ const {
         subtitle: 'text-xl text-muted',
       }}
     />
-    {image && (
-      <div class="my-6">
-        <Image
-          src={image.src}
-          alt={image.alt}
-          width={image.width ?? 600}
-          height={image.height ?? 400}
-          class="mx-auto rounded-md shadow-lg"
-        />
-      </div>
-    )}
-    {bottomtag && (
-      <div class="text-xl text-muted mt-4">
-        {bottomtag}
-      </div>
-    )}
+    {
+      image && (
+        <div class="my-6">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            width={image.width ?? 600}
+            height={image.height ?? 400}
+            class="mx-auto rounded-md shadow-lg"
+          />
+        </div>
+      )
+    }
+    {bottomtag && <div class="text-xl text-muted mt-4">{bottomtag}</div>}
     {
       actions && (
         <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-6">

@@ -20,7 +20,7 @@ const { metadata } = Astro.props;
   </slot>
   <slot name="header">
     {/* Explicitly type headerData as HeaderProps */}
-    <Header {...(headerData as HeaderProps)} isSticky />
+    <Header {...headerData as HeaderProps} isSticky />
   </slot>
   <main>
     <slot />

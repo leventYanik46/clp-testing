@@ -10,7 +10,7 @@ site:
 metadata:
   title:
     default: Capitol Law Partners
-  description: "Capitol Law Partners - Law Firm providing legal services in the practice areas of Corporate, Commercial, Real Estate, Intellectual Property, and Litigation."
+  description: 'Capitol Law Partners - Law Firm providing legal services in the practice areas of Corporate, Commercial, Real Estate, Intellectual Property, and Litigation.'
   robots:
     index: true
     follow: true

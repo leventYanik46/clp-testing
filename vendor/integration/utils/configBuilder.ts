@@ -129,7 +129,6 @@ const getI18N = (config: Config) => {
   return value as I18NConfig;
 };
 
-
 const getAppBlog = (config: Config) => {
   const _default = {
     isEnabled: false,

@@ -3,10 +3,11 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import EValForm from '~/components/widgets/EvaluationForm.astro';
 const metadata = {
-    title: 'E1-E2',
-  };
-  ---
-  <Layout metadata={metadata}>
+  title: 'E1-E2',
+};
+---
+
+<Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
   <HeroText tagline="E1-E2" title="E1-E2 Evaluation" />
@@ -48,16 +49,19 @@ const metadata = {
         label: 'What are your goals in the U.S.?:*',
       },
       {
-        label: 'What kind of business would you like to conduct in the U.S.? Please provide some information. (For example; Which industry are you interested in? Will you establish a new business or buy an existing business? Will you do retail, wholesale, or both? Will you rent an office or a warehouse? Do you already have customers in the U.S.?)',
+        label:
+          'What kind of business would you like to conduct in the U.S.? Please provide some information. (For example; Which industry are you interested in? Will you establish a new business or buy an existing business? Will you do retail, wholesale, or both? Will you rent an office or a warehouse? Do you already have customers in the U.S.?)',
       },
       {
-        label: 'What is your budget if you are planning to invest in the U.S. and what is the source of this investment budget? (For example: sales of property or car, savings from salary, dividend from company profits, gift from family, etc.)*',
+        label:
+          'What is your budget if you are planning to invest in the U.S. and what is the source of this investment budget? (For example: sales of property or car, savings from salary, dividend from company profits, gift from family, etc.)*',
       },
       {
         label: 'How many U.S. workers are you planning to hire?:*',
       },
       {
-        label: 'Is your U.S. company going to conduct international trade with your own country? If yes, what is your prediction about the trade volume for the first 6 months and the following months? Please include the amount in U.S. dollars and number of shipments.:*',
+        label:
+          'Is your U.S. company going to conduct international trade with your own country? If yes, what is your prediction about the trade volume for the first 6 months and the following months? Please include the amount in U.S. dollars and number of shipments.:*',
       },
     ]}
     disclaimer={{
@@ -66,4 +70,4 @@ const metadata = {
     }}
     description="Our support team typically responds within 24 business hours."
   />
-  </Layout>
+</Layout>
