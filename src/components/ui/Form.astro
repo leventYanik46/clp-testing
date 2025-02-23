@@ -86,16 +86,19 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
 </form>
 
 <script>
-  document.getElementById('contactForm')?.addEventListener('submit', async function (event) {
+  document.getElementById('contactForm')!.addEventListener('submit', async function (event) {
     event.preventDefault();
 
-    // Ensure TypeScript recognizes `this` as an HTMLFormElement
-    const form = event.currentTarget as HTMLFormElement;
+    const form = this as HTMLFormElement;
+    const submitButton = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    if (!submitButton) return;
+    submitButton.disabled = true;
+
     const formData = new FormData(form);
     const formObject = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch('/.netlify/functions/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formObject),
@@ -104,13 +107,15 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
       const result = await response.json();
       if (result.success) {
         alert('Your message has been sent successfully!');
-        form.reset(); // Corrected way to reset the form
+        form.reset(); // Reset form on success
       } else {
         alert('Error sending message: ' + result.error);
       }
     } catch (error) {
       alert('An error occurred while sending your message.');
       console.error(error);
+    } finally {
+      submitButton.disabled = false;
     }
   });
 </script>
