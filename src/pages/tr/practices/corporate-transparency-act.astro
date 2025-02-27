@@ -1,0 +1,70 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Image from '~/components/common/Image.astro';
+
+const metadata = {
+  title: 'Corporate Transparency Act',
+};
+
+const post = {
+  title: 'Corporate Transparency Act',
+  image: '~/assets/images/corporate-transperency-act-img.jpg',
+  content: `
+<p>The Corporate Transparency Act (CTA) imposes new compliance requirements on businesses, requiring them to disclose beneficial ownership information to prevent financial crimes such as money laundering and fraud. Ensuring your business adheres to these regulations is critical to avoiding penalties and maintaining corporate integrity.</p>
+
+<p>Our legal team provides expert guidance on navigating the Corporate Transparency Act, ensuring your business meets all reporting obligations while maintaining compliance with federal regulations. We help businesses understand their responsibilities and implement legal strategies that align with these evolving transparency requirements.</p>
+
+<h2>Key Services</h2>
+<ul>
+    <li><strong>Beneficial Ownership Reporting</strong> - Assisting businesses in meeting their reporting obligations under the Corporate Transparency Act.</li>
+    <li><strong>Compliance Audits & Risk Assessments</strong> - Evaluating your business structure to ensure compliance with federal transparency laws.</li>
+    <li><strong>Corporate Structuring & Governance</strong> - Advising on legal structures that align with regulatory requirements while protecting business interests.</li>
+    <li><strong>Legal Documentation & Filing Assistance</strong> - Helping businesses gather, prepare, and submit necessary documents to remain in compliance.</li>
+    <li><strong>Risk Management & Penalty Avoidance</strong> - Identifying potential risks and implementing proactive measures to prevent violations.</li>
+    <li><strong>Ongoing Compliance Support</strong> - Providing continuous legal guidance to help businesses adapt to regulatory changes and new requirements.</li>
+</ul>
+
+<h2>Why Choose Us?</h2>
+<p>Our attorneys stay up to date with the latest developments in corporate compliance laws, ensuring that businesses meet their legal obligations under the Corporate Transparency Act. We take a proactive approach to regulatory compliance, helping clients avoid fines and maintain corporate transparency. With our in-depth knowledge and strategic guidance, your business can operate with confidence, knowing it is fully compliant with federal reporting requirements.</p>
+`,
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-8 sm:py-16 lg:py-20 mx-auto">
+    <article>
+      <header class="intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+        <h1
+          class="px-4 sm:px-6 max-w-3xl mb-10 mx-auto text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading"
+        >
+          {post.title}
+        </h1>
+
+        {
+          post.image ? (
+            <Image
+              src={post.image}
+              class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 "
+              widths={[400, 900]}
+              sizes="(max-width: 900px) 400px, 900px"
+              alt="Corporate Transparency Act"
+              width={900}
+              height={506}
+              loading="eager"
+              decoding="async"
+            />
+          ) : (
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <div class="border-t " />
+            </div>
+          )
+        }
+      </header>
+      <div
+        class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
+      >
+        <Fragment set:html={post.content} />
+      </div>
+    </article>
+  </section>
+</Layout>

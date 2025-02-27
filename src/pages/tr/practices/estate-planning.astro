@@ -1,0 +1,69 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Image from '~/components/common/Image.astro';
+const metadata = {
+  title: 'Estate Planning',
+};
+
+const post = {
+  title: 'Estate Planning',
+  image: '~/assets/images/estate-img.jpg',
+  content: `
+<p>Planning for the future is one of the most important steps you can take to protect your family and assets. Our Estate Planning services are designed to help individuals, families, and business owners create comprehensive legal strategies that ensure their wishes are honored and their loved ones are provided for. With careful planning, you can minimize estate taxes, prevent unnecessary legal complications, and establish a clear roadmap for the distribution of your assets.</p>
+
+<p>Our experienced estate planning attorneys work closely with you to develop a tailored plan that aligns with your personal and financial goals. Whether you are looking to draft a will, create a trust, or plan for incapacity, we provide legal guidance to secure your legacy and protect your beneficiaries.</p>
+
+<h2>Key Services</h2>
+<ul>
+    <li><strong>Wills & Trusts</strong> - Establish legally binding documents that clearly outline your asset distribution, ensuring your loved ones are cared for according to your wishes.</li>
+    <li><strong>Probate & Estate Administration</strong> - Navigate the complexities of probate with expert legal assistance, ensuring the efficient execution of your estate.</li>
+    <li><strong>Business Succession Planning</strong> - Develop a plan to transition your business smoothly to future generations or key stakeholders while preserving its value.</li>
+    <li><strong>Guardianship & Power of Attorney</strong> - Designate trusted individuals to manage your affairs in case of incapacity, ensuring your health and financial decisions are in good hands.</li>
+    <li><strong>Charitable Giving & Philanthropy</strong> - Incorporate charitable contributions into your estate plan to support causes that matter to you.</li>
+    <li><strong>Tax Minimization Strategies</strong> - Implement legal techniques to reduce estate taxes and maximize the value of your assets for future generations.</li>
+</ul>
+
+<h2>Why Choose Us?</h2>
+<p>Our estate planning attorneys have extensive experience helping clients protect their assets and ensure their legacy lives on. We take a personalized approach to every estate plan, tailoring strategies to your unique needs and goals. With a deep understanding of estate laws and tax implications, we provide practical, forward-thinking solutions to give you peace of mind.</p>
+`,
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-8 sm:py-16 lg:py-20 mx-auto">
+    <article>
+      <header class="intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+        <h1
+          class="px-4 sm:px-6 max-w-3xl mb-10 mx-auto text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading"
+        >
+          {post.title}
+        </h1>
+
+        {
+          post.image ? (
+            <Image
+              src={post.image}
+              class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 "
+              widths={[400, 900]}
+              sizes="(max-width: 900px) 400px, 900px"
+              alt="Estate Planning"
+              width={900}
+              height={506}
+              loading="eager"
+              decoding="async"
+            />
+          ) : (
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <div class="border-t " />
+            </div>
+          )
+        }
+      </header>
+      <div
+        class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
+      >
+        <Fragment set:html={post.content} />
+      </div>
+    </article>
+  </section>
+</Layout>

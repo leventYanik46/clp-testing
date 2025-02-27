@@ -1,0 +1,130 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
+const metadata = {
+  title: 'contact',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="Contact Us" title="Let's Connect!" />
+
+  <ContactUs
+    id="form"
+    title="Drop us a message today!"
+    subtitle="Get expert legal guidance tailored to your needs. Contact us now to start your journey!"
+    inputs={[
+      {
+        type: 'text',
+        name: 'name',
+        label: 'Name',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+      },
+      {
+        type: 'text',
+        name: 'phone',
+        label: 'Phone Number:',
+      },
+    ]}
+    textarea={{
+      label: 'Message',
+    }}
+    disclaimer={{
+      label:
+        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+    }}
+    description="Our team typically responds within 24 business hours."
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="We are here to help!"
+    items={[
+      {
+        title: 'General support',
+        description: `Chat with us for inquiries related to legal consultations, case evaluations, contract reviews, compliance matters, or general questions about our legal services.`,
+      },
+      {
+        title: 'Speak with an Attorney',
+        description:
+          'Need direct legal advice? Reach out to our attorneys for personalized consultations and professional legal representation.',
+      },
+      {
+        title: 'Immigration Case Assistance',
+        description:
+          "Need help with your immigration case? Whether you're applying for a visa, green card, citizenship, or facing immigration challenges, our team is here to guide you through the process.",
+      },
+      {
+        title: 'Phone',
+        description: '+1 (202) 440-2272',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Email',
+        description: 'reyhan@capitollawpartners.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Whatsapp',
+        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        icon: 'tabler:message',
+      },
+    ]}
+  />
+  <ItemGrid3
+    items={[
+      {
+        title: 'Virginia Office',
+        description: '13873 Park Center Rd, Herndon, VA 20171',
+        image: {
+          src: '~/assets/images/map-herndon.jpg',
+          alt: 'Maps location image',
+          href: 'https://www.google.com/maps/place/13873+Park+Center+Rd,+Herndon,+VA+20171',
+        },
+      },
+      {
+        title: 'Washington DC Office',
+        description: '1200 G Street, NW, STE 800, Washington, DC 20005',
+        image: {
+          src: '~/assets/images/map-washington.png',
+          alt: 'Maps location image',
+          href: 'https://www.google.com/maps/place/1200+G+St+NW,+Washington,+DC+20005',
+        },
+      },
+      {
+        title: 'New York Office',
+        description: '14 Wall Street 20th Floor, New York, NY 10005',
+        image: {
+          src: '~/assets/images/map-newyork.png',
+          alt: 'Maps location image',
+          href: 'https://www.google.com/maps/place/14+Wall+St+20th+Floor,+New+York,+NY+10005',
+        },
+      },
+      {
+        title: 'İstanbul Office:',
+        description: 'Trump Towers, Residence 2901, 34381, Şişli/İstanbul Türkiye',
+        image: {
+          src: '~/assets/images/map-istanbul-1.png',
+          alt: 'Maps location image',
+          href: 'https://www.google.com/maps/place/Trump+Towers,+Residence+2901,+34381,+Şişli/İstanbul+Türkiye',
+        },
+      },
+    ]}
+    columns={4}
+    classes={{
+      container: 'gap-4 md:gap-6',
+      panel: 'rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white p-6',
+      icon: 'w-16 h-16 mb-6 text-primary',
+    }}
+  />
+</Layout>

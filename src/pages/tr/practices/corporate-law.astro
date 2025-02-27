@@ -1,0 +1,86 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Image from '~/components/common/Image.astro';
+
+const metadata = {
+  title: 'Corporate Law',
+};
+
+const post = {
+  title: 'Corporate Law',
+  image: '~/assets/images/corporate-img.jpg',
+  content: `
+
+    <p>Building a successful business requires a strong legal foundation. Our Corporate Law services provide businesses with expert legal guidance to navigate corporate governance, compliance, and transactions effectively. Whether you're launching a startup or managing a growing enterprise, our attorneys offer strategic solutions to protect and enhance your business operations.</p>
+    
+    <h2>Key Services</h2>
+    <ul>
+        <li>Business Formation & Structuring</li>
+        <li>Corporate Governance & Compliance</li>
+        <li>Contract Drafting & Negotiation</li>
+        <li>Mergers & Acquisitions</li>
+        <li>Intellectual Property Protection</li>
+    </ul>
+    
+    <h2>Business Formation & Structuring</h2>
+    <p>Set your company up for success with the right legal structure, tailored to your business goals and regulatory requirements.</p>
+    
+    <h2>Corporate Governance & Compliance</h2>
+    <p>Ensure your business adheres to corporate laws and best practices while maintaining transparency and accountability.</p>
+    
+    <h2>Contract Drafting & Negotiation</h2>
+    <p>Draft, review, and negotiate contracts to safeguard your business interests and establish strong partnerships.</p>
+    
+    <h2>Mergers & Acquisitions</h2>
+    <p>Legal due diligence, structuring, and negotiations to facilitate smooth business transitions and growth strategies.</p>
+    
+    <h2>Intellectual Property Protection</h2>
+    <p>Safeguard your brand, trademarks, patents, and trade secrets with robust legal strategies.</p>
+    
+    <h2>Why Choose Us?</h2>
+    <p>Our experienced corporate attorneys provide comprehensive legal support to help businesses mitigate risks, comply with regulations, and achieve sustainable growth. We act as strategic partners, delivering proactive legal solutions tailored to your company's needs.</p>
+    
+    <p>With our legal expertise, you can focus on driving innovation and success while we handle the complexities of corporate law.</p>
+`,
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-8 sm:py-16 lg:py-20 mx-auto">
+    <article>
+      <header class="intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+        <h1
+          class="px-4 sm:px-6 max-w-3xl mb-10 mx-auto text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading"
+        >
+          {post.title}
+        </h1>
+        <p class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted text-justify"></p>
+
+        {
+          post.image ? (
+            <Image
+              src={post.image}
+              class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 "
+              widths={[400, 900]}
+              sizes="(max-width: 900px) 400px, 900px"
+              alt=""
+              width={900}
+              height={506}
+              loading="eager"
+              decoding="async"
+            />
+          ) : (
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <div class="border-t " />
+            </div>
+          )
+        }
+      </header>
+      <div
+        class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
+      >
+        <Fragment set:html={post.content} />
+      </div>
+    </article>
+  </section>
+</Layout>

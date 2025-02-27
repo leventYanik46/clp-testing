@@ -1,0 +1,42 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+
+const metadata = {
+  title: 'Academic Works',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '/capitol-law-partners' },
+        { text: 'About Me', href: '/en/our-team/murat/murat' },
+        { text: 'Academic Works', href: '/en/our-team/murat/academic-works' },
+        { text: 'Publications', href: '/en/our-team/murat/publications' },
+        { text: 'Media & News', href: '/en/our-team/murat/media-news' },
+      ]}
+      actions={[
+        {
+          text: 'Contact Me',
+          href: '/en/contact',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
+  <!-- BlogLatestPost Widget **************** -->
+
+  <BlogLatestPosts
+    id="blog"
+    title="Explore my insightful articles on my blog"
+    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

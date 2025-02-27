@@ -25,6 +25,7 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
+    
     sitemap(),
     mdx(),
     icon({
@@ -83,5 +84,20 @@ export default defineConfig({
         '~': path.resolve(__dirname, './src'),
       },
     },
+  },
+
+  // Add i18n configuration
+  i18n: {
+    locales: ['en', 'tr'],
+    defaultLocale: 'en',
+    routing: {
+      prefixDefaultLocale: true,
+      redirectToDefaultLocale: true,
+      fallbackType: 'redirect'
+        },
+    fallback: { 
+     tr: 'en',
+    },
+       
   },
 });

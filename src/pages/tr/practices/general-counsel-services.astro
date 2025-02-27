@@ -1,0 +1,83 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Image from '~/components/common/Image.astro';
+
+const metadata = {
+  title: 'General Counsel Services',
+};
+
+const post = {
+  title: 'General Counsel Services',
+  image: '~/assets/images/precision-img.jpg',
+  content: `
+<p>Navigating complex legal challenges requires more than just reactive solutions—it demands proactive legal strategy. Our General Counsel Services provide businesses with dedicated legal support tailored to their ongoing needs. Whether you're a startup or an established enterprise, our attorneys offer risk management, compliance oversight, and strategic counsel to help your business thrive.</p>
+
+<h2>Key Services</h2>
+<ul>
+  <li>Corporate law</li>
+  <li>Business law</li>
+  <li>Legal compliance</li>
+</ul>
+
+<h3>Corporate Compliance & Governance</h3>
+<p>Ensure your business stays compliant with industry regulations and corporate governance best practices.</p>
+
+<h3>Contract Drafting & Negotiation</h3>
+<p>Protect your business interests with well-structured contracts that mitigate risks and foster strong partnerships.</p>
+
+<h3>Employment & HR Legal Support</h3>
+<p>Guidance on labor laws, employment contracts, workplace policies, and dispute resolution.</p>
+
+<h3>Risk Management & Dispute Resolution</h3>
+<p>Identify potential legal risks early and resolve disputes effectively to safeguard your business.</p>
+
+<h3>Mergers & Acquisitions Support</h3>
+<p>Legal due diligence and structuring to ensure seamless transactions in business growth or acquisitions.</p>
+
+<h2>Why Choose Us?</h2>
+<p>Our seasoned attorneys act as trusted legal advisors, offering customized solutions without the overhead of an in-house legal team. With decades of experience in corporate law, we provide businesses with the legal foundation needed for sustainable growth.</p>
+
+<p>Let us handle your legal concerns so you can focus on scaling your business with confidence.</p>
+`,
+};
+---
+
+<Layout metadata={metadata}>
+  <section class="py-8 sm:py-16 lg:py-20 mx-auto">
+    <article>
+      <header class="intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+        <h1
+          class="px-4 sm:px-6 max-w-3xl mb-10 mx-auto text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading"
+        >
+          {post.title}
+        </h1>
+        <p class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted text-justify"></p>
+
+        {
+          post.image ? (
+            <Image
+              src={post.image}
+              class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 "
+              widths={[400, 900]}
+              sizes="(max-width: 900px) 400px, 900px"
+              alt=""
+              width={900}
+              height={506}
+              loading="eager"
+              decoding="async"
+            />
+          ) : (
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <div class="border-t " />
+            </div>
+          )
+        }
+      </header>
+      <div
+        class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
+      >
+        <Fragment set:html={post.content} />
+      </div>
+    </article>
+  </section>
+</Layout>

@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Header from '~/components/widgets/Header.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
@@ -8,30 +9,50 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'shafeek-seddiq',
+  title: 'murat',
 };
 ---
 
 <Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '/capitol-law-partners' },
+        { text: 'About Me', href: '/en/our-team/murat/murat' },
+        { text: 'Academic Works', href: '/en/our-team/murat/academic-works' },
+        { text: 'Publications', href: '/en/our-team/murat/publications' },
+        { text: 'Media & News', href: '/en/our-team/murat/media-news' },
+      ]}
+      actions={[
+        {
+          text: 'Contact Me',
+          href: '/en/contact',
+        },
+      ]}
+      isSticky
+    />
+  </Fragment>
+
   <Content
     id="about"
     columns={2}
     image={{
-      src: '~/assets/images/shafeek-profile-prefered.png',
+      src: '~/assets/images/cagatay-profile.png',
       alt: 'Colorful Image',
       loading: 'eager',
       class: 'w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto',
     }}
   >
     <Fragment slot="content">
-      <h1 class="text-4xl md:text-5xl font-bold tracking-tight sm:text-6xl mb-4">Shafeek Seddiq</h1>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight sm:text-6xl mb-4">Cagatay Ersoy</h1>
       <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Attorney At Law</h2>
       <div class="prose prose-lg max-w-none mb-8">
         <p class="mb-4">
-          Shafeek is a proactive, results-driven, and seasoned leader and lawyer with over 20 years of legal experience.
-          He works with clients on estate planning, business formation, partnerships, and drafting various legal
-          documents. In addition, Shafeek serves as counsel and advice healthcare organizations on a variety of
-          healthcare compliance, operation and management matters.
+          This area will be an autobiography of Cagatay Ersoy. Which he should write himself. Shafeek is a proactive,
+          results-driven, and seasoned leader and lawyer with over 20 years of legal experience. He works with clients
+          on estate planning, business formation, partnerships, and drafting various legal documents. In addition,
+          Shafeek serves as counsel and advice healthcare organizations on a variety of healthcare compliance, operation
+          and management matters.
         </p>
         <p class="mb-4">
           Upon graduating law school, Shafeek practiced law with one of the largest firms in Washington D.C. Later, he
@@ -57,12 +78,12 @@ const metadata = {
         >
           Contact Me
         </a>
-       <!--  <a
-          href={getPermalink('/contact')}
+        <a
+          href={getPermalink('/en/contact')}
           class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
         >
           See More
-        </a>-->
+        </a>
       </div>
     </Fragment>
   </Content>
@@ -83,6 +104,9 @@ const metadata = {
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
+
+  <!-- Testimonials Widget *********** -->
+
   <Testimonials
     title="Client testimonials"
     subtitle="Discover what clients have to say about their experiences working with me."
@@ -153,7 +177,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Contact Me',
-        href: '/',
+        href: '/en/contact',
       },
     ]}
   />

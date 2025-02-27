@@ -8,7 +8,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
-  title: 'shafeek-seddiq',
+  title: 'cagata-ersoy',
 };
 ---
 
@@ -17,21 +17,22 @@ const metadata = {
     id="about"
     columns={2}
     image={{
-      src: '~/assets/images/shafeek-profile-prefered.png',
+      src: '~/assets/images/cagatay-profile.png',
       alt: 'Colorful Image',
       loading: 'eager',
       class: 'w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto',
     }}
   >
     <Fragment slot="content">
-      <h1 class="text-4xl md:text-5xl font-bold tracking-tight sm:text-6xl mb-4">Shafeek Seddiq</h1>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight sm:text-6xl mb-4">Cagatay Ersoy</h1>
       <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Attorney At Law</h2>
       <div class="prose prose-lg max-w-none mb-8">
         <p class="mb-4">
-          Shafeek is a proactive, results-driven, and seasoned leader and lawyer with over 20 years of legal experience.
-          He works with clients on estate planning, business formation, partnerships, and drafting various legal
-          documents. In addition, Shafeek serves as counsel and advice healthcare organizations on a variety of
-          healthcare compliance, operation and management matters.
+          This area will be an autobiography of Cagatay Ersoy. Which he should write himself. Shafeek is a proactive,
+          results-driven, and seasoned leader and lawyer with over 20 years of legal experience. He works with clients
+          on estate planning, business formation, partnerships, and drafting various legal documents. In addition,
+          Shafeek serves as counsel and advice healthcare organizations on a variety of healthcare compliance, operation
+          and management matters.
         </p>
         <p class="mb-4">
           Upon graduating law school, Shafeek practiced law with one of the largest firms in Washington D.C. Later, he
@@ -52,17 +53,17 @@ const metadata = {
       </div>
       <div class="flex flex-col sm:flex-row items-center gap-4 mt-8">
         <a
-          href={getPermalink('/en/contact')}
+          href={getPermalink('/contact')}
+          class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
+        >
+          Schedule a Consultation
+        </a>
+        <a
+          href={getPermalink('/contact')}
           class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
         >
           Contact Me
         </a>
-       <!--  <a
-          href={getPermalink('/contact')}
-          class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto"
-        >
-          See More
-        </a>-->
       </div>
     </Fragment>
   </Content>
