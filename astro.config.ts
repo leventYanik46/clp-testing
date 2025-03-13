@@ -92,12 +92,11 @@ export default defineConfig({
     defaultLocale: 'en',
     routing: {
       prefixDefaultLocale: true,
-      redirectToDefaultLocale: true,
+      redirectToDefaultLocale: false, // disable automatic redirection so URLs remain canonical
       fallbackType: 'redirect'
-        },
-    fallback: { 
-     tr: 'en',
     },
-       
+    fallback: { 
+      tr: 'en',
+    },
   },
 });
