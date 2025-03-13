@@ -4,6 +4,7 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
+import contact from '~/locales/en/contact.json';
 const metadata = {
   title: 'contact',
 };
@@ -11,81 +12,35 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
+  <HeroText tagline={contact.hero.tagline} title={contact.hero.title} />
 
-  <HeroText tagline="Contact Us" title="Let's Connect!" />
-
+  <!-- ContactUs Widget ******************* -->
   <ContactUs
     id="form"
-    title="Drop us a message today!"
-    subtitle="Get expert legal guidance tailored to your needs. Contact us now to start your journey!"
+    title={contact.contactForm.title}
+    subtitle={contact.contactForm.subtitle}
     inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-      {
-        type: 'text',
-        name: 'phone',
-        label: 'Phone Number:',
-      },
+      { type: 'text', name: 'name', label: contact.contactForm.inputs.name },
+      { type: 'email', name: 'email', label: contact.contactForm.inputs.email },
+      { type: 'text', name: 'phone', label: contact.contactForm.inputs.phone },
     ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our team typically responds within 24 business hours."
+    textarea={{ label: contact.contactForm.textarea }}
+    disclaimer={{ label: contact.contactForm.disclaimer }}
+    description={contact.contactForm.description}
   />
 
-  <!-- Features2 Widget ************** -->
-
+  <!-- Features2 Widget ******************* -->
   <Features2
-    title="We are here to help!"
-    items={[
-      {
-        title: 'General support',
-        description: `Chat with us for inquiries related to legal consultations, case evaluations, contract reviews, compliance matters, or general questions about our legal services.`,
-      },
-      {
-        title: 'Speak with an Attorney',
-        description:
-          'Need direct legal advice? Reach out to our attorneys for personalized consultations and professional legal representation.',
-      },
-      {
-        title: 'Immigration Case Assistance',
-        description:
-          "Need help with your immigration case? Whether you're applying for a visa, green card, citizenship, or facing immigration challenges, our team is here to guide you through the process.",
-      },
-      {
-        title: 'Phone',
-        description: '+1 (202) 440-2272',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Email',
-        description: 'reyhan@capitollawpartners.com',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Whatsapp',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:message',
-      },
-    ]}
+    title={contact.features.title}
+    items={contact.features.items}
   />
+
+  <!-- ItemGrid3 Widget for Office Locations ******************* -->
   <ItemGrid3
     items={[
       {
-        title: 'Virginia Office',
-        description: '13873 Park Center Rd, Herndon, VA 20171',
+        title: contact.locations.items[0].title,
+        description: contact.locations.items[0].description,
         image: {
           src: '~/assets/images/map-herndon.jpg',
           alt: 'Maps location image',
@@ -93,8 +48,8 @@ const metadata = {
         },
       },
       {
-        title: 'Washington DC Office',
-        description: '1200 G Street, NW, STE 800, Washington, DC 20005',
+        title: contact.locations.items[1].title,
+        description: contact.locations.items[1].description,
         image: {
           src: '~/assets/images/map-washington.png',
           alt: 'Maps location image',
@@ -102,8 +57,8 @@ const metadata = {
         },
       },
       {
-        title: 'New York Office',
-        description: '14 Wall Street 20th Floor, New York, NY 10005',
+        title: contact.locations.items[2].title,
+        description: contact.locations.items[2].description,
         image: {
           src: '~/assets/images/map-newyork.png',
           alt: 'Maps location image',
@@ -111,8 +66,8 @@ const metadata = {
         },
       },
       {
-        title: 'İstanbul Office:',
-        description: 'Trump Towers, Residence 2901, 34381, Şişli/İstanbul Türkiye',
+        title: contact.locations.items[3].title,
+        description: contact.locations.items[3].description,
         image: {
           src: '~/assets/images/map-istanbul-1.png',
           alt: 'Maps location image',

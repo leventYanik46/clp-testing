@@ -1,32 +1,27 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Image from '~/components/common/Image.astro';
+import assetProtectionData from '~/locales/en/practice-areas/asset-protection.json';
 
 const metadata = {
-  title: 'Asset Protection',
+  title: assetProtectionData.assetProtection.title,
 };
 
 const post = {
-  title: 'Asset Protection',
+  title: assetProtectionData.assetProtection.title,
   image: '~/assets/images/asset-protection.jpg',
+  // Construct the content using the intro, key services, and whyChooseUs from JSON
   content: `
-<p>Protecting your personal and business assets from financial risks, legal disputes, and unforeseen challenges is crucial for long-term security. Our Asset Protection services help individuals, business owners, and high-net-worth individuals implement legal strategies to shield their wealth from creditors, lawsuits, and other financial liabilities.</p>
-
-<p>By proactively structuring your assets, we help you minimize risk and preserve your financial well-being, ensuring that your wealth remains protected for you and your beneficiaries.</p>
+<p>${assetProtectionData.assetProtection.intro}</p>
 
 <h2>Key Services</h2>
 <ul>
-    <li><strong>Trust & Estate Planning</strong> - Establish legal structures to protect personal and business assets from potential claims and financial threats.</li>
-    <li><strong>Liability Protection Strategies</strong> - Implement legal measures to separate personal and business assets, reducing exposure to lawsuits and creditors.</li>
-    <li><strong>Business & Investment Protection</strong> - Secure business interests, investments, and intellectual property through tailored legal safeguards.</li>
-    <li><strong>Family Wealth Preservation</strong> - Develop long-term strategies for maintaining and transferring wealth to future generations.</li>
-    <li><strong>Offshore & Domestic Asset Protection Trusts</strong> - Utilize legally compliant trust structures to safeguard assets from lawsuits and financial claims.</li>
-    <li><strong>Insurance Planning & Risk Management</strong> - Enhance your financial security with comprehensive insurance strategies to cover potential liabilities.</li>
+  ${assetProtectionData.assetProtection.keyServices.map(s => `<li><strong>${s.service}</strong>${s.description}</li>`).join('')}
 </ul>
 
 <h2>Why Choose Us?</h2>
-<p>Our asset protection attorneys take a proactive approach to safeguarding your wealth. We offer customized legal solutions that align with your financial goals, helping you minimize exposure to legal risks while ensuring compliance with all relevant regulations. With a deep understanding of trust laws, liability protection, and risk management, we help clients build strong financial defenses against potential threats.</p>
-`,
+<p>${assetProtectionData.assetProtection.whyChooseUs}</p>
+`
 };
 ---
 
@@ -34,35 +29,30 @@ const post = {
   <section class="py-8 sm:py-16 lg:py-20 mx-auto">
     <article>
       <header class="intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
-        <h1
-          class="px-4 sm:px-6 max-w-3xl mx-auto mb-10 text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading"
-        >
+        <h1 class="px-4 sm:px-6 max-w-3xl mx-auto mb-10 text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading">
           {post.title}
         </h1>
 
-        {
-          post.image ? (
-            <Image
-              src={post.image}
-              class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 "
-              widths={[400, 900]}
-              sizes="(max-width: 900px) 400px, 900px"
-              alt="Asset Protection"
-              width={900}
-              height={506}
-              loading="eager"
-              decoding="async"
-            />
-          ) : (
-            <div class="max-w-3xl mx-auto px-4 sm:px-6">
-              <div class="border-t " />
-            </div>
-          )
-        }
+        {post.image ? (
+          <Image
+            src={post.image}
+            class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400"
+            widths={[400, 900]}
+            sizes="(max-width: 900px) 400px, 900px"
+            alt="Asset Protection"
+            width={900}
+            height={506}
+            loading="eager"
+            decoding="async"
+          />
+        ) : (
+          // ...existing fallback code...
+          <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="border-t" />
+          </div>
+        )}
       </header>
-      <div
-        class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
-      >
+      <div class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0">
         <Fragment set:html={post.content} />
       </div>
     </article>

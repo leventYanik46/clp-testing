@@ -115,7 +115,6 @@ export const footerData = {
       title: 'Resources',
       links: [
         { text: 'Blog', href: getBlogPermalink() },
-        { text: 'FAQs', href: getPermalink('/en/faqs') },
         { text: 'Contact Us', href: getPermalink('/en/contact') },
         { text: 'Free Evaluations', href: getPermalink('/en/contact') },
       ],

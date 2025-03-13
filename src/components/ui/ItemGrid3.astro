@@ -41,7 +41,7 @@ const {
           )}
         >
           {image && (
-            <a href={(image as any).href || '#'} target="_blank" rel="noopener noreferrer">
+            <a href={(image as { href?: string }).href || '#'} target="_blank" rel="noopener noreferrer">
               <Image
                 class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg mb-4 transition-transform transform hover:scale-105"
                 width={400}

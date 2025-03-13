@@ -1,32 +1,26 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Image from '~/components/common/Image.astro';
+import litigationData from '~/locales/en/practice-areas/business-litigation.json';
 
 const metadata = {
-  title: 'Business Litigation',
+  title: litigationData.businessLitigation.title,
 };
 
 const post = {
-  title: 'Business Litigation',
+  title: litigationData.businessLitigation.title,
   image: '~/assets/images/business-litigation-img.jpg',
   content: `
-<p>Legal disputes can disrupt business operations and threaten financial stability. Our Business Litigation services provide businesses with skilled legal representation to resolve conflicts efficiently and protect their interests. Whether you are facing contract disputes, shareholder conflicts, or regulatory challenges, our attorneys deliver strategic advocacy to safeguard your business.</p>
+<p>${litigationData.businessLitigation.intro}</p>
 
 <h2>Key Services</h2>
 <ul>
-    <li><strong>Commercial Disputes</strong> - Resolve contract breaches, business torts, and other disputes through negotiation, mediation, or litigation.</li>
-    <li><strong>Shareholder & Partnership Disputes</strong> - Protect your rights in ownership conflicts, fiduciary duty claims, and business dissolutions.</li>
-    <li><strong>Employment Litigation</strong> - Defend against wrongful termination claims, wage disputes, discrimination allegations, and non-compete violations.</li>
-    <li><strong>Regulatory & Compliance Disputes</strong> - Ensure compliance with industry regulations and defend against government investigations and enforcement actions.</li>
-    <li><strong>Intellectual Property Litigation</strong> - Enforce and defend against claims related to trademarks, copyrights, patents, and trade secrets.</li>
+  ${litigationData.businessLitigation.keyServices.map(s => `<li><strong>${s.service}</strong>${s.description}</li>`).join('')}
 </ul>
 
 <h2>Why Choose Us?</h2>
-<p>Our experienced litigators provide aggressive yet strategic representation to minimize risks and resolve disputes efficiently. We prioritize protecting your business’s financial and reputational interests while seeking the most favorable outcome—whether through settlement, arbitration, or trial.</p>
-
-<p>With our legal expertise, you can focus on running your business while we handle the complexities of litigation and dispute resolution.</p>
-
-`,
+<p>${litigationData.businessLitigation.whyChooseUs}</p>
+`
 };
 ---
 
@@ -34,36 +28,30 @@ const post = {
   <section class="py-8 sm:py-16 lg:py-20 mx-auto">
     <article>
       <header class="intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
-        <h1
-          class="px-4 sm:px-6 max-w-3xl mb-10 mx-auto text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading"
-        >
+        <h1 class="px-4 sm:px-6 max-w-3xl mx-auto mb-10 text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading">
           {post.title}
         </h1>
         <p class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted text-justify"></p>
 
-        {
-          post.image ? (
-            <Image
-              src={post.image}
-              class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 "
-              widths={[400, 900]}
-              sizes="(max-width: 900px) 400px, 900px"
-              alt=""
-              width={900}
-              height={506}
-              loading="eager"
-              decoding="async"
-            />
-          ) : (
-            <div class="max-w-3xl mx-auto px-4 sm:px-6">
-              <div class="border-t " />
-            </div>
-          )
-        }
+        { post.image ? (
+          <Image
+            src={post.image}
+            class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400"
+            widths={[400, 900]}
+            sizes="(max-width: 900px) 400px, 900px"
+            alt="Business Litigation"
+            width={900}
+            height={506}
+            loading="eager"
+            decoding="async"
+          />
+        ) : (
+          <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="border-t"/>
+          </div>
+        )}
       </header>
-      <div
-        class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
-      >
+      <div class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl mt-8">
         <Fragment set:html={post.content} />
       </div>
     </article>

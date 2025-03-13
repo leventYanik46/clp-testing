@@ -4,19 +4,22 @@ import HeroText from '~/components/widgets/HeroText.astro';
 import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features2 from '~/components/widgets/Features2.astro';
+import location from '~/locales/en/location.json';
 const metadata = {
   title: 'contact',
 };
 ---
 
 <Layout metadata={metadata}>
-  <HeroText tagline="Find Us" title="Our Locations" />
+  <!-- HeroText Widget ******************* -->
+  <HeroText tagline={location.hero.tagline} title={location.hero.title} />
 
+  <!-- ItemGrid3 Widget for Office Locations ******************* -->
   <ItemGrid3
     items={[
       {
-        title: 'Virginia Office',
-        description: '13873 Park Center Rd, Herndon, VA 20171',
+        title: location.locations[0].title,
+        description: location.locations[0].description,
         image: {
           src: '~/assets/images/map-herndon.jpg',
           alt: 'Maps location image',
@@ -24,8 +27,8 @@ const metadata = {
         },
       },
       {
-        title: 'Washington DC Office',
-        description: '1200 G Street, NW, STE 800, Washington, DC 20005',
+        title: location.locations[1].title,
+        description: location.locations[1].description,
         image: {
           src: '~/assets/images/map-washington.png',
           alt: 'Maps location image',
@@ -33,8 +36,8 @@ const metadata = {
         },
       },
       {
-        title: 'New York Office',
-        description: '14 Wall Street 20th Floor, New York, NY 10005',
+        title: location.locations[2].title,
+        description: location.locations[2].description,
         image: {
           src: '~/assets/images/map-newyork.png',
           alt: 'Maps location image',
@@ -42,8 +45,8 @@ const metadata = {
         },
       },
       {
-        title: 'İstanbul Office:',
-        description: 'Trump Towers, Residence 2901, 34381, Şişli/İstanbul Türkiye',
+        title: location.locations[3].title,
+        description: location.locations[3].description,
         image: {
           src: '~/assets/images/map-istanbul-1.png',
           alt: 'Maps location image',
@@ -60,58 +63,26 @@ const metadata = {
   />
 
   <!-- CallToAction Widget *********** -->
-
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Contact Us',
+        text: location.callToAction.buttonText,
         href: '/en/contact',
       },
     ]}
   >
     <Fragment slot="title">
-      Capitol <span class="sm:whitespace-nowrap">Law Patners</span>
+      {location.callToAction.title}
     </Fragment>
-
     <Fragment slot="subtitle">
-      Discover the difference our expertise can make in your legal matters. <br class="hidden md:inline" />
-      Contact us today!
+      {location.callToAction.subtitle}
     </Fragment>
   </CallToAction>
 
+  <!-- Features2 Widget ******************* -->
   <Features2
-    title="We are here to help!"
-    items={[
-      {
-        title: 'General support',
-        description: `Chat with us for inquiries related to legal consultations, case evaluations, contract reviews, compliance matters, or general questions about our legal services.`,
-      },
-      {
-        title: 'Speak with an Attorney',
-        description:
-          'Need direct legal advice? Reach out to our attorneys for personalized consultations and professional legal representation.',
-      },
-      {
-        title: 'Immigration Case Assistance',
-        description:
-          "Need help with your immigration case? Whether you're applying for a visa, green card, citizenship, or facing immigration challenges, our team is here to guide you through the process.",
-      },
-      {
-        title: 'Phone',
-        description: '+1 (202) 440-2272',
-        icon: 'tabler:headset',
-      },
-      {
-        title: 'Email',
-        description: 'reyhan@capitollawpartners.com',
-        icon: 'tabler:mail',
-      },
-      {
-        title: 'Whatsapp',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
-        icon: 'tabler:message',
-      },
-    ]}
+    title={location.features.title}
+    items={location.features.items}
   />
 </Layout>
