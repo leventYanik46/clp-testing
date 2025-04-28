@@ -20,7 +20,7 @@
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
     "fix:prettier": "prettier -w .",
-    "deploy": "netlify build && netlify deploy --prod"
+    "deploy": "netlify build && netlify deploy --prod",
     "test": "netlify build && netlify deploy"
   },
   "dependencies": {
