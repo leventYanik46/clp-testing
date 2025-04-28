@@ -26,7 +26,11 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap(),
+    sitemap({
+      filter: (page) => {
+        return !page.includes('/tag/');
+      }
+    }),
     mdx(),
     icon({
       include: {
