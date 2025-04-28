@@ -68,10 +68,6 @@ export const headerData = {
       text: 'Our Locations',
       href: getPermalink('/en/locations'),
     },
-    {
-      text: 'Contact Us',
-      href: getPermalink('/en/contact'),
-    },
   ],
   actions: [{ text: 'Contact Us', href: '/en/contact', variant: 'primary' }],
 };

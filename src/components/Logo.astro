@@ -1,7 +1,18 @@
 ---
 import { SITE } from 'astrowind:config';
+import logoImage from '~/assets/images/Logo-Black.png';
+import Image from '~/components/common/Image.astro';
 ---
 
-<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-xl md:base font-bold text-gray-900 whitespace-nowrap">
+<span class="flex items-center justify-center mx-auto text-[1.2rem] md:base font-bold text-gray-900 whitespace-nowrap">
+  <div class="pr-1 justify-start">
+    <Image
+      src={logoImage}
+      alt="Capital Law Logo"
+      width={64}
+      height={64}
+      class="rounded-md"
+    />
+  </div>
   {SITE?.name}
 </span>
