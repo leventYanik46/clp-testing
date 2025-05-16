@@ -4,46 +4,46 @@ export const headerData = {
   links: [
     {
       text: 'About Us',
-      href: getPermalink('/en/about'),
+      href: getPermalink('/about'),
     },
     {
       text: 'Practice Areas',
       links: [
         {
           text: 'General Counsel Services',
-          href: getPermalink('/en/practices/general-counsel-services'),
+          href: getPermalink('/practices/general-counsel-services'),
         },
         {
           text: 'Corporate Law',
-          href: getPermalink('/en/practices/corporate-law'),
+          href: getPermalink('/practices/corporate-law'),
         },
         {
           text: 'Business Litigation',
-          href: getPermalink('/en/practices/business-litigation'),
+          href: getPermalink('/practices/business-litigation'),
         },
         {
           text: 'Business Immigration Law',
-          href: getPermalink('/en/practices/business-immigration'),
+          href: getPermalink('/practices/business-immigration'),
         },
         {
           text: 'Immigration Law',
-          href: getPermalink('/en/practices/immigration-law'),
+          href: getPermalink('/practices/immigration-law'),
         },
         {
           text: 'Estate Planning',
-          href: getPermalink('/en/practices/estate-planning'),
+          href: getPermalink('/practices/estate-planning'),
         },
         {
           text: 'Real Estate',
-          href: getPermalink('/en/practices/real-estate'),
+          href: getPermalink('/practices/real-estate'),
         },
         {
           text: 'Asset Protection',
-          href: getPermalink('/en/practices/asset-protection'),
+          href: getPermalink('/practices/asset-protection'),
         },
         {
           text: 'Corporate Transparency Act',
-          href: getPermalink('/en/practices/corporate-transparency-act'),
+          href: getPermalink('/practices/corporate-transparency-act'),
         },
       ],
     },
@@ -52,24 +52,28 @@ export const headerData = {
       links: [
         {
           text: 'Cagatay Ersoy',
-          href: getPermalink('/en/our-team/cagatay'),
+          href: getPermalink('/our-team/cagatay'),
         },
         {
           text: 'Sena Sahin',
-          href: getPermalink('/en/our-team/sena'),
+          href: getPermalink('/our-team/sena'),
         },
         {
           text: 'Shafeek Seddiq',
-          href: getPermalink('/en/our-team/shafeek'),
+          href: getPermalink('/our-team/shafeek'),
         },
       ],
     },
     {
       text: 'Our Locations',
-      href: getPermalink('/en/locations'),
+      href: getPermalink('/locations'),
+    },
+    {
+      text: 'Blog',
+      href: getPermalink('/blog'),
     },
   ],
-  actions: [{ text: 'Contact Us', href: '/en/contact', variant: 'primary' }],
+  actions: [{ text: 'Contact Us', href: '/contact', variant: 'primary' }],
 };
 
 export const footerData = {
@@ -77,38 +81,38 @@ export const footerData = {
     {
       title: 'About Us',
       links: [
-        { text: 'Our Story', href: getPermalink('/en/about') },
-        { text: 'Our Locations', href: getPermalink('/en/locations') },
+        { text: 'Our Story', href: getPermalink('/eabout') },
+        { text: 'Our Locations', href: getPermalink('/locations') },
       ],
     },
     {
       title: 'Our Team',
       links: [
-        { text: 'Cagatay Ersoy', href: getPermalink('/en/our-team/cagatay') },
-        { text: 'Sena Sahin', href: getPermalink('/en/our-team/sena') },
-        { text: 'Shafeek Seddiq', href: getPermalink('/en/our-team/shafeek') },
+        { text: 'Cagatay Ersoy', href: getPermalink('/our-team/cagatay') },
+        { text: 'Sena Sahin', href: getPermalink('/our-team/sena') },
+        { text: 'Shafeek Seddiq', href: getPermalink('/our-team/shafeek') },
       ],
     },
     {
       title: 'Practice Areas',
       links: [
-        { text: 'General Counsel Services', href: getPermalink('/en/practices/general-counsel-services') },
-        { text: 'Corporate Law', href: getPermalink('/en/practices/corporate-law') },
-        { text: 'Business Litigation', href: getPermalink('/en/practices/business-litigation') },
-        { text: 'Business Immigration Law', href: getPermalink('/en/practices/business-immigration') },
-        { text: 'Immigration Law', href: getPermalink('/en/practices/immigration-law') },
-        { text: 'Estate Planning', href: getPermalink('/en/practices/estate-planning') },
-        { text: 'Real Estate', href: getPermalink('/en/practices/real-estate') },
-        { text: 'Asset Protection', href: getPermalink('/en/practices/asset-protection') },
-        { text: 'Corporate Transparency Act', href: getPermalink('/en/practices/corporate-transparency-act') },
+        { text: 'General Counsel Services', href: getPermalink('/practices/general-counsel-services') },
+        { text: 'Corporate Law', href: getPermalink('/practices/corporate-law') },
+        { text: 'Business Litigation', href: getPermalink('/practices/business-litigation') },
+        { text: 'Business Immigration Law', href: getPermalink('/practices/business-immigration') },
+        { text: 'Immigration Law', href: getPermalink('/practices/immigration-law') },
+        { text: 'Estate Planning', href: getPermalink('/practices/estate-planning') },
+        { text: 'Real Estate', href: getPermalink('/practices/real-estate') },
+        { text: 'Asset Protection', href: getPermalink('/practices/asset-protection') },
+        { text: 'Corporate Transparency Act', href: getPermalink('/practices/corporate-transparency-act') },
       ],
     },
     {
       title: 'Resources',
       links: [
         { text: 'Blog', href: getBlogPermalink() },
-        { text: 'Contact Us', href: getPermalink('/en/contact') },
-        { text: 'Free Evaluations', href: getPermalink('/en/contact') },
+        { text: 'Contact Us', href: getPermalink('/contact') },
+        { text: 'Free Evaluations', href: getPermalink('/contact') },
       ],
     },
   ],

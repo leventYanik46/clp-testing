@@ -7,12 +7,11 @@ import Features from '~/components/widgets/Features.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Capitol Law Partners',
+  description: "Capitol Law Partners offers trusted legal counsel in business, immigration, estate planning, and IP law. Schedule your consultation today.",
   ignoreTitleTemplate: true,
 };
 ---
@@ -26,9 +25,9 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Schedule A Consultation',
-        href: '/en/Schedule',
+        href: '/Schedule',
       },
-      { text: 'Free Evaluation', href: '/en/evaluations', variant: 'primary' },
+      { text: 'Free Evaluation', href: '/evaluations', variant: 'primary' },
     ]}
   >
     <!--Your Trusted Advocates in Justice—Dedicated to Prioritizing You. 
@@ -216,13 +215,13 @@ const metadata = {
     items={[
       {
         title:
-          'Step 1: <span class="font-medium">Fill Out The <a href="/en/contact" class="hover:text-primary underline font-bold"> Contact Us </a> Form</span>',
+          'Step 1: <span class="font-medium">Fill Out The <a href="/contact" class="hover:text-primary underline font-bold"> Contact Us </a> Form</span>',
         description:
           'Start by providing us with details about your legal concerns through our contact form. Our team will review your inquiry and connect you with the right legal expert.',
         icon: 'tabler:file-text',
       },
       {
-        title: 'Step 2: <span class="font-medium">Schedule a <a href="/en/evaluations" class="hover:text-primary underline font-bold"> Free Evaluation </a></span>',
+        title: 'Step 2: <span class="font-medium">Schedule a <a href="/evaluations" class="hover:text-primary underline font-bold"> Free Evaluation </a></span>',
         description:
           "Once we receive your information, we'll schedule a free case evaluation to understand your situation and outline potential legal solutions.",
         icon: 'tabler:calendar-event',
@@ -263,7 +262,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Contact Us',
-        href: '/en/contact',
+        href: '/contact',
       },
     ]}
   >

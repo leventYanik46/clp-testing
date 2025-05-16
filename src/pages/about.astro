@@ -3,12 +3,13 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
 import Hero3 from '~/components/widgets/hero3.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 import library from '~/locales/en/about.json';
 const metadata = {
   title: 'About Us',
+  description: 
+    "Discover our law firm’s commitment to excellence, integrity, and client-focused service. Learn about our experienced attorneys and diverse practice areas."
 };
 ---
 
@@ -37,17 +38,6 @@ const metadata = {
         </Fragment>
       </Hero3>
     
-      <!-- Stats Widget ****************** -->
-      <Stats
-        title={library.stats.title}
-        stats={[
-          { title: library.stats.offices, amount: '4' },
-          { title: library.stats.employees, amount: '248' },
-          { title: library.stats.templates, amount: '12' },
-          { title: library.stats.awards, amount: '24' },
-        ]}
-      />
-    
       <!-- Features3 Widget for Practice Areas ************** -->
       <Features3
         title={library.practiceAreas.title}
@@ -56,67 +46,46 @@ const metadata = {
         isBeforeContent={true}
         items={[
           {
-            title: library.practiceAreas.item1.title,
-            description: library.practiceAreas.item1.description,
-            icon: 'tabler:gavel',
-          },
-          {
-            title: library.practiceAreas.item2.title,
-            description: library.practiceAreas.item2.description,
-            icon: 'tabler:building-skyscraper',
-          },
-          {
-            title: library.practiceAreas.item3.title,
-            description: library.practiceAreas.item3.description,
+            title: 'Business & Corporate Law',
+            description:
+              'Comprehensive counsel for businesses of all sizes, from entity formation and contracts to mergers, acquisitions, and disputes.',
             icon: 'tabler:briefcase',
           },
+          {
+            title: 'Immigration Law',
+            description:
+              'Guidance through business and employment visas, asylum, family petitions, and removal defense—making immigration processes clearer and more manageable.',
+            icon: 'tabler:globe-filled',
+          },
+          {
+            title: 'Trusts and Estates',
+            description:
+              'Personalized estate plans, wills, and trusts to protect your family’s future and preserve what matters most.',
+            icon: 'tabler:affiliate',
+          },
+          {
+            title: 'Health Care Law',
+            description:
+              'Regulatory and compliance solutions for providers and facilities, allowing you to focus on quality patient care.',
+            icon: 'tabler:medical-cross',
+          },
+          {
+            title: 'Real Estate Law',
+            description:
+              'Support for commercial and residential transactions, ensuring your property deals are secure and seamless.',
+            icon: 'tabler:home',
+          },
+          {
+            title: 'Intellectual Property Law',
+            description:
+              'Protection for your ideas, brands, and creative works through trademarks, copyrights, and effective dispute resolution.',
+            icon: 'tabler:file-certificate',
+          }
         ]}
       />
     
       <!-- Features3 Widget for Additional Practice Areas ************** -->
-      <Features3
-        columns={3}
-        isAfterContent={true}
-        items={[
-          {
-            title: library.additionalPractice.item1.title,
-            description: library.additionalPractice.item1.description,
-            icon: 'tabler:arrows-right-left',
-          },
-          {
-            title: library.additionalPractice.item2.title,
-            description: library.additionalPractice.item2.description,
-            icon: 'tabler:home',
-          },
-          {
-            title: library.additionalPractice.item3.title,
-            description: library.additionalPractice.item3.description,
-            icon: 'tabler:building-estate',
-          },
-          {
-            title: library.additionalPractice.item4.title,
-            description: library.additionalPractice.item4.description,
-            icon: 'tabler:globe-filled',
-          },
-          {
-            title: library.additionalPractice.item5.title,
-            description: library.additionalPractice.item5.description,
-            icon: 'tabler:affiliate',
-          },
-          {
-            title: library.additionalPractice.item6.title,
-            description: library.additionalPractice.item6.description,
-            icon: 'tabler:file-certificate',
-          },
-        ]}
-        image={{
-          src: '~/assets/images/meeting-table.jpg',
-          alt: 'Capitol Law Partners Image',
-          width: 600,
-          height: 400,
-        }}
-      />
-    
+
       <!-- Steps2 Widget for Values ****************** -->
       <Steps2
         title={library.values.title}

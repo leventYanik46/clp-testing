@@ -1,26 +1,26 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Image from '~/components/common/Image.astro';
-import assetProtectionData from '~/locales/en/practice-areas/asset-protection.json';
+import litigationData from '~/locales/en/practice-areas/business-litigation.json';
 
 const metadata = {
-  title: assetProtectionData.assetProtection.title,
+  title: litigationData.businessLitigation.title,
+   description: "Business litigation attorneys offering counsel in contract disputes, partnership conflicts, and commercial litigation to protect your company’s interests."
 };
 
 const post = {
-  title: assetProtectionData.assetProtection.title,
-  image: '~/assets/images/asset-protection.jpg',
-  // Construct the content using the intro, key services, and whyChooseUs from JSON
+  title: litigationData.businessLitigation.title,
+  image: '~/assets/images/business-litigation-img.jpg',
   content: `
-<p>${assetProtectionData.assetProtection.intro}</p>
+<p>${litigationData.businessLitigation.intro}</p>
 
 <h2>Key Services</h2>
 <ul>
-  ${assetProtectionData.assetProtection.keyServices.map(s => `<li><strong>${s.service}</strong>${s.description}</li>`).join('')}
+  ${litigationData.businessLitigation.keyServices.map(s => `<li><strong>${s.service}</strong>${s.description}</li>`).join('')}
 </ul>
 
 <h2>Why Choose Us?</h2>
-<p>${assetProtectionData.assetProtection.whyChooseUs}</p>
+<p>${litigationData.businessLitigation.whyChooseUs}</p>
 `
 };
 ---
@@ -32,27 +32,27 @@ const post = {
         <h1 class="px-4 sm:px-6 max-w-3xl mx-auto mb-10 text-4xl md:text-5xl font-bold leading-tighter tracking-tighter font-heading">
           {post.title}
         </h1>
+        <p class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted text-justify"></p>
 
-        {post.image ? (
+        { post.image ? (
           <Image
             src={post.image}
             class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400"
             widths={[400, 900]}
             sizes="(max-width: 900px) 400px, 900px"
-            alt="Asset Protection"
+            alt="Business Litigation"
             width={900}
             height={506}
             loading="eager"
             decoding="async"
           />
         ) : (
-          // ...existing fallback code...
           <div class="max-w-3xl mx-auto px-4 sm:px-6">
-            <div class="border-t" />
+            <div class="border-t"/>
           </div>
         )}
       </header>
-      <div class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0">
+      <div class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl mt-8">
         <Fragment set:html={post.content} />
       </div>
     </article>

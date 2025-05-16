@@ -28,7 +28,7 @@ export default defineConfig({
     }),
     sitemap({
       filter: (page) => {
-        return !page.includes('/tag/');
+        return !['/tag/', '/category', '/archive/'].some(excl => page.includes(excl));
       }
     }),
     mdx(),
@@ -87,20 +87,6 @@ export default defineConfig({
       alias: {
         '~': path.resolve(__dirname, './src'),
       },
-    },
-  },
-
-  // Add i18n configuration
-  i18n: {
-    locales: ['en', 'tr'],
-    defaultLocale: 'en',
-    routing: {
-      prefixDefaultLocale: true,
-      redirectToDefaultLocale: false, // disable automatic redirection so URLs remain canonical
-      fallbackType: 'redirect'
-    },
-    fallback: { 
-      tr: 'en',
     },
   },
 });

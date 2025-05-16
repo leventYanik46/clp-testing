@@ -1,25 +1,47 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
-import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import location from '~/locales/en/location.json';
+import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
+import contact from '~/locales/en/contact.json';
 const metadata = {
   title: 'contact',
+  description: 'Contact our immigration and business law experts for tailored legal advice. Call, email, or complete our online form for a personalized consultation.',
 };
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
-  <HeroText tagline={location.hero.tagline} title={location.hero.title} />
+  <HeroText tagline={contact.hero.tagline} title={contact.hero.title} />
+
+  <!-- ContactUs Widget ******************* -->
+  <ContactUs
+    id="form"
+    title={contact.contactForm.title}
+    subtitle={contact.contactForm.subtitle}
+    inputs={[
+      { type: 'text', name: 'name', label: contact.contactForm.inputs.name },
+      { type: 'email', name: 'email', label: contact.contactForm.inputs.email },
+      { type: 'text', name: 'phone', label: contact.contactForm.inputs.phone },
+    ]}
+    textarea={{ label: contact.contactForm.textarea }}
+    disclaimer={{ label: contact.contactForm.disclaimer }}
+    description={contact.contactForm.description}
+  />
+
+  <!-- Features2 Widget ******************* -->
+  <Features2
+    title={contact.features.title}
+    items={contact.features.items}
+  />
 
   <!-- ItemGrid3 Widget for Office Locations ******************* -->
   <ItemGrid3
     items={[
       {
-        title: location.locations[0].title,
-        description: location.locations[0].description,
+        title: contact.locations.items[0].title,
+        description: contact.locations.items[0].description,
         image: {
           src: '~/assets/images/map-herndon.jpg',
           alt: 'Maps location image',
@@ -27,8 +49,8 @@ const metadata = {
         },
       },
       {
-        title: location.locations[1].title,
-        description: location.locations[1].description,
+        title: contact.locations.items[1].title,
+        description: contact.locations.items[1].description,
         image: {
           src: '~/assets/images/map-washington.png',
           alt: 'Maps location image',
@@ -36,8 +58,8 @@ const metadata = {
         },
       },
       {
-        title: location.locations[2].title,
-        description: location.locations[2].description,
+        title: contact.locations.items[2].title,
+        description: contact.locations.items[2].description,
         image: {
           src: '~/assets/images/map-newyork.png',
           alt: 'Maps location image',
@@ -45,8 +67,8 @@ const metadata = {
         },
       },
       {
-        title: location.locations[3].title,
-        description: location.locations[3].description,
+        title: contact.locations.items[3].title,
+        description: contact.locations.items[3].description,
         image: {
           src: '~/assets/images/map-istanbul-1.png',
           alt: 'Maps location image',
@@ -60,29 +82,5 @@ const metadata = {
       panel: 'rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white p-6',
       icon: 'w-16 h-16 mb-6 text-primary',
     }}
-  />
-
-  <!-- CallToAction Widget *********** -->
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: location.callToAction.buttonText,
-        href: '/en/contact',
-      },
-    ]}
-  >
-    <Fragment slot="title">
-      {location.callToAction.title}
-    </Fragment>
-    <Fragment slot="subtitle">
-      {location.callToAction.subtitle}
-    </Fragment>
-  </CallToAction>
-
-  <!-- Features2 Widget ******************* -->
-  <Features2
-    title={location.features.title}
-    items={location.features.items}
   />
 </Layout>

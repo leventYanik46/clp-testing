@@ -9,4 +9,5 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 
-  
+  [build.processing.html]
+    pretty_urls = false
