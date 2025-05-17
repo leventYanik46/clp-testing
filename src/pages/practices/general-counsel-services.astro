@@ -3,42 +3,41 @@ import Layout from '~/layouts/PageLayout.astro';
 import Image from '~/components/common/Image.astro';
 
 const metadata = {
-  title: 'General Counsel Services',
-  description: "Dedicated general counsel services offering proactive corporate compliance, contract drafting, HR legal support, risk management, and M&A guidance to strengthen your business operations."
+  title: 'General Counsel & Advisory Services',
+  description: "Executive legal advisory, contract review, corporate governance, and compliance counsel for businesses seeking experienced legal guidance without in-house overhead."
 };
 
 const post = {
-  title: 'General Counsel Services',
+  title: 'General Counsel & Advisory Services',
   image: '~/assets/images/precision-img.jpg',
   content: `
-<p>Navigating complex legal challenges requires more than just reactive solutions—it demands proactive legal strategy. Our General Counsel Services provide businesses with dedicated legal support tailored to their ongoing needs. Whether you're a startup or an established enterprise, our attorneys offer risk management, compliance oversight, and strategic counsel to help your business thrive.</p>
+<p>Our General Counsel & Advisory Services practice provides businesses with high-level legal guidance tailored to leadership needs. Acting as your outside counsel, we help align legal strategy with your business vision, ensuring informed decision-making at every level. From developing governance frameworks to providing direct support to executives, we mitigate risk and strengthen internal operations with confidence and clarity.</p>
+
+<p>Whether you're drafting critical contracts, navigating compliance obligations, or refining internal policies, we serve as your long-term legal partner. Our experienced attorneys help leadership teams plan for sustainable growth while maintaining regulatory integrity and strategic flexibility.</p>
 
 <h2>Key Services</h2>
 <ul>
-  <li>Corporate law</li>
-  <li>Business law</li>
-  <li>Legal compliance</li>
+  <li>Strategic Legal Guidance for Businesses</li>
+  <li>Risk Management & Legal Compliance</li>
+  <li>Corporate Governance & Internal Policies</li>
+  <li>Contract Review & Executive Counsel</li>
 </ul>
 
-<h3>Corporate Compliance & Governance</h3>
-<p>Ensure your business stays compliant with industry regulations and corporate governance best practices.</p>
+<h2>Service Breakdown</h2>
+<h3>Strategic Legal Guidance for Businesses</h3>
+<p>Holistic legal support that aligns with your business goals, including counsel on operational decisions, expansion strategies, compliance planning, and long-term risk mitigation.</p>
 
-<h3>Contract Drafting & Negotiation</h3>
-<p>Protect your business interests with well-structured contracts that mitigate risks and foster strong partnerships.</p>
+<h3>Risk Management & Legal Compliance</h3>
+<p>Proactive identification and resolution of legal risks across business functions, with tailored compliance strategies that meet industry standards and regulatory requirements.</p>
 
-<h3>Employment & HR Legal Support</h3>
-<p>Guidance on labor laws, employment contracts, workplace policies, and dispute resolution.</p>
+<h3>Corporate Governance & Internal Policies</h3>
+<p>Development and review of governance frameworks, board procedures, and internal policies that promote accountability, transparency, and sound corporate management.</p>
 
-<h3>Risk Management & Dispute Resolution</h3>
-<p>Identify potential legal risks early and resolve disputes effectively to safeguard your business.</p>
+<h3>Contract Review & Executive Counsel</h3>
+<p>Precise review, negotiation, and drafting of key contracts, combined with direct advisory support to executives on legal strategy, deal structuring, and complex business matters.</p>
 
-<h3>Mergers & Acquisitions Support</h3>
-<p>Legal due diligence and structuring to ensure seamless transactions in business growth or acquisitions.</p>
-
-<h2>Why Choose Us?</h2>
-<p>Our seasoned attorneys act as trusted legal advisors, offering customized solutions without the overhead of an in-house legal team. With decades of experience in corporate law, we provide businesses with the legal foundation needed for sustainable growth.</p>
-
-<p>Let us handle your legal concerns so you can focus on scaling your business with confidence.</p>
+<h2>Why Partner With Us?</h2>
+<p>We deliver the legal sophistication of an in-house department without the overhead. Our attorneys integrate seamlessly into your leadership team to anticipate legal needs and respond decisively, enabling you to lead your business forward with clarity and confidence.</p>
 `,
 };
 ---
@@ -52,7 +51,6 @@ const post = {
         >
           {post.title}
         </h1>
-        <p class="max-w-3xl mx-auto mt-4 mb-8 px-4 sm:px-6 text-xl md:text-2xl text-muted text-justify"></p>
 
         {
           post.image ? (

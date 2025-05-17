@@ -4,15 +4,17 @@
     "description": "Learn more about Capitol Law Partners, a trusted law firm with decades of legal expertise."
   },
   "hero": {
-    "tagline": "About Us",
-    "title": "Integrity You Can Trust. Advocacy You Deserve. Outcomes That Matter.",
-    "title2": "Backed by Decades of Legal Expertise",
+    "tagline": "Our Mission",
+    "title": "We make the complex simple",
+    "title2": "Guiding you with clarity and confidence",
     "subtitle": {
+      
       "part1": "At ",
       "bold1": "Capitol Law Partners",
-      "part2": ", we are committed to delivering exceptional legal services with integrity, dedication, and results-driven advocacy. With decades of experience, our firm has built a reputation for excellence in corporate law, business litigation, immigration, and estate planning. Navigating legal challenges can be overwhelming, which is why we prioritize clear communication, strategic solutions, and personalized representation to protect your interests. Let us help you move forward with ",
+      "part2": ", our mission is simple: we make the complex simple.\n\nWe know that dealing with the law can feel intimidating or overwhelming, whether you're launching a startup, running a small business, or facing a personal legal matter. That's why our team is dedicated to guiding you through every legal challenge with clarity, ",
       "bold2": "confidence",
-      "part3": "."
+      "part3": ", and a focus on practical solutions. We combine a friendly, approachable style with the rigorous expertise you expect from a professional law firm, ensuring you get advice that's both understandable and effective.",
+      "part4": "From individuals to startups and small businesses, we are proud to serve clients from all walks of life.\n\nOur clients come to us with a wide variety of legal needs—from protecting an innovative new idea to buying a first home – and we tailor our services to meet their unique goals. No matter who you are or what legal challenge you're facing, you can count on receiving personalized attention, respect, and a commitment to finding the best path forward."
     }
   },
   "stats": {
@@ -65,19 +67,19 @@
     }
   },
   "values": {
-    "title": "Our Values",
-    "subtitle": "At Capitol Law Partners, our core values define who we are and how we serve our clients. We are committed to ethical, client-focused legal services with a dedication to excellence and continuous improvement.",
+    "title": "Our Approach",
+    "subtitle": "At Capitol Law Partners, we take pride in offering a legal experience that is responsive, personalized, and rooted in trust. Our approach is designed to ensure that every client feels heard, supported, and empowered—no matter how complex the issue at hand.",
     "value1": {
-      "title": "Client-Centered Advocacy",
-      "description": "We prioritize our clients’ needs, offering personalized legal strategies and dedicated representation to ensure the best possible outcomes."
+      "title": "Client-Focused Solutions",
+      "description": "Your goals shape our strategy. We listen carefully, tailor every plan to your unique circumstances, and focus on delivering practical results that align with what matters most to you."
     },
     "value2": {
-      "title": "Excellence & Growth",
-      "description": "We continuously refine our legal expertise to provide innovative solutions and superior service."
+      "title": "Clear, Accessible Communication",
+      "description": "We speak your language. Our attorneys cut through legal jargon to explain complex issues in plain, understandable terms—keeping you informed and confident every step of the way."
     },
     "value3": {
-      "title": "Integrity & Ethics",
-      "description": "We uphold the highest ethical standards, ensuring honesty, transparency, and fairness in all legal matters."
+      "title": "Integrity and Personal Connection",
+      "description": "Behind every case is a person, a business, or a family. We build lasting relationships through honesty, respect, and a commitment to treating your legal matter with care and urgency."
     }
   },
   "achievements": {
@@ -99,7 +101,7 @@
   "locations": {
     "item1": {
       "title": "Virginia Office",
-      "description": "13873 Park Center Rd, Herndon, VA 20171"
+      "description": "13873 Park Center Road Suite, 152, Herndon, VA 20171"
     },
     "item2": {
       "title": "Washington DC Office",

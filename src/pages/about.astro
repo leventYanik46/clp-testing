@@ -5,7 +5,7 @@ import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
 import Hero3 from '~/components/widgets/hero3.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
-import library from '~/locales/en/about.json';
+import library from '~/locales/en/about.json'; // updated relative path
 const metadata = {
   title: 'About Us',
   description: 
@@ -25,7 +25,6 @@ const metadata = {
   >
     <Fragment slot="title">
      {library.hero.title} <br />
-      <span class="text-accent highlight">{library.hero.title2}</span>
     </Fragment>
 
 
@@ -35,6 +34,8 @@ const metadata = {
           {library.hero.subtitle.part2}
           <strong>{library.hero.subtitle.bold2}</strong>
           {library.hero.subtitle.part3}
+        <br /><br />
+          {library.hero.subtitle.part4}
         </Fragment>
       </Hero3>
     
@@ -64,9 +65,9 @@ const metadata = {
             icon: 'tabler:affiliate',
           },
           {
-            title: 'Health Care Law',
+            title: 'Outside General Counsel & Advisory Services',
             description:
-              'Regulatory and compliance solutions for providers and facilities, allowing you to focus on quality patient care.',
+              'Serving as a trusted legal advisor to startups and growing businesses by providing ongoing counsel on contracts, compliance, employment issues, risk management, and day-to-day operations.',
             icon: 'tabler:medical-cross',
           },
           {
@@ -105,31 +106,6 @@ const metadata = {
           },
         ]}
       />
-    
-      <!-- Steps2 Widget for Achievements ****************** -->
-      <Steps2
-        title={library.achievements.title}
-        subtitle={library.achievements.subtitle}
-        isReversed={true}
-        items={[
-          {
-            title: library.achievements.item1.title,
-            description: library.achievements.item1.description,
-            icon: 'tabler:globe',
-          },
-          {
-            title: library.achievements.item2.title,
-            description: library.achievements.item2.description,
-            icon: 'tabler:message-star',
-          },
-          {
-            title: library.achievements.item3.title,
-            description: library.achievements.item3.description,
-            icon: 'tabler:award',
-          },
-        ]}
-      />
-    
       <!-- ItemGrid3 Widget for Office Locations ************** -->
       <ItemGrid3
         items={[
@@ -139,7 +115,7 @@ const metadata = {
             image: {
               src: '~/assets/images/map-herndon.jpg',
               alt: 'Maps location image',
-              href: 'https://www.google.com/maps/place/13873+Park+Center+Rd,+Herndon,+VA+20171',
+              href: 'https://www.google.com/maps/place/Capitol+Law+Partners/data=!4m2!3m1!1s0x0:0xdd25a8b02491aacd?sa=X&ved=1t:2428&ictx=111',
             },
           },
           {
@@ -148,7 +124,7 @@ const metadata = {
             image: {
               src: '~/assets/images/map-washington.png',
               alt: 'Maps location image',
-              href: 'https://www.google.com/maps/place/1200+G+St+NW,+Washington,+DC+20005',
+              href: 'https://www.google.com/maps/place/Capitol+Law+Partners/@38.8981849,-77.0307687,17z/data=!3m2!4b1!5s0x89b7b7bdf11bb751:0xf9b2c66482b778ff!4m6!3m5!1s0x89b7b79fdc4c0afd:0x70647fab40f6ef1b!8m2!3d38.8981808!4d-77.0281938!16s%2Fg%2F11y23hfk14?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D',
             },
           },
           {
@@ -166,7 +142,7 @@ const metadata = {
             image: {
               src: '~/assets/images/map-istanbul-1.png',
               alt: 'Maps location image',
-              href: 'https://www.google.com/maps/place/Trump+Towers,+Residence+2901,+34381,+Şişli/İstanbul+Türkiye',
+              href: 'https://www.google.com/maps/place/Trump+Towers/data=!4m2!3m1!1s0x0:0x9ce9fcc6cd43250?sa=X&ved=1t:2428&ictx=111',
             },
           },
         ]}
@@ -197,4 +173,3 @@ const metadata = {
         ]}
       />
     </Layout>
-    

@@ -6,7 +6,7 @@
   "locations": [
     {
       "title": "Virginia Office",
-      "description": "13873 Park Center Rd, Herndon, VA 20171"
+      "description": "13873 Park Center Road, Suite 152, Herndon, VA 20171"
     },
     {
       "title": "Washington DC Office",
@@ -22,7 +22,7 @@
     }
   ],
   "callToAction": {
-    "title": "Capitol Law Patners",
+    "title": "Capitol Law Partners",
     "subtitle": "Discover the difference our expertise can make in your legal matters. Contact us today!",
     "buttonText": "Contact Us"
   },

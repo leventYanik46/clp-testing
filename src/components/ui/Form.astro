@@ -9,7 +9,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '' } 
   {
     inputs &&
       inputs.map(
-        ({ type = 'text', name, label = '', autocomplete = 'on', placeholder = '' }) =>
+        ({ type = 'text', required , name, label = '', autocomplete = 'on', placeholder = '' }) =>
           name && (
             <div class="mb-6">
               {label && (

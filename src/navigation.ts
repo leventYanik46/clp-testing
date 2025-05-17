@@ -10,7 +10,7 @@ export const headerData = {
       text: 'Practice Areas',
       links: [
         {
-          text: 'General Counsel Services',
+          text: 'General Counsel & Advisory Services',
           href: getPermalink('/practices/general-counsel-services'),
         },
         {
@@ -36,14 +36,6 @@ export const headerData = {
         {
           text: 'Real Estate',
           href: getPermalink('/practices/real-estate'),
-        },
-        {
-          text: 'Asset Protection',
-          href: getPermalink('/practices/asset-protection'),
-        },
-        {
-          text: 'Corporate Transparency Act',
-          href: getPermalink('/practices/corporate-transparency-act'),
         },
       ],
     },
@@ -103,8 +95,6 @@ export const footerData = {
         { text: 'Immigration Law', href: getPermalink('/practices/immigration-law') },
         { text: 'Estate Planning', href: getPermalink('/practices/estate-planning') },
         { text: 'Real Estate', href: getPermalink('/practices/real-estate') },
-        { text: 'Asset Protection', href: getPermalink('/practices/asset-protection') },
-        { text: 'Corporate Transparency Act', href: getPermalink('/practices/corporate-transparency-act') },
       ],
     },
     {
