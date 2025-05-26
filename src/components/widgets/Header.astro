@@ -70,7 +70,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         {/* New mobile-only Contact Us button before ToggleMenu, visible on screens smaller than lg */}
         <div class="lg:hidden">
           {actions?.[0] && (
-            <Button {...actions[0]} class="py-2.5 px-5.5 font-semibold shadow-none text-sm whitespace-nowrap" />
+            <Button {...actions[0]} class="py-2.5 px-2.5 ml-2 font-semibold shadow-none text-sm whitespace-nowrap" />
           )}
         </div>
         <ToggleMenu />

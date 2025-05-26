@@ -50,10 +50,7 @@ export const headerData = {
           text: 'Sena Sahin',
           href: getPermalink('/our-team/sena'),
         },
-        {
-          text: 'Shafeek Seddiq',
-          href: getPermalink('/our-team/shafeek'),
-        },
+      
       ],
     },
     {
@@ -71,9 +68,9 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'About Us',
+      title: 'Information',
       links: [
-        { text: 'Our Story', href: getPermalink('/eabout') },
+        { text: 'About Us',  href: getPermalink('/about') },
         { text: 'Our Locations', href: getPermalink('/locations') },
       ],
     },
@@ -82,7 +79,6 @@ export const footerData = {
       links: [
         { text: 'Cagatay Ersoy', href: getPermalink('/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/our-team/sena') },
-        { text: 'Shafeek Seddiq', href: getPermalink('/our-team/shafeek') },
       ],
     },
     {
