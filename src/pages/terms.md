@@ -3,7 +3,7 @@ title: 'Terms and Conditions'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-Last updated: January 17, 2025
+Last updated: May 27, 2025
 
 ## Welcome to the Capitol Law Partners Website
 
@@ -63,7 +63,7 @@ When you visit the Capitol Law Partners website, we may track information about 
 
 #### Cookies
 
-Our website uses cookies for easier navigation and to remember user preferences (for example, remembering what you entered in a form so you don’t have to re-enter it). Cookies do **not** generate or read personal data from your computer or any device used to access our site. For more information on cookies, please visit [cookiecentral.com/faq/](https://cookiecentral.com/faq/) or [this resource](https://www.glideagency.com/blog/2018/04/10/all-you-need-to-know-about-the-google-analytics-cookie/).
+Our website uses cookies for easier navigation and to remember user preferences (for example, remembering what you entered in a form so you don’t have to re-enter it). Cookies do **not** generate or read personal data from your computer or any device used to access our site.
 
 ---
 
@@ -90,8 +90,8 @@ If you subscribe to our email list, you will receive periodic updates or an elec
 If you have any further questions about our Terms of Use, Disclaimer, or Privacy Policy, please contact us at:
 
 **Capitol Law Partners, PLLC**  
-[Street Address, City, State, ZIP]  
+13873 Park Center Rd STE 152, Herndon, VA 20171  
 Phone: (**202**) 440-2272  
 Email: [info@capitollawpartners.com](mailto:info@capitollawpartners.com)
 
-_Last updated: January 17, 2025_
+_Last updated: May 27, 2025_

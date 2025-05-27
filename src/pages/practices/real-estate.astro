@@ -4,30 +4,40 @@ import Image from '~/components/common/Image.astro';
 
 const metadata = {
   title: 'Real Estate Law',
-  description: "Expert real estate attorneys guide residential & commercial transactions, contract drafting, zoning compliance, landlord-tenant issues & title disputes."
+  description: "Guidance in commercial and residential real estate transactions, property acquisitions, leasing, development, and contract negotiation for seamless property deals."
 };
 
 const post = {
   title: 'Real Estate Law',
   image: '~/assets/images/real-estate.jpg',
   content: `
-
-<p>Real estate transactions involve complex legal considerations that require expert guidance to ensure smooth and successful outcomes. Whether you’re buying, selling, leasing, or developing property, having an experienced legal team by your side is essential to safeguarding your investments. Our Real Estate Law services provide comprehensive legal support for individuals, businesses, and investors navigating the intricate landscape of real estate transactions.</p>
-
-<p>From contract negotiations to zoning compliance, our attorneys have the expertise to handle all aspects of real estate law, helping clients avoid costly disputes and maximize their opportunities.</p>
-
-<h2>Key Services</h2>
 <ul>
-    <li><strong>Residential & Commercial Transactions</strong> - Legal support for buying, selling, and leasing properties, ensuring compliance and protection in all transactions.</li>
-    <li><strong>Real Estate Contracts & Negotiations</strong> - Drafting, reviewing, and negotiating contracts to ensure your interests are protected throughout the deal.</li>
-    <li><strong>Land Use & Zoning Compliance</strong> - Assisting with local regulations, rezoning efforts, and land use approvals to facilitate property development.</li>
-    <li><strong>Title & Ownership Disputes</strong> - Resolving property disputes related to ownership claims, title defects, and boundary disagreements.</li>
-    <li><strong>Landlord-Tenant Law</strong> - Legal guidance for lease agreements, tenant disputes, evictions, and compliance with rental regulations.</li>
-    <li><strong>Real Estate Litigation</strong> - Representation in legal disputes arising from property transactions, breaches of contract, or construction issues.</li>
+  <li>Guidance in Commercial and Residential Real Estate Transactions</li>
+  <li>Property Acquisitions, Leasing, and Development</li>
+  <li>Real Estate Contracts and Negotiations</li>
 </ul>
 
-<h2>Why Choose Us?</h2>
-<p>Our real estate attorneys bring extensive experience in handling complex transactions and disputes. We provide strategic legal solutions to help clients navigate the real estate market with confidence, ensuring that their investments are legally sound and financially beneficial. With a client-focused approach, we prioritize clear communication, efficiency, and risk management in every transaction.</p>
+<p>Buying your first home, negotiating a commercial lease, or diving into a development project is exciting, but it can also be complex. At Capitol Law Partners PLLC, we are here to make sure your real estate deals go smoothly. Our team provides clear, reliable guidance on both commercial and residential transactions, whether you are acquiring property, securing financing, or finalizing leasing agreements.</p>
+
+<p>We carefully review and draft real estate contracts to protect your interests and reduce risks, so you can move forward with confidence. And when it comes to negotiations, we bring a detail-oriented approach and deep knowledge of real estate law to the table, ensuring your projects stay on track and in compliance with regulations.</p>
+
+<h3>Guidance in Commercial and Residential Real Estate Transactions</h3>
+<p>Whether you are buying your first home, investing in commercial property, or developing a real estate portfolio, we provide the legal insights you need to navigate the process smoothly and confidently.</p>
+
+<h3>Property Acquisitions</h3>
+<p>From due diligence to closing, we handle the legal details of property purchases, ensuring you make informed decisions and avoid potential pitfalls.</p>
+
+<h3>Leasing Agreements</h3>
+<p>Whether you’re a landlord or a tenant, we draft, review, and negotiate commercial and residential leases to safeguard your interests and prevent disputes down the line.</p>
+
+<h3>Real Estate Development</h3>
+<p>Embarking on a development project? We assist with zoning, permits, contracts, and compliance, providing the legal foundation to keep your project moving forward.</p>
+
+<h3>Real Estate Contracts and Negotiations</h3>
+<p>Clear, well-crafted contracts are crucial in any real estate transaction. We draft and review agreements with precision and a focus on your long-term goals, while also handling tough negotiations to secure favorable terms.</p>
+
+<h3>Why Choose Us?</h3>
+<p>In real estate, details matter. That is why our team takes the time to truly understand your goals, whether you are buying, selling, leasing, or developing property. We are thorough, responsive, and committed to helping you close deals smoothly while minimizing risks along the way.</p>
 `,
 };
 ---
@@ -42,25 +52,23 @@ const post = {
           {post.title}
         </h1>
 
-        {
-          post.image ? (
-            <Image
-              src={post.image}
-              class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400 "
-              widths={[400, 900]}
-              sizes="(max-width: 900px) 400px, 900px"
-              alt="Real Estate Law"
-              width={900}
-              height={506}
-              loading="eager"
-              decoding="async"
-            />
-          ) : (
-            <div class="max-w-3xl mx-auto px-4 sm:px-6">
-              <div class="border-t " />
-            </div>
-          )
-        }
+        {post.image ? (
+          <Image
+            src={post.image}
+            class="max-w-full lg:max-w-[900px] mx-auto mb-6 sm:rounded-md bg-gray-400"
+            widths={[400, 900]}
+            sizes="(max-width: 900px) 400px, 900px"
+            alt="Real Estate Law"
+            width={900}
+            height={506}
+            loading="eager"
+            decoding="async"
+          />
+        ) : (
+          <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="border-t" />
+          </div>
+        )}
       </header>
       <div
         class="mx-auto px-6 sm:px-6 max-w-3xl prose prose-md lg:prose-xl prose-headings:font-heading prose-headings:leading-tighter prose-headings:tracking-tighter prose-headings:font-bold prose-a:text-primary prose-img:rounded-md prose-img:shadow-lg mt-8 prose-headings:scroll-mt-[80px] prose-li:my-0"
