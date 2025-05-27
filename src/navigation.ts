@@ -11,28 +11,28 @@ export const headerData = {
       links: [
         {
           text: 'General Counsel & Advisory Services',
-          href: getPermalink('/practices/general-counsel-services'),
+          href: getPermalink('/practice-area/general-counsel-services'),
         },
         {
           text: 'Business & Corporate Law',
-          href: getPermalink('/practices/business-corporate-law'),
+          href: getPermalink('/practice-area/business-corporate-law'),
         },
 
         {
           text: 'Trusts & Estates',
-          href: getPermalink('/practices/estate-planning'),
+          href: getPermalink('/practice-area/estate-planning'),
         },
         {
           text: 'Real Estate',
-          href: getPermalink('/practices/real-estate'),
+          href: getPermalink('/practice-area/real-estate'),
         },
         {
           text: 'Intellectual Property Law',
-          href: getPermalink('/practices/ip-law'),
+          href: getPermalink('/practice-area/ip-law'),
         },
         {
           text: 'Immigration Law',
-          href: getPermalink('/practices/immigration-law'),
+          href: getPermalink('/practice-area/immigration-law'),
         },
       ],
     },
@@ -85,12 +85,12 @@ export const footerData = {
     {
       title: 'Practice Areas',
       links: [
-        { text: 'General Counsel Services', href: getPermalink('/practices/general-counsel-services') },
-        { text: 'Business & Corporate Law', href: getPermalink('/practices/business-corporate-law') },
-        { text: 'Trusts & Estates', href: getPermalink('/practices/estate-planning') },
-        { text: 'Real Estate', href: getPermalink('/practices/real-estate') },
-        { text: 'Intellectual Property Law', href: getPermalink('/practices/ip-law') },
-        { text: 'Immigration Law', href: getPermalink('/practices/immigration-law') },
+        { text: 'General Counsel Services', href: getPermalink('/practice-area/general-counsel-services') },
+        { text: 'Business & Corporate Law', href: getPermalink('/practice-area/business-corporate-law') },
+        { text: 'Trusts & Estates', href: getPermalink('/practice-area/estate-planning') },
+        { text: 'Real Estate', href: getPermalink('/practice-area/real-estate') },
+        { text: 'Intellectual Property Law', href: getPermalink('/practice-area/ip-law') },
+        { text: 'Immigration Law', href: getPermalink('/practice-area/immigration-law') },
       ],
     },
     {
