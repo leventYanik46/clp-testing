@@ -121,11 +121,13 @@
     "tagline": "Contact us",
     "item1": {
       "title": "Chat with us",
-      "description": "Get quick answers and personalized support from our legal team."
+      "description": "Get quick answers and personalized support from our legal team.",
+      "link": "https://wa.me/12024402272"
     },
     "item2": {
       "title": "Call us",
-      "description": "Speak directly with our attorneys for expert legal advice and consultation. +1 (202) 440-2272"
+      "description": "Speak directly with our attorneys for expert legal advice and consultation. +1 (202) 440-2272",
+      "link": "tel:+12024402272"
     }
   }
 }

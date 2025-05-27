@@ -72,7 +72,21 @@ const metadata = {
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
-
+  <Steps
+  id="resume"
+  title="Bar Admissions"
+  items={[
+    {
+      title: `New York`,
+      icon: 'tabler:certificate',
+    },
+    {
+      title: `Istanbul Bar Association`,
+      icon: 'tabler:certificate',
+    },
+  ]}
+  classes={{ container: 'max-w-3xl' }}
+/>
   <!-- Testimonials Widget ********** -->
 
   <Testimonials
@@ -128,8 +142,8 @@ const metadata = {
 
   <BlogLatestPosts
     id="blog"
-    title="Explore my insightful articles on my blog"
-    information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
+    title="Explore our latest legal insights"
+    information={`Stay informed with expert articles on immigration, corporate law, and data privacy.`}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50"></div>

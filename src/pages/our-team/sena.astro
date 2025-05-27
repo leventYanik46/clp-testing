@@ -28,11 +28,14 @@ const metadata = {
       <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Attorney At Law</h2>
       <div class="prose prose-lg max-w-none mb-8">
         <p>
-          Sena Sahin is a partner at Capitol Law Partners PLLC, licensed in Washington, D.C., Pennsylvania, and Texas, and a J.D. graduate of South Texas College of Law Houston. Fluent in English and Turkish, she delivers client-focused, results-driven counsel across civil litigation, corporate advisory, and data privacy matters.
+          Sena Sahin is a partner at Capitol Law Partners PLLC, licensed in Washington, D.C., Pennsylvania, and Texas, and a J.D. graduate of South Texas College of Law Houston. Fluent in English and Turkish, she delivers client-focused, results-driven counsel across civil litigation, corporate advisory, and data privacy matters. 
+          <br /> <br />
+
         </p>
         <p>
           In litigation, Ms. Sahin has defended insurance carriers and employers in personal injury, premises, and professional liability cases, achieving strategic outcomes at national firms. As outside general counsel, she provides proactive legal guidance on contracts, compliance, and risk management to businesses across industries.
         </p>
+        <br /> 
         <p>
           A Certified Information Privacy Professional (CIPP/US) with a Cybersecurity and Information Privacy Compliance certificate, she advises organizations on data protection and evolving privacy regulations.
         </p>
@@ -58,28 +61,40 @@ const metadata = {
 
   <Steps
     id="resume"
-    title="Education & Admissions"
+    title="Education"
     items={[
       {
-        title: `J.D., South Texas College of Law Houston (2020)`,
+        title: `South Texas College of Law Houston <br /><span class="text-sm font-normal">(2020) - JD</span>`,
         icon: 'tabler:school',
       },
       {
-        title: `Cert., Cybersecurity & Information Privacy Compliance`,
-        icon: 'tabler:shield-check',
-      },
-      {
-        title: `BA, University of Connecticut (2015)`,
+        title: `University of Connecticut<br /><span class="text-sm font-normal">(2015) - Bachelor of Arts in Political Science</span>`,
         icon: 'tabler:school',
       },
-      {
-        title: `Bar Admissions: DC, PA, TX; US District Court, S.D. Texas`,
-        icon: 'tabler:certificate',
-      }
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
 
+  <Steps
+  id="resume"
+  title="Admissions & Certifications"
+  items={[
+          {
+      title: `Bar Admissions:<br /> DC, PA, TX; US District Court, S.D. Texas`,
+      icon: 'tabler:certificate',
+    },
+    {
+      title: `Certified Information Privacy Professional - United States (CIPP/US)`,
+      icon: 'tabler:shield-check',
+    },
+    {
+      title: `Drexel University's Thomas R. Kline School of Law Certificate,<br /> Cybersecurity and Information Privacy Compliance`,
+      icon: 'tabler:shield-check',
+    },
+
+  ]}
+  classes={{ container: 'max-w-3xl' }}
+/>
   <!-- Testimonials Widget ********** -->
 
   <Testimonials

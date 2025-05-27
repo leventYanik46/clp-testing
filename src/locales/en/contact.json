@@ -32,15 +32,18 @@
       },
       {
         "title": "Phone",
-        "description": "+1 (202) 440-2272"
+        "description": "+1 (202) 440-2272",
+        "link": "tel:+12024402272"
       },
       {
         "title": "Email",
-        "description": "info@capitollawpartners.com"
+        "description": "info@capitollawpartners.com",
+        "link": "mailto:info@capitollawpartners.com"
       },
       {
         "title": "Whatsapp",
-        "description": "+1 (202) 440-2272"
+        "description": "+1 (202) 440-2272",
+        "link": "https://wa.me/12024402272"
       }
     ]
   },

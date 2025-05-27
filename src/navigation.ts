@@ -14,28 +14,25 @@ export const headerData = {
           href: getPermalink('/practices/general-counsel-services'),
         },
         {
-          text: 'Corporate Law',
+          text: 'Business & Corporate Law',
           href: getPermalink('/practices/corporate-law'),
         },
+
         {
-          text: 'Business Litigation',
-          href: getPermalink('/practices/business-litigation'),
-        },
-        {
-          text: 'Business Immigration Law',
-          href: getPermalink('/practices/business-immigration'),
-        },
-        {
-          text: 'Immigration Law',
-          href: getPermalink('/practices/immigration-law'),
-        },
-        {
-          text: 'Estate Planning',
+          text: 'Trust & Estates',
           href: getPermalink('/practices/estate-planning'),
         },
         {
           text: 'Real Estate',
           href: getPermalink('/practices/real-estate'),
+        },
+        {
+          text: 'Intellectual Property Law',
+          href: getPermalink('/practices/real-estate'),
+        },
+        {
+          text: 'Immigration Law',
+          href: getPermalink('/practices/immigration-law'),
         },
       ],
     },
