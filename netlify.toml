@@ -13,191 +13,191 @@
     pretty_urls = false
 
 # ─────────────────────────────────────────────────────────────
-# Redirect outdated CLP routes → Amerikayayolculuk.com
+# Redirect outdated CLP routes → capitollawpartners.com
 # Only routes absent from the new sitemap are listed
 # ─────────────────────────────────────────────────────────────
 
 # Old “About” pages → /about
 [[redirects]]
   from = "/hakkimizda/"
-  to   = "https://amerikayayolculuk.com/about"
+  to   = "https://capitollawpartners.com/about"
   status = 301
 
 [[redirects]]
   from = "/about-us/"
-  to   = "https://amerikayayolculuk.com/about"
+  to   = "https://capitollawpartners.com/about"
   status = 301
 
 # Old “Contact” pages → /contact
 [[redirects]]
   from = "/contact-us/"
-  to   = "https://amerikayayolculuk.com/contact"
+  to   = "https://capitollawpartners.com/contact"
   status = 301
 
 [[redirects]]
   from = "/bize-ulasin/"
-  to   = "https://amerikayayolculuk.com/contact"
+  to   = "https://capitollawpartners.com/contact"
   status = 301
 
 # Practice‐area slugs that changed
 [[redirects]]
   from = "/practise_area/corporate-law/"
-  to   = "https://amerikayayolculuk.com/practice-area/business-corporate-law"
+  to   = "https://capitollawpartners.com/practice-area/business-corporate-law"
   status = 301
 
 [[redirects]]
   from = "/practise_area/business-immigration-law/"
-  to   = "https://amerikayayolculuk.com/practice-area/immigration-law"
+  to   = "https://capitollawpartners.com/practice-area/immigration-law"
   status = 301
 
 # These CLP practice pages no longer exist → homepage
 [[redirects]]
   from = "/practise_area/business-litigation-2/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/practise_area/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 # Locations / Global presence → /locations
 [[redirects]]
   from = "/global-presence/"
-  to   = "https://amerikayayolculuk.com/locations"
+  to   = "https://capitollawpartners.com/locations"
   status = 301
 
 [[redirects]]
   from = "/lokasyonlarimiz/"
-  to   = "https://amerikayayolculuk.com/locations"
+  to   = "https://capitollawpartners.com/locations"
   status = 301
 
 # Scheduling → /Schedule
 [[redirects]]
   from = "/consultation-appointment/"
-  to   = "https://amerikayayolculuk.com/Schedule"
+  to   = "https://capitollawpartners.com/Schedule"
   status = 301
 
 [[redirects]]
   from = "/ucretsiz-danismanlik-randevusu/"
-  to   = "https://amerikayayolculuk.com/Schedule"
+  to   = "https://capitollawpartners.com/Schedule"
   status = 301
 
 # Language toggles (site is now single-language) → homepage
 [[redirects]]
   from = "/tr/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/?lang=tr"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/?lang=en"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 # Other legacy CLP pages (no equivalent) → homepage
 [[redirects]]
   from = "/ekibimiz/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/our-team/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/careers/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/kariyer/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/practise-areas/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/calisma-alanlarimiz/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/home-clp/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/faq/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/jurisdiction/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 # Technical/unused → homepage
 [[redirects]]
   from = "/tf_header_footer/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/tf_header_footer/footer-default/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 # Old gallery → homepage
 [[redirects]]
   from = "/gallery/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/gallery/education-law-cases-8/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/gallery/education-law-cases-7/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/gallery/education-law-cases-6/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/gallery/education-law-cases-5/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/gallery/education-law-cases-4/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/gallery/education-law-cases-3/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/gallery/education-law-cases-2/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301
 
 [[redirects]]
   from = "/gallery/education-law-cases/"
-  to   = "https://amerikayayolculuk.com/"
+  to   = "https://capitollawpartners.com/"
   status = 301

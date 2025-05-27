@@ -19,7 +19,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  site: 'https://amerikayayolculuk.com', // Replace with your website URL
+  site: 'https://capitollawpartners.com', // Replace with your website URL
   adapter: netlify(),
   output: 'static',
   integrations: [
