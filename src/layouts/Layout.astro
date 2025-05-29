@@ -42,21 +42,26 @@ const { language, textDirection } = I18N;
     <slot />
 
     <BasicScripts />
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const identity = window.netlifyIdentity;
-        if (identity) {
-          identity.on("init", (user) => {
-            if (!user && window.location.hash.includes("invite_token")) {
-              identity.open(); // auto-open if invite present
-            }
-            identity.on("login", () => {
-              window.location.href = "/admin/";
-            });
-          });
-          identity.init();
-        }
+  <!-- Netlify Identity init & invite-handler -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const netlifyIdentity = window.netlifyIdentity;
+      if (!netlifyIdentity) return;
+
+      // Redirect to /admin/ on successful login
+      netlifyIdentity.on("login", () => {
+        window.location.href = "/admin/";
       });
-    </script>
+
+      // Initialize the widget (this also processes the invite_token and strips the hash)
+      netlifyIdentity.init();
+
+      // If there was an invite token, open the signup modal explicitly
+      if (window.location.hash.includes("invite_token")) {
+        // Use the “signup” screen, which is guaranteed to show the password‐set UI
+        netlifyIdentity.open("signup");
+      }
+    });
+  </script>
   </body>
 </html>
