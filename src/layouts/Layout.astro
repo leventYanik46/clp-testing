@@ -33,7 +33,7 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <!-- Comment the line below to disable View Transitions -->
     <ViewTransitions fallback="swap" />
   </head>
@@ -42,26 +42,5 @@ const { language, textDirection } = I18N;
     <slot />
 
     <BasicScripts />
-  <!-- Netlify Identity init & invite-handler -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const netlifyIdentity = window.netlifyIdentity;
-      if (!netlifyIdentity) return;
-
-      // Redirect to /admin/ on successful login
-      netlifyIdentity.on("login", () => {
-        window.location.href = "/admin/";
-      });
-
-      // Initialize the widget (this also processes the invite_token and strips the hash)
-      netlifyIdentity.init();
-
-      // If there was an invite token, open the signup modal explicitly
-      if (window.location.hash.includes("invite_token")) {
-        // Use the “signup” screen, which is guaranteed to show the password‐set UI
-        netlifyIdentity.open("signup");
-      }
-    });
-  </script>
   </body>
 </html>

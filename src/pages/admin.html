@@ -8,6 +8,18 @@
     <title>Content Manager</title>
   </head>
   <body>
+    <!-- 1. Netlify Identity widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      const identity = window.netlifyIdentity;
+      if (identity) {
+        // When someone logs in, reload so CMS picks up the user
+        identity.on('login', () => window.location.reload());
+        identity.init();
+      }
+    </script>
+
+    <!-- 2. Decap CMS itself -->
     <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
   </body>
 </html>
