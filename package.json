@@ -34,6 +34,7 @@
     "astro": "^5.2.6",
     "astro-embed": "^0.7.4",
     "astro-icon": "^1.1.1",
+    "decap-cms-app": "^3.6.3",
     "dotenv": "^16.4.7",
     "googleapis": "^144.0.0",
     "limax": "4.1.0",
