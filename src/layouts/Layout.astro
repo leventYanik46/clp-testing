@@ -43,17 +43,21 @@ const { language, textDirection } = I18N;
 
     <BasicScripts />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-    window.netlifyIdentity.init();
-  }
-</script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const identity = window.netlifyIdentity;
+        if (identity) {
+          identity.on("init", (user) => {
+            if (!user && window.location.hash.includes("invite_token")) {
+              identity.open(); // auto-open if invite present
+            }
+            identity.on("login", () => {
+              window.location.href = "/admin/";
+            });
+          });
+          identity.init();
+        }
+      });
+    </script> 
   </body>
 </html>
