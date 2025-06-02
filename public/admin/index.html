@@ -1,37 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+    <!-- Tell Decap CMS where to find your config.yml -->
+    <link href="/admin/config.yml" rel="cms-config-url" type="text/yaml" />
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- 1. Netlify Identity widget -->
+    <!-- Load Netlify Identity -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       const identity = window.netlifyIdentity;
       if (identity) {
         let firstInit = true;
-
-        identity.on('login', (user) => {
-          // Only reload if this was a fresh login (not the automatic “restore session”)
-          if (!firstInit) {
-            window.location.reload();
-          }
+        identity.on("login", () => {
+          if (!firstInit) window.location.reload();
         });
-
-        identity.on('init', (user) => {
-          // Mark that the initial “init” event has fired
+        identity.on("init", () => {
           firstInit = false;
         });
-
         identity.init();
       }
     </script>
 
-    <!-- 2. Decap CMS itself -->
+    <!-- ↓────────────── MISSING CMS BUNDLE ──────────────↓ -->
     <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
+    <!-- ↑ Make sure you use the same version series you need (v3.x in this example) -->
   </body>
 </html>
