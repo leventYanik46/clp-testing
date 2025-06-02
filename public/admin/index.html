@@ -8,25 +8,24 @@
     <link href="/admin/config.yml" rel="cms-config-url" type="text/yaml" />
     <title>Content Manager</title>
   </head>
-  <body>
-    <!-- Load Netlify Identity -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-      const identity = window.netlifyIdentity;
-      if (identity) {
-        let firstInit = true;
-        identity.on("login", () => {
-          if (!firstInit) window.location.reload();
-        });
-        identity.on("init", () => {
-          firstInit = false;
-        });
-        identity.init();
-      }
-    </script>
-
-    <!-- ↓────────────── MISSING CMS BUNDLE ──────────────↓ -->
-    <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
-    <!-- ↑ Make sure you use the same version series you need (v3.x in this example) -->
-  </body>
-</html>
+    <body>
+      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      <script>
+        // If the URL contains a Netlify Identity hash, clear it now.
+        if (window.location.hash.includes("access_token")) {
+          window.history.replaceState(null, null, "/admin/");
+        }
+  
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+              window.netlifyIdentity.open();
+            }
+          });
+          window.netlifyIdentity.init();
+        }
+      </script>
+  
+      <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
+    </body>
+  </html>
