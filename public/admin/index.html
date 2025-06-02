@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <!-- Adjust the href to include the base path if you have one -->
     <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
     <title>Content Manager</title>
   </head>
@@ -14,8 +13,20 @@
     <script>
       const identity = window.netlifyIdentity;
       if (identity) {
-        // When someone logs in, reload so CMS picks up the user
-        identity.on('login', () => window.location.reload());
+        let firstInit = true;
+
+        identity.on('login', (user) => {
+          // Only reload if this was a fresh login (not the automatic “restore session”)
+          if (!firstInit) {
+            window.location.reload();
+          }
+        });
+
+        identity.on('init', (user) => {
+          // Mark that the initial “init” event has fired
+          firstInit = false;
+        });
+
         identity.init();
       }
     </script>
