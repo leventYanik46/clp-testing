@@ -24,17 +24,17 @@ This Green Card application is particularly attractive as it allows individuals 
 
 We can outline the criteria required to qualify for this Green Card category into three main groups. The first of these is having sufficient education or experience.
 
-## 	Education or Experience
+## Education or Experience
 
 People who want to get a Green Card through this category must have at least a master’s degree or higher. If individuals have a master’s degree or higher in the USA or other countries, this condition will easily be met. In the absence of a master’s degree or any doctoral degree, a bachelor’s degree and at least five years of work experience in the relevant field is considered equivalent to a postgraduate degree. In this scenario, the postgraduate education criteria will be met with undergraduate education and work experience.
 
 The second criterion is that the work or research that is the subject of the Green Card application must be of a nature that can benefit the public or national interests of the USA.
 
-## \    National Interest - Public Interest
+## National Interest - Public Interest
 
 It is a must for this application that the work or research of the NIW Green Card applicant be of sufficient importance and quality to benefit the interests of the USA. However, this criterion should not be interpreted too conservatively. The endeavor in question is not limited to the activities of any particular occupational group. For instance, an engineer’s work on artificial intelligence, a doctor’s work on the treatment of a disease, or an entrepreneur’s contributions to employment could all be considered issues of national or public interest. The important thing here is to demonstrate that the applicants’ efforts can contribute to the national or public interest of the USA.
 
-## \    Sufficient Contribution
+##  Sufficient Contribution
 
 Individuals’ contributions are expected to be significantly greater than those typically encountered in the field. It must be demonstrated in the application that the contributions specified will lead to advancement in the field and contribute to the American economy, health, education, or culture. A good example of this would be a significant amount of employment created by a businessperson that could be deemed critical to American national interests. Applicants will not be required to prove that their endeavor will succeed, but rather that they are equipped to make it succeed if the opportunity arises.
 
