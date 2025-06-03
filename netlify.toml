@@ -199,3 +199,119 @@
   from = "/gallery/education-law-cases/"
   to   = "/"
   status = 301
+
+  [[redirects]]
+  from = "/sitemap.xml"
+  to   = "/sitemap-index.xml"
+  status = 301
+
+  [[redirects]]
+  from = "/https://capitollawpartners.com/fusce-tincidunt-commodo-sapien-quis-porttitor-ipsum-fringilla-et-2/"
+  to   = "/"
+  status = 301
+
+# Duplicate entry removed:
+# [[redirects]]
+#   from = "/fusce-tincidunt-commodo-sapien-quis-porttitor-ipsum-fringilla-et/"
+#   to   = "/"
+#   status = 301
+
+[[redirects]]
+  from = "/api/contact"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/case-study/motocycle-security-case/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/practise_area/practice-areas/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/tax/shoe-carnival-converse-shoes-c-RQXzwNTD"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/case-study/real-estate-case/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/case_study_category/real-specialist/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/attorney/benjamin-isabella/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/practise-areas/info@capitollawpartners.com"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/attorney/sena-sahin/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/lorem-ipsum-dolor-sit-amet-consectetur-adipiscing-elit/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/practice-areas/tax/20240402"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/attorney/william-sophia/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/fusce-tincidunt-commodo-sapien-quis-porttitor-ipsum-fringilla-et/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/case-study/domestic-violence-case/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/category/blog/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/domestic-violence-in-california-how-a-lawyer-can-help-2/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/practise_area/insurance-defense/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/hello-world/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/category/attorney/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tag/creative/"
+  to = "/"
+  status = 301

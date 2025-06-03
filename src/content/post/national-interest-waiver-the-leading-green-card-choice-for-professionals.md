@@ -8,7 +8,8 @@ tags:
   - permanent residency
   - eb-2
   - NIW
-image: /_astro/blogpost4.jpg
+image: ~/assets/images/blogpost4.jpg
+  
 publishDate: 2025-06-03T08:26:00.000Z
 metadata:
   canonical: https://capitollawpartners.com/national-interest-waiver
