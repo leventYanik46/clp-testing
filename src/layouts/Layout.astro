@@ -67,23 +67,26 @@ const { language, textDirection } = I18N;
 
     <BasicScripts />
     <!-- Load Netlify Identity widget -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>    
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const identity = window.netlifyIdentity;
-        if (identity) {
-          identity.on("init", (user) => {
-            if (!user && window.location.hash.includes("invite_token")) {
-              identity.open(); // auto-open if invite present
-            }
-            identity.on("login", () => {
-              window.location.href = "/admin/";
-            });
-          });
-          identity.init();
-        }
+      document.addEventListener("DOMContentLoaded", () => {
+        const ni = window.netlifyIdentity;
+        if (!ni) return;
+    
+        // When init finishes, handle the hash + open signup
+        ni.on("init", (user) => {
+          // If there’s an invite_token in the URL, open the Sign Up form
+          if (window.location.hash.startsWith("#invite_token")) {
+            ni.open("signup");
+            // Now that the modal is open, strip the hash so it doesn’t re-fire on reload
+            window.history.replaceState(null, null, "/#");
+          }
+        });
+    
+        // Actually initialize the widget (this parses invite_token out of the hash)
+        ni.init();
       });
     </script>
+    
   </body>
 </html>
