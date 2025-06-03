@@ -1,31 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <!-- Tell Decap CMS where to find your config.yml -->
     <link href="/admin/config.yml" rel="cms-config-url" type="text/yaml" />
     <title>Content Manager</title>
   </head>
-    <body>
-      <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-      <script>
-        // If the URL contains a Netlify Identity hash, clear it now.
-        if (window.location.hash.includes("access_token")) {
-          window.history.replaceState(null, null, "/admin/");
-        }
-  
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", (user) => {
-            if (!user) {
-              window.netlifyIdentity.open();
-            }
-          });
-          window.netlifyIdentity.init();
-        }
-      </script>
-  
-      <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
-    </body>
-  </html>
+  <body>
+    <!-- 1) Identity widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- 2) Auto-open login (or signup if invite_token) -->
+    <script>
+      // If Netlify Identity appended an access_token, strip it and stay on /admin/
+      if (window.location.hash.includes("access_token")) {
+        window.history.replaceState(null, null, "/admin/");
+      }
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          // If not logged in, open the login/signup modal
+          if (!user) {
+            window.netlifyIdentity.open();
+          }
+        });
+        window.netlifyIdentity.init();
+      }
+    </script>
+
+    <!-- 3) Decap CMS bundle -->
+    <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
+  </body>
+</html>

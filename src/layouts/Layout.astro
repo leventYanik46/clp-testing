@@ -66,26 +66,27 @@ const { language, textDirection } = I18N;
     <slot />
 
     <BasicScripts />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const netlifyIdentity = window.netlifyIdentity;
-        if (!netlifyIdentity) return;
-  
-        // Redirect to /admin/ on successful login
-        netlifyIdentity.on("login", () => {
-          window.location.href = "/admin/";
-        });
-  
-        // Initialize the widget (this also processes the invite_token and strips the hash)
-        netlifyIdentity.init();
-  
-        // If there was an invite token, open the signup modal explicitly
-        if (window.location.hash.includes("invite_token")) {
-          // Use the “signup” screen, which is guaranteed to show the password‐set UI
-          netlifyIdentity.open("signup");
-        }
-      });
-    </script>
+    <!-- Load Netlify Identity widget -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const netlifyIdentity = window.netlifyIdentity;
+    if (!netlifyIdentity) return;
+
+    // After a successful login/signup, send the user to /admin/
+    netlifyIdentity.on("login", () => {
+      window.location.href = "/admin/";
+    });
+
+    // Initialize the widget (this also processes any invite_token in the hash)
+    netlifyIdentity.init();
+
+    // If the URL contains "#invite_token", immediately open the signup modal
+    if (window.location.hash.includes("invite_token")) {
+      netlifyIdentity.open("signup");
+    }
+  });
+</script>
   </body>
 </html>
