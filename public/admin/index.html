@@ -2,33 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="robots" content="noindex" />
     <link href="/admin/config.yml" rel="cms-config-url" type="text/yaml" />
     <title>Content Manager</title>
   </head>
   <body>
-    <!-- 1) Identity widget -->
+    <!-- 1) LOAD IDENTITY WIDGET -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-    <!-- 2) Auto-open login (or signup if invite_token) -->
+    <!-- 2) INITIALIZE + AUTO-OPEN LOGIC -->
     <script>
-      // If Netlify Identity appended an access_token, strip it and stay on /admin/
-      if (window.location.hash.includes("access_token")) {
-        window.history.replaceState(null, null, "/admin/");
-      }
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          // If not logged in, open the login/signup modal
+      window.addEventListener("DOMContentLoaded", () => {
+        const ni = window.netlifyIdentity;
+        if (!ni) return;
+
+        // If an access_token is present, strip it so the modal stays visible correctly
+        if (window.location.hash.includes("access_token")) {
+          window.history.replaceState(null, null, "/admin/");
+        }
+
+        // Initialize the widget (fires the "init" event below)
+        ni.init();
+
+        // When “init” fires, if no user is logged in, open the login/signup modal
+        ni.on("init", (user) => {
           if (!user) {
-            window.netlifyIdentity.open();
+            ni.open();
           }
         });
-        window.netlifyIdentity.init();
-      }
+
+        // (No automatic redirect here; user can click “Log in” or “Sign up” themselves.)
+      });
     </script>
 
-    <!-- 3) Decap CMS bundle -->
+    <!-- 3) LOAD DECAP CMS -->
     <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
   </body>
 </html>

@@ -67,26 +67,21 @@ const { language, textDirection } = I18N;
 
     <BasicScripts />
     <!-- Load Netlify Identity widget -->
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const netlifyIdentity = window.netlifyIdentity;
-    if (!netlifyIdentity) return;
-
-    // After a successful login/signup, send the user to /admin/
-    netlifyIdentity.on("login", () => {
-      window.location.href = "/admin/";
-    });
-
-    // Initialize the widget (this also processes any invite_token in the hash)
-    netlifyIdentity.init();
-
-    // If the URL contains "#invite_token", immediately open the signup modal
-    if (window.location.hash.includes("invite_token")) {
-      netlifyIdentity.open("signup");
-    }
-  });
-</script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const ni = window.netlifyIdentity;
+        if (!ni) return;
+    
+        // Initialize (process invite_token if present)
+        ni.init();
+    
+        // If the URL contains "#invite_token", open the signup modal
+        if (window.location.hash.includes("invite_token")) {
+          ni.open("signup");
+        }
+      });
+    </script>
   </body>
 </html>
