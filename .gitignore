@@ -24,3 +24,6 @@ pnpm-lock.yaml
 .astro
 # Local Netlify folder
 .netlify
+
+# Prevent new blog posts from being tracked
+src/content/post/*

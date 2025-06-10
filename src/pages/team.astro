@@ -1,0 +1,194 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import TeamCard from '~/components/widgets/teamcard.astro';
+
+const metadata = {
+  title: 'Meet Our Team',
+  description: 'Meat our team and schedule an appointment with our experts.',
+};
+---
+
+<Layout metadata={metadata}>
+  
+  <div class="flex flex-wrap justify-center gap-4">
+    <TeamCard
+    title="Cagatay Ersoy"
+    tagline="Attorney at Law"
+    subtitle="Let's Work Together"
+    bottomtag="Business Immigration | Business Law | Trademark Law"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Schedule an appointment',
+        href: 'https://calendar.app.google/UGuCPvGbEV1b3acWA',
+        target: '_blank',
+      },
+      {
+        variant: 'primary',
+        text: 'See Bio →',
+        href: '/our-team/cagatay',
+        target: '_blank',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/cagatay-appointment.png',
+      alt: 'Schedule an appointment',
+    }}
+  />
+  <TeamCard
+    title="Sena Sahin"
+    tagline="Attorney at Law"
+    subtitle="Let's Work Together"
+    bottomtag="Litigation | Corporate Law | Immigration Law "
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Schedule an appointment',
+        href: 'https://calendar.app.google/j5WDBFZPNocPCB7CA',
+        target: '_blank',
+      },
+      {
+        variant: 'primary',
+        text: 'See Bio →',
+        href: '/our-team/sena',
+        target: '_blank',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/sena-profile-alternate-cta.png',
+      alt: 'Schedule an appointment',
+    }}
+  />
+<TeamCard
+title="Shafeek Seddiq"
+subtitle="Let's Work Together"
+tagline="Attorney at Law"
+bottomtag="Trusts & Estates | Business Law | General Counsel"
+actions={[
+  {
+    variant: 'primary',
+    text: 'Contact Me',
+    href: '/contact',
+    target: '_blank',
+  },
+  {
+    variant: 'primary',
+    text: 'See Bio →',
+    href: '/our-team/shafeek',
+    target: '_blank',
+  },
+]}
+  image={{
+    src: '~/assets/images/Shafeek-2.jpg',
+    alt: 'Blueprint Image',
+  }}
+/>
+<TeamCard
+title="Esra Nur Bulan"
+subtitle="Let's Work Together"
+tagline="Attorney at Law"
+bottomtag="Litigation | Corporate Law | Immigration Law"
+actions={[
+   {
+    variant: 'primary',
+    text: 'Contact Me',
+    href: 'https://wa.me/12024402272',
+    target: '_blank',
+  },
+]}
+  image={{
+    src: '~/assets/images/Esra.jpg',
+    alt: 'Blueprint Image',
+  }}
+/>
+<TeamCard
+title="Kemal Sahin"
+subtitle="Let's Work Together"
+tagline="Attorney at Law"
+bottomtag="General Counsel Advisory | Intellectual Property Law"
+actions={[
+  {
+    variant: 'primary',
+    text: 'Contact Me',
+    href: 'https://wa.me/12024402272',
+    target: '_blank',
+  },
+]}
+/>
+<TeamCard
+title="S. Selman Kilic"
+subtitle="Let's Work Together"
+tagline="Attorney at Law"
+bottomtag="Immigration Litigation | Immigration Law "
+actions={[
+  {
+    variant: 'primary',
+    text: 'Contact Me',
+    href: 'https://wa.me/12024402272',
+    target: '_blank',
+  },
+]}
+/>
+<div class="w-full">
+<TeamCard
+subtitle="Dr. Murat Y."
+tagline="Office Manager"
+bottomtag="Management | Istanbul Bar | Law Professor"
+actions={[
+  {
+    variant: 'primary',
+    text: 'Contact Me',
+    href: 'https://wa.me/12024402272',
+    target: '_blank',
+  },
+]}
+/>
+</div>
+<TeamCard
+title=""
+subtitle="Dr. Burak C."
+tagline="Case Manager"  
+bottomtag=""
+/>
+
+<TeamCard
+title=""
+subtitle="Mikayil G."
+tagline="Case Manager"  
+bottomtag=""
+/>
+
+<TeamCard
+title=""
+subtitle="Dr. Ahmet B."
+tagline="Case Manager"  
+bottomtag=""
+/>
+
+<TeamCard
+title=""
+subtitle="Yasin D."
+tagline="Case Manager"  
+bottomtag=""
+/>
+
+<TeamCard
+title=""
+subtitle="Kilare M."
+tagline="Legal Assistant"  
+bottomtag=""
+actions={[
+  {
+    variant: 'primary',
+    text: 'Contact Me',
+    href: 'https://wa.me/12024402272',
+    target: '_blank',
+  },
+]}
+/>
+
+  </div>
+
+  
+  
+</Layout>

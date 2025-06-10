@@ -40,6 +40,10 @@ export const headerData = {
       text: 'Our Team',
       links: [
         {
+          text: 'Meet Our Team',
+          href: getPermalink('/team'),
+        },
+        {
           text: 'Cagatay Ersoy',
           href: getPermalink('/our-team/cagatay'),
         },
@@ -77,6 +81,7 @@ export const footerData = {
     {
       title: 'Our Team',
       links: [
+        { text: 'Meet Our Team', href: getPermalink('/team')},
         { text: 'Cagatay Ersoy', href: getPermalink('/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/our-team/sena') },
         { text: 'Shafeek Seddiq', href: getPermalink('/our-team/shafeek') },
