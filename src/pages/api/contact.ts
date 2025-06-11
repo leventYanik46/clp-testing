@@ -38,7 +38,6 @@ export async function POST({ request }) {
 
     const transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
-      port: 465, // Use 587 for STARTTLS
       secure: true, // `true` for port 465, `false` for port 587
       auth: {
         type: 'OAuth2',
@@ -51,11 +50,14 @@ export async function POST({ request }) {
     });
 
     const mailOptions = {
-      from: `Website Contact Form <${SENDER_EMAIL}>`, // Must be your Gmail
-      to: SENDER_EMAIL, // Send it to yourself
-      replyTo: email, // Allows you to reply directly to the user
+      from: `${name} <${SENDER_EMAIL}>`,
+      to: "info@capitollawpartners.com",
+      replyTo: email,
       subject: `New Contact: ${name}`,
-      text: `Email: ${email}\nPhone: ${phone}\nMessage: ${message}\n-------------`,
+      html: `
+        <p>Email: <a href="mailto:${email}">${email}</a></p>
+        <p>Phone: <a href="tel:${phone}">${phone}</a></p>
+        <hr/><p>${message}</p>`
     };
     await transporter.sendMail(mailOptions);
     return new Response(
@@ -66,7 +68,7 @@ export async function POST({ request }) {
       { status: 200 }
     );
   } catch (error) {
-    console.error('ERROR sending email:', error);
+    console.error('Nodemailer failed to send mail', error);
     return new Response(JSON.stringify({ error: error.message }), { status: 500 });
   }
 }

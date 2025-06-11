@@ -210,17 +210,6 @@
   to   = "/"
   status = 301
 
-# Duplicate entry removed:
-# [[redirects]]
-#   from = "/fusce-tincidunt-commodo-sapien-quis-porttitor-ipsum-fringilla-et/"
-#   to   = "/"
-#   status = 301
-
-[[redirects]]
-  from = "/api/contact"
-  to = "/"
-  status = 301
-
 [[redirects]]
   from = "/case-study/motocycle-security-case/"
   to = "/"
