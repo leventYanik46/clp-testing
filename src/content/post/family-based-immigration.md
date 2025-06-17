@@ -8,6 +8,11 @@ excerpt: "Explains how US citizens and Green Card holders can sponsor certain
   Support (Form I-864), which allows the sponsor to take financial
   responsibility for the immigrant. "
 category: Immigration
+tags:
+  - "law "
+  - family-based immigration
+  - green card
+  - F1 visa
 image: /images/dall·e-2025-06-17-23.38.07-a-high-resolution-wide-format-image-16_9-illustrating-family-based-immigration.-the-scene-features-a-family-with-parents-and-children-walking-toget.webp
 imageWidth: 1790
 imageHeight: 1024
