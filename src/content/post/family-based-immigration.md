@@ -1,6 +1,12 @@
 ---
 title: Family-Based Immigration
-excerpt: Discover the Family Based Immigration
+excerpt: "Explains how US citizens and Green Card holders can sponsor certain
+  family members to immigrate to the US. It discusses who is eligible, the two
+  main visa categories (Immediate Relative and Family Preference), and the
+  application process depending on whether the family member is in the US or
+  abroad. It also explains the financial requirement known as the Affidavit of
+  Support (Form I-864), which allows the sponsor to take financial
+  responsibility for the immigrant. "
 category: Immigration
 image: /images/dall·e-2025-06-17-23.38.07-a-high-resolution-wide-format-image-16_9-illustrating-family-based-immigration.-the-scene-features-a-family-with-parents-and-children-walking-toget.webp
 imageWidth: 1790
