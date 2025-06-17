@@ -54,7 +54,13 @@ export const headerData = {
         { text: 'Shafeek Seddiq', 
           href: getPermalink('/our-team/shafeek') 
         },
-      
+        { text: 'Kemal Sahin', 
+          href: getPermalink('/our-team/kemal') },
+
+        { text: 'S. Selman Kilic', 
+          href: getPermalink('/our-team/selman') },
+        { text: 'Esra Nur Bulan', 
+          href: getPermalink('/our-team/esra') },
       ],
     },
     {
@@ -84,7 +90,9 @@ export const footerData = {
         { text: 'Meet Our Team', href: getPermalink('/team')},
         { text: 'Cagatay Ersoy', href: getPermalink('/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/our-team/sena') },
-        { text: 'Shafeek Seddiq', href: getPermalink('/our-team/shafeek') },
+        { text: 'Kemal Sahin', href: getPermalink('/our-team/kemal') },
+        { text: 'S. Selman Kilic', href: getPermalink('/our-team/selman') },
+
       ],
     },
     {
