@@ -1,6 +1,6 @@
 ---
 title: ⁠Immigration Mandamus Lawsuits
-excerpt: ⁠Immigration Mandamus Lawsuits
+excerpt: Learn about the process of immigration mandamus cases...
 category: ⁠Immigration Mandamus Lawsuits
 tags:
   - immigrationmandamuslawsuit
