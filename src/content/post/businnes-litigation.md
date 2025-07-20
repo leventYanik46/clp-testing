@@ -10,7 +10,7 @@ category: ⁠  ⁠Business Litigation
 image: /images/canva-partner-lawyers-or-attorneys-discussing-a-contract-agreement.-maev6ejcubo.jpg
 imageWidth: 1600
 imageHeight: 1067
-publishDate: 2025-07-01T14:22:00.000Z
+publishDate: 2025-07-18T17:22:00.000+03:00
 metadata:
   canonical: https://capitollawpartners.com/businnes-litigation
   description: What Is Business Litigation? When Does Business Litigation Arise?
