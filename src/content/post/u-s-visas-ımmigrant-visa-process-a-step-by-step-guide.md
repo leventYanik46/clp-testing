@@ -1,6 +1,6 @@
 ---
 title: " U.S. Visas - Immigrant Visa Process - A Step-by-Step Guide "
-excerpt: This guide provides a step-by-step overview of the U.S. immigrant visa
+excerpt: "This guide provides a step-by-step overview of the U.S. immigrant visa
   process—from submitting your initial petition to preparing for the final
   interview. It explains how to navigate key stages such as paying required
   fees, submitting Form I-864, completing the DS-260, and gathering the
@@ -8,7 +8,7 @@ excerpt: This guide provides a step-by-step overview of the U.S. immigrant visa
   materials correctly, monitor your case progress through CEAC, and prepare for
   your embassy interview. Whether you're just beginning or nearing the end of
   your journey, this guide helps ensure you stay informed, organized, and ready
-  for every stage of the process.          ChatGPT’ye sor
+  for every stage of the process. "
 category: "Immigration "
 image: /images/us.visa.jpg
 imageWidth: 6000
