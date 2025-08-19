@@ -15,13 +15,9 @@ metadata:
     get expert guidance from Capitol Law Partners to travel safely and stay
     compliant."
 ---
- 
-
 ### **B1/B2 Visas in the United States: What You Can and Cannot Do** 
 
 Traveling to the United States under a **B1/B2 visa** can open many opportunities, but it also comes with clear limitations. At **Capitol Law Partners**, we often receive questions from clients about what activities are legally permitted on these visas and which ones may cause immigration issues. Below, we break it down for you in a practical, easy-to-understand way. 
-
- 
 
 ### **What You Can Do with a B1/B2 Visa** 
 
@@ -34,8 +30,6 @@ A **B1 visa** is designed for **business-related activities**, while a **B2 visa
 
 These activities are considered temporary and non-immigrant in nature, which means they align with the purpose of the B1/B2 visa. 
 
- 
-
 ### **What You Cannot Do with a B1/B2 Visa** 
 
 While the visa allows for multiple activities, there are **strict limitations** you must respect: 
@@ -47,8 +41,6 @@ While the visa allows for multiple activities, there are **strict limitations** 
 
 Violating these restrictions can lead to serious immigration consequences, including visa revocation or future entry bans. 
 
- 
-
 #### **Why Legal Guidance Matters** 
 
-Immigration rules are detailed and sometimes confusing. Many travelers unintentionally overstep their visa limits, which may affect future applications. At **Capitol Law Partners**, our attorneys provide **personalized guidance** to help you maximize the opportunities of your B1/B2 visa while staying compliant with U.S. immigration law.
+Immigration rules are detailed and sometimes confusing. Many travelers unintentionally overstep their visa limits, which may affect future applications. At **[Capitol Law Partners](https://capitollawpartners.com/)**, our attorneys provide **personalized guidance** to help you maximize the opportunities of your B1/B2 visa while staying compliant with U.S. immigration law.
