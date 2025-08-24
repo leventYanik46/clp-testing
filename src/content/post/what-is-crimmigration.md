@@ -8,7 +8,7 @@ category: İmmigration
 image: /images/usa.jpg
 imageWidth: 4722
 imageHeight: 3062
-publishDate: 2025-08-20T17:11:00.000+03:00
+publishDate: 2025-08-22T17:11:00.000+03:00
 metadata:
   description: Learn how criminal charges impact immigration status. Capitol Law
     Partners offers expert crimmigration defense to protect your rights in the
