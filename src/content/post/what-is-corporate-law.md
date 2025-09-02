@@ -9,7 +9,7 @@ category: Corporate & Business Law
 image: /images/pexels-fauxels-3184430.jpg
 imageWidth: 6000
 imageHeight: 4000
-publishDate: 2025-09-29T00:22:00.000+03:00
+publishDate: 2025-08-29T00:22:00.000+03:00
 metadata:
   canonical: https://capitollawpartners.com/what-is-corporate-law
   description: Capitol Law Partners explains corporate law essentials—formation,
