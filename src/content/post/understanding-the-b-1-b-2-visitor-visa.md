@@ -7,7 +7,7 @@ category: Green Card
 image: /images/visa.jpg
 imageWidth: 6186
 imageHeight: 4124
-publishDate: 2025-09-03T19:42:00.000+03:00
+publishDate: 2025-09-04T19:42:00.000+03:00
 metadata:
   canonical: https://capitollawpartners.com/understanding-the-b-1-b-2-visitor-visa-business-and-tourism-in-the-united-states
   description: "Understanding the B-1/B-2 Visitor Visa: Business and Tourism in
