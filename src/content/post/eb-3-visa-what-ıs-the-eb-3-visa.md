@@ -5,7 +5,7 @@ excerpt: " The EB-3 visa offers a pathway to U.S. permanent residency for
   sponsorship. Capitol Law Partners assists both applicants and employers
   through labor certification, petition filings, and immigration strategy to
   secure Green Card approval. "
-category: Green Card
+category: Immigrant Visas
 image: /images/eb-1.jpg
 imageWidth: 6000
 imageHeight: 4000
