@@ -76,7 +76,11 @@ It was stated that those with H-1B visas will be able to enter and exit the coun
 
  Yes, it could be struck down or suspended. 
 
- 
+
+
+[*🔗* We also announced on our social media account!](https://www.instagram.com/p/DO-Wp-vDgFW/?img_index=1)
+
+
 
 ### What is an H-1 Visa?  
 
@@ -86,11 +90,12 @@ Currently, approximately 85,000 H-1B visas are issued each year. Of these visas,
 
 This change, a reflection of the “America First” rhetoric, forces technology companies to raise salaries while also creating a significant cost for them. In this process, only “high value-added” talent will be accepted into the country, American workers will be given priority, and others will be left out. 
 
-
-
-
 However, this policy may also have negative consequences. Highly qualified individuals may turn to countries such as Canada, Germany, Singapore, or China, which offer more flexible immigration policies. This situation could damage the US's global appeal for talent. 
 
- 
-
 On the other hand, visa types such as the “Gold Card” and “Platinum Card” offer wealthy foreigners quick residency and tax advantages in exchange for investment or donations. Thus, while obtaining a Green Card becomes nearly impossible for a professional pursuing a career on an H-1B visa, the doors will be wide open for those with wealth.
+
+[We are also on social media! Click and check out our other activities.](https://www.instagram.com/capitollawpartners/)
+
+![](/images/43ff11f8-bfc3-40f3-a65e-da5d9e294acf.jpeg)
+
+[](https://www.instagram.com/capitollawpartners/)
