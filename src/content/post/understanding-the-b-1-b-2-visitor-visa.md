@@ -74,3 +74,13 @@ At *[Capitol Law Partners](https://capitollawpartners.com)*, we guide clients th
 \-Providing long-term immigration strategy if future U.S. work or residency is desired. 
 
 Our experience ensures that your application is not just processed but positioned for success.
+
+
+
+[Contact Us Now.](https://capitollawpartners.com/contact)
+
+[](https://api.whatsapp.com/send/?phone=12024402272&text&type=phone_number&app_absent=0)Whatsapp [+1 (202) 440-2272](https://api.whatsapp.com/send/?phone=12024402272&text&type=phone_number&app_absent=0)
+
+[](https://api.whatsapp.com/send/?phone=12024402272&text&type=phone_number&app_absent=0)Phone [+1 (202) 440-2272](tel:+12024402272)
+
+[info@capitollawpartners.com](mailto:info@capitollawpartners.com)
