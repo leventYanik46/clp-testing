@@ -12,8 +12,7 @@ publishDate: 2025-08-18T17:35:00.000+03:00
 metadata:
   canonical: https://capitollawpartners.com/b1-b2-visas-in-the-united-states
   description: "B1/B2 visas in the U.S.: Discover what you can and cannot do, and
-    get expert guidance from Capitol Law Partners to travel safely and stay
-    compliant."
+    get expert guidance from Capitol Law Partners. What is B1/ B2 Visa?.."
 ---
 ### **B1/B2 Visas in the United States: What You Can and Cannot Do** 
 
