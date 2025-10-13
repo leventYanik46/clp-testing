@@ -10,7 +10,7 @@ imageWidth: 6000
 imageHeight: 4000
 publishDate: 2025-09-26T13:42:00.000+03:00
 metadata:
-  canonical: https://capitollawpartners.com/
+  canonical: https://capitollawpartners.com/how-to-get-a-green-card
   description: How to Get a Green Card? Employment-Based Green Card. Applying
     Through a Company. PERM Application. Can I include my family?..
 ---
