@@ -1,5 +1,5 @@
 ---
-title: Small Business Intellectual Property Protection Types
+title: Small Business Intellectual Property Protection Types in US
 excerpt: "This guide provides small business owners with a comprehensive
   overview of intellectual property protection, focusing on how trademarks,
   copyrights, patents, and trade secrets safeguard brand value and
