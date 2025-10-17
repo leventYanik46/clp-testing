@@ -54,6 +54,8 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     category: rawCategory,
     author,
     draft = false,
+    // allow editors to set a language or array of languages on the post frontmatter
+    lang: rawLang = undefined,
     metadata = {},
   } = data;
 
@@ -97,6 +99,8 @@ const getNormalizedPost = async (post: CollectionEntry<'post'>): Promise<Post> =
     // or 'content' in case you consume from API
 
     readingTime: remarkPluginFrontmatter?.readingTime,
+    // normalize lang to either a string or array
+    lang: rawLang,
   };
 };
 
@@ -176,21 +180,51 @@ export const findLatestPosts = async ({ count }: { count?: number }): Promise<Ar
 /** */
 export const getStaticPathsBlogList = async ({ paginate }: { paginate: PaginateFunction }) => {
   if (!isBlogEnabled || !isBlogListRouteEnabled) return [];
-  return paginate(await fetchPosts(), {
-    params: { blog: BLOG_BASE || undefined },
-    pageSize: blogPostsPerPage,
-  });
+  const posts = await fetchPosts();
+
+  // collect languages present in posts (default to 'en' when unspecified)
+  const languages = Array.from(
+    new Set(
+      posts.flatMap((p) => {
+        const pl = p.lang;
+        if (Array.isArray(pl)) return pl;
+        if (typeof pl === 'string') return [pl];
+        return ['en'];
+      })
+    )
+  );
+
+  return languages.flatMap((lang) =>
+    paginate(
+      posts.filter((post) => {
+        const postLang = post.lang;
+        if (Array.isArray(postLang)) return postLang.includes(lang);
+        if (typeof postLang === 'string') return postLang === lang;
+        return lang === 'en';
+      }),
+      {
+        params: { blog: BLOG_BASE ? `${lang}/${BLOG_BASE}` : undefined },
+        pageSize: blogPostsPerPage,
+        props: { lang },
+      }
+    )
+  );
 };
 
 /** */
 export const getStaticPathsBlogPost = async () => {
   if (!isBlogEnabled || !isBlogPostRouteEnabled) return [];
-  return (await fetchPosts()).flatMap((post) => ({
-    params: {
-      blog: post.permalink,
-    },
-    props: { post },
-  }));
+  const posts = await fetchPosts();
+  return posts.flatMap((post) => {
+    const postLang = post.lang;
+    const langs = Array.isArray(postLang) ? postLang : postLang ? [postLang] : ['en'];
+    return langs.map((lang) => ({
+      params: {
+        blog: `${lang}/${post.permalink}`,
+      },
+      props: { post, lang },
+    }));
+  });
 };
 
 /** */
@@ -206,13 +240,31 @@ export const getStaticPathsBlogCategory = async ({ paginate }: { paginate: Pagin
   });
 
   return Array.from(Object.keys(categories)).flatMap((categorySlug) =>
-    paginate(
-      posts.filter((post) => post.category?.slug && categorySlug === post.category?.slug),
-      {
-        params: { category: categorySlug, blog: CATEGORY_BASE || undefined },
-        pageSize: blogPostsPerPage,
-        props: { category: categories[categorySlug] },
-      }
+    // create category listing per language
+    Array.from(
+      new Set(
+        posts.flatMap((p) => {
+          const pl = p.lang;
+          if (Array.isArray(pl)) return pl;
+          if (typeof pl === 'string') return [pl];
+          return ['en'];
+        })
+      )
+    ).flatMap((lang) =>
+      paginate(
+        posts.filter((post) => {
+          if (!post.category?.slug || categorySlug !== post.category.slug) return false;
+          const postLang = post.lang;
+          if (Array.isArray(postLang)) return postLang.includes(lang);
+          if (typeof postLang === 'string') return postLang === lang;
+          return lang === 'en';
+        }),
+        {
+          params: { category: categorySlug, blog: CATEGORY_BASE ? `${lang}/${CATEGORY_BASE}` : undefined },
+          pageSize: blogPostsPerPage,
+          props: { category: categories[categorySlug], lang },
+        }
+      )
     )
   );
 };
@@ -232,13 +284,31 @@ export const getStaticPathsBlogTag = async ({ paginate }: { paginate: PaginateFu
   });
 
   return Array.from(Object.keys(tags)).flatMap((tagSlug) =>
-    paginate(
-      posts.filter((post) => Array.isArray(post.tags) && post.tags.find((elem) => elem.slug === tagSlug)),
-      {
-        params: { tag: tagSlug, blog: TAG_BASE || undefined },
-        pageSize: blogPostsPerPage,
-        props: { tag: tags[tagSlug] },
-      }
+    // create tag listing per language
+    Array.from(
+      new Set(
+        posts.flatMap((p) => {
+          const pl = p.lang;
+          if (Array.isArray(pl)) return pl;
+          if (typeof pl === 'string') return [pl];
+          return ['en'];
+        })
+      )
+    ).flatMap((lang) =>
+      paginate(
+        posts.filter((post) => {
+          if (!Array.isArray(post.tags) || !post.tags.find((elem) => elem.slug === tagSlug)) return false;
+          const postLang = post.lang;
+          if (Array.isArray(postLang)) return postLang.includes(lang);
+          if (typeof postLang === 'string') return postLang === lang;
+          return lang === 'en';
+        }),
+        {
+          params: { tag: tagSlug, blog: TAG_BASE ? `${lang}/${TAG_BASE}` : undefined },
+          pageSize: blogPostsPerPage,
+          props: { tag: tags[tagSlug], lang },
+        }
+      )
     )
   );
 };
