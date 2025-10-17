@@ -1,0 +1,12 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import schedule from '~/locales/en/schedule.json';
+
+const { metadata, attorneys } = schedule;
+---
+<Layout metadata={metadata}>
+  {attorneys.map((attorney) => (
+    <CallToAction {...attorney} />
+  ))}
+</Layout>

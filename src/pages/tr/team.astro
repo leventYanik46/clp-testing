@@ -1,0 +1,17 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import TeamCard from '~/components/widgets/teamcard.astro';
+import data from '~/locales/en/team.json';
+
+const { metadata, sections } = data;
+---
+
+<Layout metadata={metadata}>
+  {sections.map((section) => (
+    <div class={section.wrapper}>
+      {section.members.map((member) => (
+        <TeamCard {...member} />
+      ))}
+    </div>
+  ))}
+</Layout>

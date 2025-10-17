@@ -1,0 +1,10 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Features5 from '~/components/widgets/Features.astro';
+import data from '~/locales/en/evaluations.json';
+
+const { metadata, features } = data;
+---
+<Layout metadata={metadata}>
+  <Features5 {...features} />
+</Layout>

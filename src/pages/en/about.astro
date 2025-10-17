@@ -1,0 +1,65 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import ItemGrid3 from '~/components/ui/ItemGrid3.astro';
+import Hero3 from '~/components/widgets/hero3.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import data from '~/locales/en/about.json';
+
+const { metadata, hero, heroImage, practiceAreas, values, locations, contact } = data;
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero3
+    tagline={hero.tagline}
+    image={heroImage}
+  >
+    <Fragment slot="title">
+      {hero.title}
+    </Fragment>
+
+
+    <Fragment slot="subtitle">
+      <Fragment set:html={hero.subtitleHtml} />
+    </Fragment>
+  </Hero3>
+    
+      <!-- Features3 Widget for Practice Areas ************** -->
+      <Features3
+        title={practiceAreas.title}
+        subtitle={practiceAreas.subtitle}
+        columns={3}
+        isBeforeContent={true}
+        items={practiceAreas.items}
+      />
+    
+      <!-- Features3 Widget for Additional Practice Areas ************** -->
+
+      <!-- Steps2 Widget for Values ****************** -->
+      <Steps2
+        title={values.title}
+        subtitle={values.subtitle}
+        items={values.items}
+      />
+      <!-- ItemGrid3 Widget for Office Locations ************** -->
+      <ItemGrid3
+        items={locations}
+        columns={4}
+        classes={{
+          container: 'gap-4 md:gap-6',
+          panel: 'rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white p-6',
+          icon: 'w-16 h-16 mb-6 text-primary',
+        }}
+      />
+    
+      <!-- Features2 Widget for Contact ****************** -->
+      <Features2
+        title={contact.title}
+        tagline={contact.tagline}
+        columns={2}
+        items={contact.items}
+      />
+    </Layout>
