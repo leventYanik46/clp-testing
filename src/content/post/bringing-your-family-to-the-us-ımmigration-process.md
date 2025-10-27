@@ -8,7 +8,7 @@ excerpt: The most critical elements in the US immigration process are preparing
   they make their clients' journey to build a new life in America reliable,
   fast, and stress-free.
 category: "Immigration "
-lang: en
+lang: tr
 image: /images/bringg-fam.jpg
 imageWidth: 6016
 imageHeight: 4016
