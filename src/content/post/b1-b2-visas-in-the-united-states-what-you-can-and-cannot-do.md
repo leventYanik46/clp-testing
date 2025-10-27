@@ -5,6 +5,7 @@ excerpt: "The B1/B2 visa is a flexible option for short-term travel, covering
   medical visits, and short-term courses. However, it is not a work or study
   visa, and misuse can have long-term immigration consequences. "
 category: Green Card
+lang: tr
 image: /images/b1-b2visa.jpg
 imageWidth: 1280
 imageHeight: 720
