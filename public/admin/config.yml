@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: yourusername/capitol-law-partners
   branch: main
+  base_url: https://clptesting.netlify.app
+  auth_endpoint: /.netlify/functions/auth
 
 media_folder: "public/images"
 public_folder: "/images"
