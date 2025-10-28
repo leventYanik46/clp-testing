@@ -1,0 +1,118 @@
+---
+const auth0Config = {
+  domain: import.meta.env.PUBLIC_AUTH0_DOMAIN,
+  clientId: import.meta.env.PUBLIC_AUTH0_CLIENT_ID,
+  redirectUri: import.meta.env.PUBLIC_AUTH0_REDIRECT_URI,
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link href="/admin/config.yml" rel="cms-config-url" type="text/yaml" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <div
+      id="auth0-status"
+      style="position:fixed;top:1rem;left:50%;transform:translateX(-50%);background:#0b2240;color:#fff;padding:0.75rem 1.5rem;border-radius:999px;font-family:sans-serif;font-size:0.9rem;box-shadow:0 0.75rem 1.5rem rgba(0,0,0,0.15);"
+      hidden
+    >
+      Signing in with Auth0…
+    </div>
+
+    <script is:inline type="module" define:vars={{ auth0Config }}>
+      import createAuth0Client from 'https://cdn.auth0.com/js/auth0-spa-js/2.5/auth0-spa-js.production.esm.js';
+
+      const { domain, clientId, redirectUri } = auth0Config;
+      const statusEl = document.getElementById('auth0-status');
+
+      if (!domain || !clientId) {
+        if (statusEl) {
+          statusEl.hidden = false;
+          statusEl.textContent = 'Missing Auth0 configuration. Check PUBLIC_AUTH0_* env vars.';
+        }
+        throw new Error('Auth0 configuration missing; set PUBLIC_AUTH0_CLIENT_ID and PUBLIC_AUTH0_DOMAIN.');
+      }
+
+      const defaultRedirect = () => `${window.location.origin}/admin/`;
+      const redirectTarget = redirectUri || defaultRedirect();
+
+      const auth0Client = await createAuth0Client({
+        domain,
+        clientId,
+        authorizationParams: {
+          redirect_uri: redirectTarget,
+        },
+        cacheLocation: 'localstorage',
+        useRefreshTokens: true,
+      });
+
+      window.auth0Client = auth0Client;
+
+      try {
+        if (window.location.search.includes('code=') && window.location.search.includes('state=')) {
+          if (statusEl) {
+            statusEl.hidden = false;
+            statusEl.textContent = 'Completing Auth0 login…';
+          }
+          await auth0Client.handleRedirectCallback();
+          window.history.replaceState({}, document.title, window.location.pathname);
+        }
+      } catch (error) {
+        console.error('Auth0 redirect handling failed', error);
+        if (statusEl) {
+          statusEl.hidden = false;
+          statusEl.textContent = 'Auth0 login failed. See console for details.';
+        }
+      }
+
+      const authenticated = await auth0Client.isAuthenticated();
+      if (!authenticated) {
+        if (statusEl) {
+          statusEl.hidden = false;
+          statusEl.textContent = 'Redirecting to Auth0…';
+        }
+        await auth0Client.loginWithRedirect({
+          authorizationParams: {
+            redirect_uri: redirectTarget,
+          },
+        });
+        throw new Error('Auth0 redirect in progress');
+      }
+
+      if (statusEl) {
+        statusEl.hidden = true;
+      }
+
+      window.auth0 = {
+        login(options) {
+          return auth0Client.loginWithRedirect(options);
+        },
+        logout(options) {
+          const defaultOptions = { logoutParams: { returnTo: redirectTarget } };
+          return auth0Client.logout({ ...defaultOptions, ...options });
+        },
+        async isAuthenticated() {
+          return auth0Client.isAuthenticated();
+        },
+        getUser(options) {
+          return auth0Client.getUser(options);
+        },
+        getToken(options) {
+          return auth0Client.getTokenSilently(options);
+        },
+        getClient() {
+          return auth0Client;
+        },
+      };
+
+      document.dispatchEvent(new CustomEvent('auth0-ready', { detail: window.auth0 }));
+    </script>
+
+    <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@ import Header from '~/components/widgets/Header.astro';
 import Footer from '~/components/widgets/Footer.astro';
 import Announcement from '~/components/widgets/Announcement.astro';
 import Chatbox from '~/components/widgets/Chatbox.astro'; // Import Chatbox
-import { headerData, headerDataTr, footerData } from '~/navigation';
+import { headerData, headerDataTr, footerData, footerDataTr } from '~/navigation';
 import { getLangFromUrl } from '~/i18n/utils';
 import type { MetaData } from '~/types';
 import type { Props as HeaderProps } from '~/components/widgets/Header.astro';
@@ -17,6 +17,8 @@ const { metadata } = Astro.props;
 // determine language from the current URL and pick the appropriate header dataset
 const lang = getLangFromUrl(new URL(Astro.url));
 const header = lang === 'tr' ? headerDataTr : headerData;
+// pick footer data set based on detected language (same logic as header)
+const footer = lang === 'tr' ? footerDataTr : footerData;
 ---
 
 <Layout metadata={metadata}>
@@ -31,7 +33,7 @@ const header = lang === 'tr' ? headerDataTr : headerData;
     <slot />
   </main>
   <slot name="footer">
-    <Footer {...footerData} />
+    <Footer {...footer} />
   </slot>
   <Chatbox /> <!-- Add Chatbox here -->
 </Layout>

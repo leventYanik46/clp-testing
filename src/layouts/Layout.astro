@@ -10,6 +10,7 @@ import Metadata from '~/components/common/Metadata.astro';
 import SiteVerification from '~/components/common/SiteVerification.astro';
 import Analytics from '~/components/common/Analytics.astro';
 import BasicScripts from '~/components/common/BasicScripts.astro';
+import Auth0Scripts from '~/components/common/Auth0Scripts.astro';
 
 // Comment the line below to disable View Transitions
 import { ViewTransitions } from 'astro:transitions';
@@ -66,19 +67,7 @@ const { language, textDirection } = I18N;
     <slot />
 
     <BasicScripts />
-    <!-- Load Netlify Identity widget -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>    
-    <script defer>
-      const ni = window.netlifyIdentity;
-      if (!ni) return;
-      ni.on("init", () => {
-        if (window.location.hash.includes("invite_token")) {
-          ni.open("signup");
-          window.history.replaceState(null, null, "/#");
-        }
-      });
-      ni.init();
-    </script>
+    <Auth0Scripts />
     
   </body>
 </html>

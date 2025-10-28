@@ -199,6 +199,22 @@ export interface ItemGrid {
   classes?: Record<string, string>;
 }
 
+declare global {
+  interface Window {
+    auth0Client?: import('@auth0/auth0-spa-js').Auth0Client;
+    auth0?: {
+      login: (options?: import('@auth0/auth0-spa-js').RedirectLoginOptions) => Promise<void>;
+      logout: (options?: import('@auth0/auth0-spa-js').LogoutOptions) => Promise<void>;
+      isAuthenticated: () => Promise<boolean>;
+      getUser: typeof import('@auth0/auth0-spa-js').Auth0Client['getUser'];
+      getToken: typeof import('@auth0/auth0-spa-js').Auth0Client['getTokenSilently'];
+      getClient: () => import('@auth0/auth0-spa-js').Auth0Client;
+    };
+  }
+}
+
+export {};
+
 export interface Collapse {
   iconUp?: string;
   iconDown?: string;
