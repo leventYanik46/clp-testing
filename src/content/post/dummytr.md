@@ -4,7 +4,7 @@ title: "Unlocking the EB-2 NIW: How to Qualify for a National Interest Waiver"
 excerpt: "Learn how to navigate the EB-2 National Interest Waiver process, including eligibility criteria and application steps for permanent residency."
 image: ""
 category: Immigration
-lang: "en"
+lang: "tr"
 tags:
   - EB-2
   - NIW
