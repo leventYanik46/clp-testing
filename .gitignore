@@ -26,4 +26,3 @@ pnpm-lock.yaml
 .netlify
 
 # Prevent new blog posts from being tracked
-src/content/post/*
