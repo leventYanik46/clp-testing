@@ -1,23 +1,29 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Image from '~/components/common/Image.astro';
-import { getPermalink } from '~/utils/permalinks';
 import { getEntry} from 'astro:content';
 import { supportedLang } from '~/utils/lib/languageParser';
 
 export function getStaticPaths() {
-  return supportedLang.map((lang) => ({
-    params: { lang },
+  // Return string (or undefined) for the `lang` param because this
+  // file lives under a dynamic folder `[...]lang` and Astro expects
+  // a string/number/undefined for that segment in this case.
+  return supportedLang.map((l) => ({
+    params: { lang: l || undefined },
   }));
 }
 
-const { lang } = Astro.params;
-
+// Normalize Astro.params.lang to a single string and fall back to the
+// configured default language when missing.
+const raw = Astro.params?.lang;
+const resolvedLang = Array.isArray(raw) ? raw[0] : typeof raw === 'string' ? raw : undefined;
+const lang = resolvedLang ?? (await import('../../../config/config.json')).default?.settings?.default_language ?? 'en';
+// This page is for 'cagatay', so the slug is always 'cagatay' here
 let langFolder = lang;
 if (lang === 'en') langFolder = 'english';
 if (lang === 'tr') langFolder = 'turkish';
 const entry = await getEntry('practiceArea', `${langFolder}/general-counsel-services`);
-if (!entry) throw new Error('Team member not found for language: ' + lang);
+if (!entry) throw new Error('Practice area not found for language: ' + lang);
 
 const { metadata, post } = entry.data;
 
