@@ -19,9 +19,11 @@ export function getStaticPaths() {
   return paths;
 }
 
-const { lang } = Astro.params;
+const routeLang = Astro.params?.lang;
+const propLang = Astro.props?.lang;
+const lang = (typeof routeLang !== 'undefined' ? routeLang : propLang) ?? '';
 
-const homepage = await getListPage("homepage", lang as keyof ContentEntryMap);
+const homepage = await getListPage("homepage", (lang || undefined) as keyof ContentEntryMap);
 if (!homepage || homepage.length === 0 || !homepage[0].data) {
   throw new Error("Homepage content not found for language: " + lang);
 }

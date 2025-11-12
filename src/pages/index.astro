@@ -1,14 +1,13 @@
 ---
 import config from '~/config/config.json';
-// If default_language_in_subdir is true, redirect root to e.g. `/en`.
-// If false, keep root at `/`.
-const target = config.settings.default_language_in_subdir
-	? `/${config.settings.default_language}`
-	: "/";
+import HomePage from './[...lang]/index.astro';
+
+const shouldRedirect = config.settings.default_language_in_subdir;
+const redirectTarget = `/${config.settings.default_language}`;
+
+if (shouldRedirect) {
+  return Astro.redirect(redirectTarget);
+}
 ---
-<html lang="en">
-	<head>
-		<meta http-equiv="refresh" content={`0;url=${target}`} />
-	</head>
-	<body />
-</html>
+
+<HomePage lang="" />
