@@ -1,3 +1,4 @@
+import { glob } from 'astro/loaders';
 import { z, defineCollection } from 'astro:content';
 
 const metadataDefinition = () =>
@@ -130,7 +131,7 @@ const callToActionSchema = z.object({
 const locationSchema = z.object({
   title: z.string(),
   description: z.string().optional(),
-  image: imageSchema.optional(),
+  image: imageSchema,
 });
 
 const contactItemSchema = z.object({
@@ -236,8 +237,8 @@ const teamMemberStepSectionSchema = z.object({
   classes: z.record(z.string()).optional(),
 });
 
-const homeCollection = defineCollection({
-  type: 'content',
+const homepageCollection = defineCollection({
+  loader: glob({ pattern: '**/-index.{md,mdx}', base: 'src/content/homepage' }),
   schema: z.object({
     metadata: metadataDefinition(),
     hero: heroWithHighlightSchema,
@@ -251,7 +252,7 @@ const homeCollection = defineCollection({
 });
 
 const aboutCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/-index.{md,mdx}', base: 'src/content/about' }),
   schema: z.object({
     metadata: metadataDefinition(),
     hero: heroBasicSchema.extend({
@@ -266,7 +267,7 @@ const aboutCollection = defineCollection({
 });
 
 const contactCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/-index.{md,mdx}', base: 'src/content/contact' }),
   schema: z.object({
     metadata: metadataDefinition(),
     hero: heroBasicSchema.extend({
@@ -285,7 +286,7 @@ const contactCollection = defineCollection({
 });
 
 const locationsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/-index.{md,mdx}', base: 'src/content/locations' }),
   schema: z.object({
     metadata: metadataDefinition(),
     hero: heroBasicSchema.extend({
@@ -307,7 +308,7 @@ const locationsCollection = defineCollection({
 });
 
 const scheduleCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/-index.{md,mdx}', base: 'src/content/schedule' }),
   schema: z.object({
     metadata: metadataDefinition(),
     attorneys: z.array(teamCardSchema.extend({
@@ -317,7 +318,7 @@ const scheduleCollection = defineCollection({
 });
 
 const evaluationsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/-index.{md,mdx}', base: 'src/content/evaluations' }),
   schema: z.object({
     metadata: metadataDefinition(),
     features: featureSectionSchema,
@@ -325,7 +326,7 @@ const evaluationsCollection = defineCollection({
 });
 
 const teamCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/-index.{md,mdx}', base: 'src/content/team' }),
   schema: z.object({
     metadata: metadataDefinition(),
     sections: z.array(teamSectionSchema),
@@ -333,7 +334,7 @@ const teamCollection = defineCollection({
 });
 
 const teamMemberCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.{md,mdx}', base: 'src/content/teamMember' }),
   schema: z.object({
     metadata: metadataDefinition(),
     profile: teamMemberProfileSchema,
@@ -345,7 +346,7 @@ const teamMemberCollection = defineCollection({
 });
 
 const practiceAreaCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.{md,mdx}', base: 'src/content/practiceArea' }),
   schema: z.object({
     metadata: metadataDefinition(),
     post: z.object({
@@ -357,7 +358,7 @@ const practiceAreaCollection = defineCollection({
 });
 
 const notFoundCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/-index.{md,mdx}', base: 'src/content/notFound' }),
   schema: z.object({
     metadata: metadataDefinition(),
     heading: z.object({
@@ -374,8 +375,26 @@ const notFoundCollection = defineCollection({
     }),
   }),
 });
+const postCollection = defineCollection({
+  schema: z.object({
+    publishDate: z.date().optional(),
+    updateDate: z.date().optional(),
+    draft: z.boolean().optional(),
+
+    title: z.string(),
+    excerpt: z.string().optional(),
+    image: z.string().optional(),
+
+    category: z.string().optional(),
+    tags: z.array(z.string()).optional(),
+    author: z.string().optional(),
+    lang: z.enum(['en', 'tr']).optional().default('en'),
+    metadata: metadataDefinition(),
+  }),
+});
 export const collections = {
-  home: homeCollection,
+  post: postCollection,
+  homepage: homepageCollection,
   about: aboutCollection,
   contact: contactCollection,
   locations: locationsCollection,

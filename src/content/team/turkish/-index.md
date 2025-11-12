@@ -1,0 +1,143 @@
+---
+metadata:
+  title: Ekibimizle Tanışın
+  description: Ekibimizle tanışın ve uzmanlarımızdan randevu alın.
+sections:
+  - wrapper: flex flex-wrap justify-center gap-4
+    members:
+      - title: Çağatay Ersoy
+        tagline: Avukat
+        subtitle: Birlikte Çalışalım
+        bottomtag: İş Göçmenliği | İş Hukuku | Marka Hukuku
+        actions:
+          - variant: primary
+            text: Randevu planlayın
+            href: https://calendar.app.google/UGuCPvGbEV1b3acWA
+            target: _blank
+          - variant: primary
+            text: Biyografiyi Gör →
+            href: /our-team/cagatay
+            target: _blank
+        image:
+          src: ~/assets/images/cagatay-bw.png
+          alt: Randevu planlayın
+      - title: Sena Şahin
+        tagline: Avukat
+        subtitle: Birlikte Çalışalım
+        bottomtag: Dava | Şirketler Hukuku | Göçmenlik Hukuku
+        actions:
+          - variant: primary
+            text: Randevu planlayın
+            href: https://calendar.app.google/j5WDBFZPNocPCB7CA
+            target: _blank
+          - variant: primary
+            text: Biyografiyi Gör →
+            href: /our-team/sena
+            target: _blank
+        image:
+          src: ~/assets/images/Sena-bw.jpg
+          alt: Randevu planlayın
+      - title: Shafeek Seddiq
+        tagline: Avukat
+        subtitle: Birlikte Çalışalım
+        bottomtag: Vasiyetler & Miras | İş Hukuku | Genel Hukuk Müşavirliği
+        actions:
+          - variant: primary
+            text: İletişime Geç
+            href: /contact
+            target: _blank
+          - variant: primary
+            text: Biyografiyi Gör →
+            href: /our-team/shafeek
+            target: _blank
+        image:
+          src: ~/assets/images/shafeek-bw.png
+          alt: Plan görseli
+      - title: Esra Nur Bulan
+        tagline: Avukat
+        subtitle: Birlikte Çalışalım
+        bottomtag: Göçmenlik Davaları | Göçmenlik
+        actions:
+          - variant: primary
+            text: İletişime Geç
+            href: https://wa.me/12024402272
+            target: _blank
+          - variant: primary
+            text: Biyografiyi Gör →
+            href: /our-team/esra
+            target: _blank
+        image:
+          src: ~/assets/images/esra-bw.png
+          alt: Plan görseli
+      - title: Kemal Şahin
+        tagline: Stajyer Avukat
+        subtitle: Birlikte Çalışalım
+        bottomtag: Genel Hukuk Müşavirliği | Fikri Mülkiyet Hukuku
+        actions:
+          - variant: primary
+            text: İletişime Geç
+            href: https://wa.me/12024402272
+            target: _blank
+          - variant: primary
+            text: Biyografiyi Gör →
+            href: /our-team/kemal
+            target: _blank
+      - title: S. Selman Kılıç
+        tagline: Avukat
+        subtitle: Birlikte Çalışalım
+        bottomtag: Dava | Şirketler Hukuku | Göçmenlik Hukuku
+        actions:
+          - variant: primary
+            text: İletişime Geç
+            href: https://wa.me/12024402272
+            target: _blank
+          - variant: primary
+            text: Biyografiyi Gör →
+            href: /our-team/selman
+            target: _blank
+  - wrapper: w-full
+    members:
+      - title: null
+        subtitle: Dr. Murat Y.
+        tagline: Ofis Müdürü
+        actions:
+          - variant: primary
+            text: İletişime Geç
+            href: https://wa.me/12024402272
+            target: _blank
+  - wrapper: w-full grid grid-cols-1 md:grid-cols-2 gap-4
+    members:
+      - title: null
+        subtitle: Dr. Burak C.
+        tagline: Dosya Yöneticisi
+      - title: null
+        subtitle: Mikayil G.
+        tagline: Dosya Yöneticisi
+      - title: null
+        subtitle: Dr. Ahmet B.
+        tagline: Dosya Yöneticisi
+      - title: null
+        subtitle: Yasin D.
+        tagline: Dosya Yöneticisi
+  - wrapper: w-full
+    members:
+      - title: null
+        subtitle: Kilare M.
+        tagline: Hukuk Asistanı
+        actions:
+          - variant: primary
+            text: İletişime Geç
+            href: https://wa.me/12024402272
+            target: _blank
+  - wrapper: w-full grid grid-cols-1 md:grid-cols-3 gap-4
+    members:
+      - title: null
+        subtitle: Melike A.
+        tagline: Hukuk Asistanı
+      - title: null
+        subtitle: Feray H.
+        tagline: Hukuk Asistanı
+      - title: null
+        subtitle: Scott King
+        tagline: Pazarlama Direktörü
+---

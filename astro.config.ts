@@ -11,6 +11,15 @@ import type { AstroIntegration } from 'astro';
 import astrowind from './vendor/integration';
 import { readingTimeRemarkPlugin, responsiveTablesRehypePlugin, lazyImagesRehypePlugin } from './src/utils/frontmatter';
 import netlify from '@astrojs/netlify';
+import config from "./src/config/config.json";
+import languagesJSON from "./src/config/language.json";
+const { default_language } = config.settings;
+
+const supportedLang = [...languagesJSON.map((lang) => lang.languageCode)];
+const disabledLanguages = config.settings.disable_languages;
+const filteredSupportedLang = supportedLang.filter(
+  (lang) => !disabledLanguages.includes(lang)
+);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -31,6 +40,7 @@ export default defineConfig({
         return !['/tag/', '/category', '/archive/'].some(excl => page.includes(excl));
       }
     }),
+
     mdx(),
     icon({
       include: {
@@ -89,12 +99,8 @@ export default defineConfig({
       },
     },
   },
-
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'tr'],
-    routing: {
-      prefixDefaultLocale: true,
-    },
+    locales: filteredSupportedLang,
+    defaultLocale: default_language,
   },
 });

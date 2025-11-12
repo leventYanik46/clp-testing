@@ -11,7 +11,7 @@ tags:
   - immigration
   - permanent residency
 metadata:
-  canonical: https://yourdomain.com/unlocking-eb2-niw
+  canonical: https://yourdomain.com/en/unlocking-eb2-niw
   description: "Discover the EB-2 national interest waiver: a streamlined path to US permanent residency. Learn eligibility, benefits, and steps for exceptional professionals."
 ---
 

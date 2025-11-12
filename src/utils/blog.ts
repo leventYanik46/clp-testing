@@ -182,19 +182,10 @@ export const getStaticPathsBlogList = async ({ paginate }: { paginate: PaginateF
   if (!isBlogEnabled || !isBlogListRouteEnabled) return [];
   const posts = await fetchPosts();
 
-  // collect languages present in posts (default to 'en' when unspecified)
-  const languages = Array.from(
-    new Set(
-      posts.flatMap((p) => {
-        const pl = p.lang;
-        if (Array.isArray(pl)) return pl;
-        if (typeof pl === 'string') return [pl];
-        return ['en'];
-      })
-    )
-  );
+  // Always use supported languages from config
+  const supportedLanguages = ['en', 'tr'];
 
-  return languages.flatMap((lang) =>
+  return supportedLanguages.flatMap((lang) =>
     paginate(
       posts.filter((post) => {
         const postLang = post.lang;

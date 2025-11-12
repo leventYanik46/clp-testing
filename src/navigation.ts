@@ -198,8 +198,8 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terms', href: getPermalink('/terms/english/terms') },
+    { text: 'Privacy Policy', href: getPermalink('/terms/english/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/capitollawpartners/' },
@@ -260,8 +260,8 @@ export const footerDataTr = {
     },
   ],
   secondaryLinks: [
-    { text: 'Şartlar', href: getPermalink('/terms') },
-    { text: 'Gizlilik Politikası', href: getPermalink('/privacy') },
+    { text: 'Şartlar', href: getPermalink('/terms/turkish/terms') },
+    { text: 'Gizlilik Politikası', href: getPermalink('/terms/turkish/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/capitollawpartners/' },

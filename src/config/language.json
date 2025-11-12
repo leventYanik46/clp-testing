@@ -1,0 +1,15 @@
+[
+  {
+    "languageName": "En",
+    "languageCode": "en",
+    "contentDir": "english",
+    "weight": 1
+  },
+  {
+    "languageName": "Tr",
+    "languageCode": "tr",
+    "contentDir": "turkish",
+    "weight": 2
+  }
+]
+ 
