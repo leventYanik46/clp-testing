@@ -50,12 +50,12 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
   <div class="absolute inset-0"></div>
   <div
     class:list={[
-      'relative text-default py-3 px-3 min-[1241px]:px-6 mx-auto w-full border-t border-gray-200',
+      'relative text-default py-3 px-3 lg:px-6 mx-auto w-full border-t border-gray-200',
       {
-        'min-[1241px]:flex min-[1241px]:justify-between': position !== 'center',
+        'lg:flex lg:justify-between': position !== 'center',
       },
       {
-        'min-[1241px]:grid min-[1241px]:grid-cols-3 min-[1241px]:items-center': position === 'center',
+        'lg:grid lg:grid-cols-3 lg:items-center': position === 'center',
       },
       {
         'max-w-7xl': !isFullWidth,
@@ -63,20 +63,25 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
     ]}
   >
     <div class:list={[{ 'mr-auto rtl:mr-0 rtl:ml-auto': position === 'right' }, 'flex justify-between']}>
-      <a class="flex items-center ml-8 mr-2 md:ml-0 md:mr-0" href={getHomePermalink()}>
+      <a class="flex items-center " href={getHomePermalink()}>
         <Logo />
       </a>
-      <div class="flex items-center gap-4 min-[1241px]:hidden">
-        {/* New mobile-only Contact Us button before ToggleMenu, visible on screens smaller than wider breakpoint */}
+      <div class="flex items-center gap-4 lg:hidden">
+        {/* New mobile-only Contact Us button before ToggleMenu, visible on screens smaller than lg */}
+        <div class="lg:hidden">
+          {actions?.[0] && (
+            <Button {...actions[0]} class="py-2.5 px-2.5 ml-2 font-semibold shadow-none text-sm whitespace-nowrap" />
+          )}
+        </div>
         <ToggleMenu />
       </div>
     </div>
     <nav
-      class="items-center mt-10  min-[1241px]:mt-0 w-full min-[1241px]:w-auto hidden min-[1241px]:flex min-[1241px]:ml-48 min-[1241px]:-mr-4 -text-default overflow-y-auto overflow-x-hidden min-[1241px]:overflow-y-visible min-[1241px]:overflow-x-auto min-[1241px]:justify-self-center"
+      class="items-center w-full lg:w-auto hidden lg:flex lg:ml-48 lg:-mr-4 -text-default overflow-y-auto overflow-x-hidden lg:overflow-y-visible lg:overflow-x-auto lg:justify-self-center"
       aria-label="Main navigation"
     >
       <ul
-        class="flex flex-col min-[1241px]:flex-row min-[1241px]:self-center w-full min-[1241px]:w-auto max-[1080px]:text-[0.85rem] min-[1080px]:text-[1rem] tracking-[0.01rem] font-medium min-[1241px]:justify-center"
+        class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto max-[1080px]:text-[0.85rem] min-[1080px]:text-[1rem] tracking-[0.01rem] font-medium lg:justify-center"
       >
         {
           links.map(({ text, href, links }) => (
@@ -85,14 +90,14 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                 <>
                   <button type="button" class="hover:text-link px-4 font-bold py-3 flex items-center whitespace-nowrap">
                     {text}{' '}
-                    <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden min-[1241px]:inline" />
+                    <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden lg:inline" />
                   </button>
-                  <ul class="dropdown-menu min-[1241px]:backdrop-blur-md rounded min-[1241px]:absolute min-[1241px]:top-full pl-4 min-[1241px]:pl-0 min-[1241px]:hidden font-medium min-[1241px]:bg-white/90 min-[1241px]:min-w-[200px] drop-shadow-xl">
+                  <ul class="dropdown-menu lg:backdrop-blur-md rounded lg:absolute pl-4 lg:pl-0 lg:hidden font-medium lg:bg-white/90 lg:min-w-[200px] drop-shadow-xl">
                     {links.map(({ text: text2, href: href2 }) => (
                       <li>
                         <a
                           class:list={[
-                            'first:rounded-t last:rounded-b min-[1241px]:hover:bg-gray-100 hover:text-link py-2 px-5 block whitespace-no-wrap',
+                            'first:rounded-t last:rounded-b lg:hover:bg-gray-100 hover:text-link py-2 px-5 block whitespace-no-wrap',
                             { 'aw-link-active': href2 === currentPath },
                           ]}
                           href={href2}
@@ -122,25 +127,14 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
     <div
       class:list={[
         { 'ml-auto rtl:ml-0 rtl:mr-auto': position === 'left' },
-        'flex items-center gap-4 justify-end w-full min-[1241px]:self-center min-[1241px]:mb-0 min-[1241px]:justify-self-end min-[1241px]:w-auto',
+        'hidden lg:self-center lg:flex items-center lg:mb-0 fixed w-full lg:w-auto lg:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 lg:p-0 lg:justify-self-end',
       ]}
     >
-      <form class="block">
-        <select
-          class="border rounded px-2 py-1 text-sm bg-white"
-          onchange="if(this.value) window.location.href=this.value"
-          aria-label="Switch language"
-        >
-          <option value="/">🌐</option>
-          <option value="/">En</option>
-          <option value="/tr">Tr</option>
-        </select>
-      </form>
       {
         actions?.length ? (
-          <span class="max-[1240px]:hidden min-[1241px]:flex items-center">
+          <span class="-ml-32 rtl:-ml-0 rtl:-mr-32">
             {actions.map((btnProps) => (
-              <Button {...btnProps} class="py-2.5 px-5.5 min-[1241px]:px-6 font-semibold shadow-none text-sm w-auto" />
+              <Button {...btnProps} class="py-2.5 px-5.5 lg:px-6 font-semibold shadow-none text-sm w-auto" />
             ))}
           </span>
         ) : (
@@ -148,7 +142,6 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         )
       }
     </div>
-    <div class="hidden" aria-hidden="true"></div>
   </div>
 </header>
 <div class="border-t-2 border-gray-100"></div>
