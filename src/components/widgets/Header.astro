@@ -87,7 +87,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                     {text}{' '}
                     <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden min-[1241px]:inline" />
                   </button>
-                  <ul class="dropdown-menu min-[1241px]:backdrop-blur-md rounded min-[1241px]:absolute min-[1241px]:top-full min-[1241px]:mt-24 pl-4 min-[1241px]:pl-0 min-[1241px]:hidden font-medium min-[1241px]:bg-white/90 min-[1241px]:min-w-[200px] drop-shadow-xl">
+                  <ul class="dropdown-menu min-[1241px]:backdrop-blur-md rounded min-[1241px]:absolute min-[1241px]:top-full pl-4 min-[1241px]:pl-0 min-[1241px]:hidden font-medium min-[1241px]:bg-white/90 min-[1241px]:min-w-[200px] drop-shadow-xl">
                     {links.map(({ text: text2, href: href2 }) => (
                       <li>
                         <a
