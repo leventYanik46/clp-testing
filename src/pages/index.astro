@@ -1,1 +1,14 @@
-<meta http-equiv="refresh" content="0;url=/en" />
+---
+import config from '~/config/config.json';
+// If default_language_in_subdir is true, redirect root to e.g. `/en`.
+// If false, keep root at `/`.
+const target = config.settings.default_language_in_subdir
+	? `/${config.settings.default_language}`
+	: "/";
+---
+<html lang="en">
+	<head>
+		<meta http-equiv="refresh" content={`0;url=${target}`} />
+	</head>
+	<body />
+</html>
