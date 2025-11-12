@@ -5,35 +5,35 @@ export const headerData = {
   links: [
     {
       text: 'About Us',
-      href: getPermalink('/en/about'),
+      href: getPermalink('/about'),
     },
     {
       text: 'Practice Areas',
       links: [
         {
           text: 'General Counsel & Advisory Services',
-          href: getPermalink('/en/practice-area/general-counsel-services'),
+          href: getPermalink('/practice-area/general-counsel-services'),
         },
         {
           text: 'Business & Corporate Law',
-          href: getPermalink('/en/practice-area/business-corporate-law'),
+          href: getPermalink('/practice-area/business-corporate-law'),
         },
 
         {
           text: 'Trusts & Estates',
-          href: getPermalink('/en/practice-area/estate-planning'),
+          href: getPermalink('/practice-area/estate-planning'),
         },
         {
           text: 'Real Estate',
-          href: getPermalink('/en/practice-area/real-estate'),
+          href: getPermalink('/practice-area/real-estate'),
         },
         {
           text: 'Intellectual Property Law',
-          href: getPermalink('/en/practice-area/ip-law'),
+          href: getPermalink('/practice-area/ip-law'),
         },
         {
           text: 'Immigration Law',
-          href: getPermalink('/en/practice-area/immigration-law'),
+          href: getPermalink('/practice-area/immigration-law'),
         },
       ],
     },
@@ -42,38 +42,38 @@ export const headerData = {
       links: [
         {
           text: 'Meet Our Team',
-          href: getPermalink('/en/team'),
+          href: getPermalink('/team'),
         },
         {
           text: 'Cagatay Ersoy',
-          href: getPermalink('/en/our-team/cagatay'),
+          href: getPermalink('/our-team/cagatay'),
         },
         {
           text: 'Sena Sahin',
-          href: getPermalink('/en/our-team/sena'),
+          href: getPermalink('/our-team/sena'),
         },
         { text: 'Shafeek Seddiq', 
-          href: getPermalink('/en/our-team/shafeek') 
+          href: getPermalink('/our-team/shafeek') 
         },
         { text: 'Kemal Sahin', 
-          href: getPermalink('/en/our-team/kemal') },
+          href: getPermalink('/our-team/kemal') },
 
         { text: 'S. Selman Kilic', 
-          href: getPermalink('/en/our-team/selman') },
+          href: getPermalink('/our-team/selman') },
         { text: 'Esra Nur Bulan', 
-          href: getPermalink('/en/our-team/esra') },
+          href: getPermalink('/our-team/esra') },
       ],
     },
     {
       text: 'Our Locations',
-      href: getPermalink('/en/locations'),
+      href: getPermalink('/locations'),
     },
     {
       text: 'Blog',
-      href: getPermalink('/en/blog'),
+      href: getPermalink('/blog'),
     },
   ],
-  actions: [{ text: 'Contact Us', href: '/en/contact', variant: 'primary' }],
+  actions: [{ text: 'Contact Us', href: '/contact', variant: 'primary' }],
 };
 export const headerDataTr = {
   links: [

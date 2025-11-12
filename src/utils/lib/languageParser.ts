@@ -65,15 +65,25 @@ export const getTranslations = async (lang: string) => {
   return { ...menu.default, ...dictionary.default, contentDir };
 };
 
-const supportedLang = ["", ...languagesJSON.map((lang) => lang.languageCode)];
-const disabledLanguages = config.settings.disable_languages as string[];
+const {
+  default_language: defaultLanguageCode,
+  default_language_in_subdir: defaultLanguageInSubdir,
+  disable_languages: disabledLanguages = [],
+} = config.settings;
 
-// Filter out disabled languages from supportedLang
-const filteredSupportedLang = supportedLang.filter(
-  (lang) => !disabledLanguages.includes(lang),
-);
+const computedSupportedLang: string[] = [""];
 
-export { filteredSupportedLang as supportedLang };
+languagesJSON.forEach(({ languageCode }) => {
+  if (disabledLanguages.includes(languageCode)) {
+    return;
+  }
+  if (!defaultLanguageInSubdir && languageCode === defaultLanguageCode) {
+    return;
+  }
+  computedSupportedLang.push(languageCode);
+});
+
+export { computedSupportedLang as supportedLang };
 
 export const slugSelector = (url: string, lang: string) => {
   const { default_language, default_language_in_subdir } = config.settings;
