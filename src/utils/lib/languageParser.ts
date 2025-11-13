@@ -83,6 +83,8 @@ languagesJSON.forEach(({ languageCode }) => {
   computedSupportedLang.push(languageCode);
 });
 
+console.log('languageParser supportedLang', computedSupportedLang);
+
 export { computedSupportedLang as supportedLang };
 
 export const slugSelector = (url: string, lang: string) => {

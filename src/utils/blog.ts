@@ -186,6 +186,7 @@ export const getStaticPathsBlogList = async ({ paginate }: { paginate: PaginateF
 
   const defaultLang = config.settings.default_language;
   const languages = supportedLang; // e.g. ["", "en", "tr"] when default is root
+  console.log('getStaticPathsBlogList languages', languages);
 
   return languages.flatMap((langPrefix) => {
     const langCode = langPrefix === '' ? defaultLang : langPrefix;

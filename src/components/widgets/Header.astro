@@ -72,7 +72,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
       </div>
     </div>
     <nav
-      class="items-center mt-10 min-[1241px]:mt-0 w-full min-[1241px]:w-auto hidden min-[1241px]:flex min-[1241px]:ml-48 min-[1241px]:-mr-4 -text-default overflow-y-auto overflow-x-hidden min-[1241px]:overflow-y-visible min-[1241px]:overflow-x-auto min-[1241px]:justify-self-center"
+      class="items-center mt-10 min-[1241px]:mt-0 w-full min-[1241px]:w-auto hidden min-[1241px]:flex min-[1241px]:ml-48 min-[1241px]:-mr-4 -text-default overflow-y-auto overflow-x-hidden min-[1241px]:overflow-visible min-[1241px]:justify-self-center"
       aria-label="Main navigation"
     >
       <ul
@@ -91,7 +91,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                     />
                   </button>
                   <ul
-                    class="dropdown-menu pl-4 min-[1241px]:pl-0 font-medium min-[1241px]:bg-white/90 min-[1241px]:min-w-[200px] drop-shadow-xl min-[1241px]:backdrop-blur-md rounded min-[1241px]:absolute min-[1241px]:top-full min-[1241px]:hidden group-hover:min-[1241px]:block group-focus-within:min-[1241px]:block"
+                    class="dropdown-menu pl-4 min-[1241px]:pl-0 font-medium min-[1241px]:bg-white/90 min-[1241px]:min-w-[200px] drop-shadow-xl min-[1241px]:backdrop-blur-md rounded min-[1241px]:absolute min-[1241px]:top-full min-[1241px]:hidden min-[1241px]:group-hover:block min-[1241px]:group-focus-within:block"
                   >
                     {links.map(({ text: text2, href: href2 }) => (
                       <li>
