@@ -392,6 +392,25 @@ const postCollection = defineCollection({
     metadata: metadataDefinition(),
   }),
 });
+
+const announcementCollection = defineCollection({
+  loader: glob({ pattern: '**/-index.{md,mdx}', base: 'src/content/announcement' }),
+  schema: z.object({
+    title: z.string(),
+    lang: z.string(),
+    phone: z.string().optional(),
+    phone_display: z.string().optional(),
+    contact_url: z.string().optional(),
+    contact_text: z.string().optional(),
+    intro_text: z.string().optional(),
+    call_text: z.string().optional(),
+    or_text: z.string().optional(),
+    instagram: z.string().optional(),
+    facebook: z.string().optional(),
+    linkedin: z.string().optional(),
+  }),
+});
+
 export const collections = {
   post: postCollection,
   homepage: homepageCollection,
@@ -404,4 +423,5 @@ export const collections = {
   teamMember: teamMemberCollection,
   practiceArea: practiceAreaCollection,
   notFound: notFoundCollection,
+  announcement: announcementCollection,
 };

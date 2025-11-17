@@ -7,6 +7,10 @@ import { getHomePermalink } from '~/utils/permalinks';
 import { trimSlash } from '~/utils/permalinks';
 import type { CallToAction } from '~/types';
 
+const pathSegments = new URL(Astro.url).pathname.split('/').filter(Boolean);
+const lang = pathSegments[0] && pathSegments[0].length === 2 ? pathSegments[0] : '';
+const logoHref = lang ? `/${lang}` : '/'; 
+
 interface Link {
   text?: string;
   href?: string;
@@ -47,15 +51,15 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
   {...isSticky ? { 'data-aw-sticky-header': true } : {}}
   {...id ? { id } : {}}
 >
-  <div class="absolute inset-0"></div>
+   <div class="absolute inset-0"></div>
   <div
     class:list={[
-      'relative text-default py-3 px-3 min-[1241px]:px-6 mx-auto w-full border-t border-gray-200',
+      'relative text-default py-3 px-2 mx-auto w-full border-t border-gray-200',
       {
-        'min-[1241px]:flex min-[1241px]:justify-between': position !== 'center',
+        'min-[1170px]:flex min-[1170px]:justify-between': position !== 'center',
       },
       {
-        'min-[1241px]:grid min-[1241px]:grid-cols-3 min-[1241px]:items-center': position === 'center',
+        'min-[1170px]:grid min-[1170px]:grid-cols-3 min-[1170px]:items-center': position === 'center',
       },
       {
         'max-w-7xl': !isFullWidth,
@@ -63,20 +67,20 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
     ]}
   >
     <div class:list={[{ 'mr-auto rtl:mr-0 rtl:ml-auto': position === 'right' }, 'flex justify-between']}>
-      <a class="flex items-center ml-8 mr-2 md:ml-0 md:mr-0" href={getHomePermalink()}>
+      <a class="flex items-center ml-4 mr-1 md:ml-0 md:mr-0" href={logoHref}>
         <Logo />
       </a>
-      <div class="flex items-center gap-4 min-[1241px]:hidden">
+      <div class="flex items-center gap-4 min-[1170px]:hidden">
         {/* Toggle menu is the only control on mobile in this variant */}
         <ToggleMenu />
       </div>
     </div>
     <nav
-      class="items-center mt-10 min-[1241px]:mt-0 w-full min-[1241px]:w-auto hidden min-[1241px]:flex min-[1241px]:ml-48 min-[1241px]:-mr-4 -text-default overflow-y-auto overflow-x-hidden min-[1241px]:overflow-visible min-[1241px]:justify-self-center"
+      class="items-center mt-10 min-[1170px]:mt-0 w-full min-[1170px]:w-auto hidden min-[1170px]:flex min-[1170px]:ml-24 min-[1170px]:-mr-4 -text-default overflow-y-auto overflow-x-hidden min-[1170px]:overflow-visible min-[1170px]:justify-self-center"
       aria-label="Main navigation"
     >
       <ul
-        class="flex flex-col min-[1241px]:flex-row min-[1241px]:self-center w-full min-[1241px]:w-auto max-[1080px]:text-[0.85rem] min-[1080px]:text-[1rem] tracking-[0.01rem] font-medium min-[1241px]:justify-center"
+        class="flex flex-col min-[1170px]:flex-row min-[1170px]:self-center w-full min-[1170px]:w-auto max-[1080px]:text-[0.85rem] min-[1080px]:text-[1rem] tracking-[0.01rem] font-medium min-[1170px]:justify-center"
       >
         {
           links.map(({ text, href, links }) => (
@@ -87,17 +91,17 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
                     {text}{' '}
                     <Icon
                       name="tabler:chevron-down"
-                      class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden min-[1241px]:inline"
+                      class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden min-[1170px]:inline"
                     />
                   </button>
                   <ul
-                    class="dropdown-menu pl-4 min-[1241px]:pl-0 font-medium min-[1241px]:bg-white/90 min-[1241px]:min-w-[200px] drop-shadow-xl min-[1241px]:backdrop-blur-md rounded min-[1241px]:absolute min-[1241px]:top-full min-[1241px]:hidden min-[1241px]:group-hover:block min-[1241px]:group-focus-within:block"
+                    class="dropdown-menu pl-4 min-[1170px]:pl-0 font-medium min-[1170px]:bg-white/90 min-[1170px]:min-w-[200px] drop-shadow-xl min-[1170px]:backdrop-blur-md rounded min-[1170px]:absolute min-[1170px]:top-full min-[1170px]:hidden min-[1170px]:group-hover:block min-[1170px]:group-focus-within:block"
                   >
                     {links.map(({ text: text2, href: href2 }) => (
                       <li>
                         <a
                           class:list={[
-                            'first:rounded-t last:rounded-b min-[1241px]:hover:bg-gray-100 hover:text-link py-2 px-5 block whitespace-no-wrap',
+                            'first:rounded-t last:rounded-b min-[1170px]:hover:bg-gray-100 hover:text-link py-2 px-5 block whitespace-no-wrap',
                             { 'aw-link-active': href2 === currentPath },
                           ]}
                           href={href2}
@@ -127,7 +131,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
     <div
       class:list={[
         { 'ml-auto rtl:ml-0 rtl:mr-auto': position === 'left' },
-        'flex items-center gap-4 justify-end w-full min-[1241px]:self-center min-[1241px]:mb-0 min-[1241px]:justify-self-end min-[1241px]:w-auto',
+        'flex items-center gap-4 justify-end w-full min-[1170px]:self-center min-[1170px]:mb-0 min-[1170px]:justify-self-end min-[1170px]:w-auto',
       ]}
     >
       <form class="block">
@@ -143,13 +147,16 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
           <option value="/">🌐</option>
           <option value="/">En</option>
           <option value="/tr">Tr</option>
+          <option value="/es">Es</option>
+          <option value="/pt">Pt</option>
+          <option value="/fr">Fr</option>
         </select>
       </form>
       {
         actions?.length ? (
-          <span class="max-[1240px]:hidden min-[1241px]:flex items-center">
+          <span class="max-[1240px]:hidden min-[1170px]:flex items-center">
             {actions.map((btnProps) => (
-              <Button {...btnProps} class="py-2.5 px-5.5 min-[1241px]:px-6 font-semibold shadow-none text-sm w-auto" />
+              <Button {...btnProps} class="py-2.5 px-5.5 min-[1170px]:px-6 font-semibold shadow-none text-sm w-auto" />
             ))}
           </span>
         ) : (

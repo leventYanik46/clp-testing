@@ -16,7 +16,7 @@ sections:
             target: _blank
           - variant: primary
             text: Biyografiyi Gör →
-            href: /our-team/cagatay
+            href: /tr/our-team/cagatay
             target: _blank
         image:
           src: ~/assets/images/cagatay-bw.png
@@ -32,7 +32,7 @@ sections:
             target: _blank
           - variant: primary
             text: Biyografiyi Gör →
-            href: /our-team/sena
+            href: /tr/our-team/sena
             target: _blank
         image:
           src: ~/assets/images/Sena-bw.jpg
@@ -48,7 +48,7 @@ sections:
             target: _blank
           - variant: primary
             text: Biyografiyi Gör →
-            href: /our-team/shafeek
+            href: /tr/our-team/shafeek
             target: _blank
         image:
           src: ~/assets/images/shafeek-bw.png
@@ -64,7 +64,7 @@ sections:
             target: _blank
           - variant: primary
             text: Biyografiyi Gör →
-            href: /our-team/esra
+            href: /tr/our-team/esra
             target: _blank
         image:
           src: ~/assets/images/esra-bw.png
@@ -80,7 +80,7 @@ sections:
             target: _blank
           - variant: primary
             text: Biyografiyi Gör →
-            href: /our-team/kemal
+            href: /tr/our-team/kemal
             target: _blank
       - title: S. Selman Kılıç
         tagline: Avukat
@@ -93,7 +93,7 @@ sections:
             target: _blank
           - variant: primary
             text: Biyografiyi Gör →
-            href: /our-team/selman
+            href: /tr/our-team/selman
             target: _blank
   - wrapper: w-full
     members:

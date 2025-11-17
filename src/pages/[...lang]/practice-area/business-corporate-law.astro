@@ -18,10 +18,13 @@ export function getStaticPaths() {
 const raw = Astro.params?.lang;
 const resolvedLang = Array.isArray(raw) ? raw[0] : typeof raw === 'string' ? raw : undefined;
 const lang = resolvedLang ?? (await import('../../../config/config.json')).default?.settings?.default_language ?? 'en';
-// This page is for 'cagatay', so the slug is always 'cagatay' here
+// Map lang codes to folder names
 let langFolder = lang;
 if (lang === 'en') langFolder = 'english';
 if (lang === 'tr') langFolder = 'turkish';
+if (lang === 'es') langFolder = 'spanish';
+if (lang === 'pt') langFolder = 'portuguese';
+if (lang === 'fr') langFolder = 'french';
 const entry = await getEntry('practiceArea', `${langFolder}/business-corporate-law`);
 if (!entry) throw new Error('Practice area not found for language: ' + lang);
 

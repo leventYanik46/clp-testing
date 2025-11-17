@@ -10,6 +10,23 @@
     "languageCode": "tr",
     "contentDir": "turkish",
     "weight": 2
+  },
+  {
+    "languageName": "Es",
+    "languageCode": "es",
+    "contentDir": "spanish",
+    "weight": 3
+  },
+  {
+    "languageName": "Pt",
+    "languageCode": "pt",
+    "contentDir": "portuguese",
+    "weight": 4
+  },
+  {
+    "languageName": "Fr",
+    "languageCode": "fr",
+    "contentDir": "french",
+    "weight": 5
   }
 ]
- 

@@ -5,7 +5,20 @@ export const headerData = {
   links: [
     {
       text: 'About Us',
-      href: getPermalink('/about'),
+      links: [
+        {
+          text: 'About Us',
+          href: getPermalink('/about'),
+        },
+        {
+          text: 'Our Locations',
+          href: getPermalink('/locations'),
+        },
+        {
+          text: 'Blog',
+          href: getPermalink('/blog'),
+        },
+      ],
     },
     {
       text: 'Practice Areas',
@@ -157,6 +170,254 @@ export const headerDataTr = {
   ],
 };
 
+export const headerDataEs= {
+  links: [
+    {
+      text: 'Sobre Nosotros',
+      links: [
+        {
+          text: 'Sobre Nosotros',
+          href: getPermalink('/es/about'),
+        },
+        {
+          text: 'Nuestras Ubicaciones',
+          href: getPermalink('/es/locations'),
+        },
+        {
+          text: 'Blog',
+          href: getPermalink('/es/blog'),
+        },
+      ],
+    },
+    {
+      text: 'Áreas de Práctica',
+      links: [
+        {
+          text: 'Asesoría General y Servicios Consultivos',
+          href: getPermalink('/es/practice-area/general-counsel-services'),
+        },
+        {
+          text: 'Derecho Empresarial y Corporativo',
+          href: getPermalink('/es/practice-area/business-corporate-law'),
+        },
+        {
+          text: 'Fideicomisos y Sucesiones',
+          href: getPermalink('/es/practice-area/estate-planning'),
+        },
+        {
+          text: 'Derecho Inmobiliario',
+          href: getPermalink('/es/practice-area/real-estate'),
+        },
+        {
+          text: 'Propiedad Intelectual',
+          href: getPermalink('/es/practice-area/ip-law'),
+        },
+        {
+          text: 'Derecho Migratorio',
+          href: getPermalink('/es/practice-area/immigration-law'),
+        },
+      ],
+    },
+    {
+      text: 'Nuestro Equipo',
+      links: [
+        {
+          text: 'Conozca a Nuestro Equipo',
+          href: getPermalink('/es/team'),
+        },
+        {
+          text: 'Cagatay Ersoy',
+          href: getPermalink('/es/our-team/cagatay'),
+        },
+        {
+          text: 'Sena Sahin',
+          href: getPermalink('/es/our-team/sena'),
+        },
+        {
+          text: 'Shafeek Seddiq',
+          href: getPermalink('/es/our-team/shafeek'),
+        },
+        {
+          text: 'Kemal Sahin',
+          href: getPermalink('/es/our-team/kemal'),
+        },
+        {
+          text: 'S. Selman Kilic',
+          href: getPermalink('/es/our-team/selman'),
+        },
+        {
+          text: 'Esra Nur Bulan',
+          href: getPermalink('/es/our-team/esra'),
+        },
+      ],
+    },
+  ],
+  actions: [
+    { text: 'Contáctenos', href: '/es/contact', variant: 'primary' },
+  ],
+};
+export const headerDataFr = {
+  links: [
+    {
+      text: 'À propos',
+      links: [
+        {
+          text: 'À propos de nous',
+          href: getPermalink('/fr/about'),
+        },
+        {
+          text: 'Nos bureaux',
+          href: getPermalink('/fr/locations'),
+        },
+      ],
+    },
+    {
+      text: 'Domaines de pratique',
+      links: [
+        {
+          text: 'Conseil juridique externe et services',
+          href: getPermalink('/fr/practice-area/general-counsel-services'),
+        },
+        {
+          text: 'Droit des affaires et des sociétés',
+          href: getPermalink('/fr/practice-area/business-corporate-law'),
+        },
+        {
+          text: 'Trusts et successions',
+          href: getPermalink('/fr/practice-area/estate-planning'),
+        },
+        {
+          text: 'Droit immobilier',
+          href: getPermalink('/fr/practice-area/real-estate'),
+        },
+        {
+          text: 'Propriété intellectuelle',
+          href: getPermalink('/fr/practice-area/ip-law'),
+        },
+        {
+          text: 'Droit de l’immigration',
+          href: getPermalink('/fr/practice-area/immigration-law'),
+        },
+      ],
+    },
+    {
+      text: 'Notre équipe',
+      links: [
+        {
+          text: 'Rencontrez notre équipe',
+          href: getPermalink('/fr/team'),
+        },
+        {
+          text: 'Cagatay Ersoy',
+          href: getPermalink('/fr/our-team/cagatay'),
+        },
+        {
+          text: 'Sena Sahin',
+          href: getPermalink('/fr/our-team/sena'),
+        },
+        { text: 'Shafeek Seddiq',
+          href: getPermalink('/fr/our-team/shafeek')
+        },
+        { text: 'Kemal Sahin',
+          href: getPermalink('/fr/our-team/kemal') },
+
+        { text: 'S. Selman Kilic',
+          href: getPermalink('/fr/our-team/selman') },
+        { text: 'Esra Nur Bulan',
+          href: getPermalink('/fr/our-team/esra') },
+      ],
+    },
+    {
+      text: 'Blog',
+      href: getPermalink('/fr/blog'),
+    },
+  ],
+  actions: [
+    { text: 'Nous contacter', href: '/fr/contact', variant: 'primary' },
+  ],
+};
+export const headerDataPt = {
+  links: [
+    {
+      text: 'Sobre Nós',
+      links: [
+        {
+          text: 'Sobre Nós',
+          href: getPermalink('/pt/about'),
+        },
+        {
+          text: 'Nossos Escritórios',
+          href: getPermalink('/pt/locations'),
+        },
+      ],
+    },
+    {
+      text: 'Áreas de Atuação',
+      links: [
+        {
+          text: 'Consultoria Jurídica Externa e Serviços de Assessoria',
+          href: getPermalink('/pt/practice-area/general-counsel-services'),
+        },
+        {
+          text: 'Direito Empresarial e Societário',
+          href: getPermalink('/pt/practice-area/business-corporate-law'),
+        },
+
+        {
+          text: 'Trusts e Sucessões',
+          href: getPermalink('/pt/practice-area/estate-planning'),
+        },
+        {
+          text: 'Direito Imobiliário',
+          href: getPermalink('/pt/practice-area/real-estate'),
+        },
+        {
+          text: 'Propriedade Intelectual',
+          href: getPermalink('/pt/practice-area/ip-law'),
+        },
+        {
+          text: 'Direito de Imigração',
+          href: getPermalink('/pt/practice-area/immigration-law'),
+        },
+      ],
+    },
+    {
+      text: 'Nossa Equipe',
+      links: [
+        {
+          text: 'Conheça Nossa Equipe',
+          href: getPermalink('/pt/team'),
+        },
+        {
+          text: 'Cagatay Ersoy',
+          href: getPermalink('/pt/our-team/cagatay'),
+        },
+        {
+          text: 'Sena Sahin',
+          href: getPermalink('/pt/our-team/sena'),
+        },
+        { text: 'Shafeek Seddiq', 
+          href: getPermalink('/pt/our-team/shafeek') 
+        },
+        { text: 'Kemal Sahin', 
+          href: getPermalink('/pt/our-team/kemal') },
+
+        { text: 'S. Selman Kilic', 
+          href: getPermalink('/pt/our-team/selman') },
+        { text: 'Esra Nur Bulan', 
+          href: getPermalink('/pt/our-team/esra') },
+      ],
+    },
+    {
+      text: 'Blog',
+      href: getPermalink('/pt/blog'),
+    },
+  ],
+  actions: [
+    { text: 'Fale Conosco', href: '/pt/contact', variant: 'primary' },
+  ],
+};
+
 export const footerData = {
   links: [
     {
@@ -280,5 +541,195 @@ export const footerDataTr = {
     <br>
     <br>
     © Telif Hakkı Capitol Law Partners LLC · Tüm Hakları Saklıdır.
+  `,
+};
+
+export const footerDataSpanish = {
+  links: [
+    {
+      title: 'Información',
+      links: [
+        { text: 'Sobre Nosotros', href: getPermalink('/es/about') },
+        { text: 'Nuestras Ubicaciones', href: getPermalink('/es/locations') },
+      ],
+    },
+    {
+      title: 'Nuestro Equipo',
+      links: [
+        { text: 'Conozca a Nuestro Equipo', href: getPermalink('/es/team') },
+        { text: 'Cagatay Ersoy', href: getPermalink('/es/our-team/cagatay') },
+        { text: 'Sena Sahin', href: getPermalink('/es/our-team/sena') },
+        { text: 'Kemal Sahin', href: getPermalink('/es/our-team/kemal') },
+        { text: 'S. Selman Kilic', href: getPermalink('/es/our-team/selman') },
+      ],
+    },
+    {
+      title: 'Áreas de Práctica',
+      links: [
+        { text: 'Servicios de Asesoría General', href: getPermalink('/es/practice-area/general-counsel-services') },
+        { text: 'Derecho Empresarial y Corporativo', href: getPermalink('/es/practice-area/business-corporate-law') },
+        { text: 'Fideicomisos y Sucesiones', href: getPermalink('/es/practice-area/estate-planning') },
+        { text: 'Derecho Inmobiliario', href: getPermalink('/es/practice-area/real-estate') },
+        { text: 'Propiedad Intelectual', href: getPermalink('/es/practice-area/ip-law') },
+        { text: 'Derecho Migratorio', href: getPermalink('/es/practice-area/immigration-law') },
+      ],
+    },
+    {
+      title: 'Recursos',
+      links: [
+        { text: 'Blog', href: getPermalink('/es/blog') },
+        { text: 'Contáctenos', href: getPermalink('/es/contact') },
+        { text: 'Evaluaciones gratuitas', href: getPermalink('/es/evaluations') },
+      ],
+    },
+  ],
+  secondaryLinks: [
+    { text: 'Términos', href: getPermalink('/es/terms/spanish/terms') },
+    { text: 'Política de Privacidad', href: getPermalink('/es/terms/spanish/privacy') },
+  ],
+  socialLinks: [
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/capitollawpartners/' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/CapitolLaw/' },
+    {
+      ariaLabel: 'LinkedIn',
+      icon: 'tabler:brand-linkedin',
+      href: 'https://www.linkedin.com/company/capitollawpartners',
+    },
+  ],
+  footNote: `
+    <strong>
+    Publicidad de abogados. El contenido de este sitio web se ofrece solo con fines informativos,<br>
+    y no debe interpretarse como asesoría legal formal ni como el establecimiento de una relación abogado/cliente.
+    </strong>
+    <br>
+    <br>
+    © Copyright Capitol Law Partners LLC · Todos los derechos reservados.
+  `,
+};
+
+
+export const footerDataFr = {
+  links: [
+    {
+      title: 'Informations',
+      links: [
+        { text: 'À propos de nous', href: getPermalink('/fr/about') },
+        { text: 'Nos bureaux', href: getPermalink('/fr/locations') },
+      ],
+    },
+    {
+      title: 'Notre équipe',
+      links: [
+        { text: 'Rencontrez notre équipe', href: getPermalink('/fr/team') },
+        { text: 'Cagatay Ersoy', href: getPermalink('/fr/our-team/cagatay') },
+        { text: 'Sena Sahin', href: getPermalink('/fr/our-team/sena') },
+        { text: 'Kemal Sahin', href: getPermalink('/fr/our-team/kemal') },
+        { text: 'S. Selman Kilic', href: getPermalink('/fr/our-team/selman') },
+      ],
+    },
+    {
+      title: 'Domaines de pratique',
+      links: [
+        { text: 'Conseil juridique externe', href: getPermalink('/fr/practice-area/general-counsel-services') },
+        { text: 'Droit des affaires et des sociétés', href: getPermalink('/fr/practice-area/business-corporate-law') },
+        { text: 'Trusts et successions', href: getPermalink('/fr/practice-area/estate-planning') },
+        { text: 'Droit immobilier', href: getPermalink('/fr/practice-area/real-estate') },
+        { text: 'Propriété intellectuelle', href: getPermalink('/fr/practice-area/ip-law') },
+        { text: 'Droit de l’immigration', href: getPermalink('/fr/practice-area/immigration-law') },
+      ],
+    },
+    {
+      title: 'Ressources',
+      links: [
+        { text: 'Blog', href: getPermalink('/fr/blog') },
+        { text: 'Nous contacter', href: getPermalink('/fr/contact') },
+        { text: 'Évaluations gratuites', href: getPermalink('/fr/evaluations') },
+      ],
+    },
+  ],
+  secondaryLinks: [
+    { text: 'Conditions', href: getPermalink('/fr/terms/french/terms') },
+    { text: 'Politique de confidentialité', href: getPermalink('/fr/terms/french/privacy') },
+  ],
+  socialLinks: [
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/capitollawpartners/' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/CapitolLaw/' },
+    {
+      ariaLabel: 'LinkedIn',
+      icon: 'tabler:brand-linkedin',
+      href: 'https://www.linkedin.com/company/capitollawpartners',
+    },
+  ],
+  footNote: `
+    <strong>
+    Publicité d’avocat. Le contenu de ce site est fourni uniquement à titre informatif,<br>
+    et ne doit pas être interprété comme un conseil juridique formel ni comme l’établissement d’une relation avocat/client.
+    </strong>
+    <br>
+    <br>
+    © Copyright Capitol Law Partners LLC · Tous droits réservés.
+  `,
+};
+export const footerDataPt = {
+  links: [
+    {
+      title: 'Informações',
+      links: [
+        { text: 'Sobre Nós', href: getPermalink('/pt/about') },
+        { text: 'Nossos Escritórios', href: getPermalink('/pt/locations') },
+      ],
+    },
+    {
+      title: 'Nossa Equipe',
+      links: [
+        { text: 'Conheça Nossa Equipe', href: getPermalink('/pt/team') },
+        { text: 'Cagatay Ersoy', href: getPermalink('/pt/our-team/cagatay') },
+        { text: 'Sena Sahin', href: getPermalink('/pt/our-team/sena') },
+        { text: 'Kemal Sahin', href: getPermalink('/pt/our-team/kemal') },
+        { text: 'S. Selman Kilic', href: getPermalink('/pt/our-team/selman') },
+
+      ],
+    },
+    {
+      title: 'Áreas de Atuação',
+      links: [
+        { text: 'Consultoria Jurídica Externa', href: getPermalink('/pt/practice-area/general-counsel-services') },
+        { text: 'Direito Empresarial e Societário', href: getPermalink('/pt/practice-area/business-corporate-law') },
+        { text: 'Trusts e Sucessões', href: getPermalink('/pt/practice-area/estate-planning') },
+        { text: 'Direito Imobiliário', href: getPermalink('/pt/practice-area/real-estate') },
+        { text: 'Propriedade Intelectual', href: getPermalink('/pt/practice-area/ip-law') },
+        { text: 'Direito de Imigração', href: getPermalink('/pt/practice-area/immigration-law') },
+      ],
+    },
+    {
+      title: 'Recursos',
+      links: [
+        { text: 'Blog', href: getPermalink('/pt/blog') },
+        { text: 'Fale Conosco', href: getPermalink('/pt/contact') },
+        { text: 'Avaliações gratuitas', href: getPermalink('/pt/evaluations') },
+      ],
+    },
+  ],
+  secondaryLinks: [
+    { text: 'Termos', href: getPermalink('/pt/terms/portuguese/terms') },
+    { text: 'Política de Privacidade', href: getPermalink('/pt/terms/portuguese/privacy') },
+  ],
+  socialLinks: [
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/capitollawpartners/' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/CapitolLaw/' },
+    {
+      ariaLabel: 'LinkedIn',
+      icon: 'tabler:brand-linkedin',
+      href: 'https://www.linkedin.com/company/capitollawpartners',
+    },
+  ],
+  footNote: `
+    <strong>
+    Publicidade de advogado. O conteúdo deste site é voltado apenas para fins informativos gerais,<br>
+    e não deve ser interpretado como aconselhamento jurídico formal nem como estabelecimento de relação advogado/cliente.
+    </strong>
+    <br>
+    <br>
+    © Copyright Capitol Law Partners LLC · Todos os direitos reservados.
   `,
 };
