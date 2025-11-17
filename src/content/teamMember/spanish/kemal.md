@@ -13,10 +13,10 @@ profile:
   - Fluido en inglés, turco, francés y neerlandés, el Sr. Sahin salva con facilidad las barreras lingüísticas y culturales, lo que lo hace especialmente efectivo para asesorar en asuntos legales transfronterizos. Su combinación de excelencia académica, experiencia internacional y dominio de varios idiomas es un gran activo para Capitol Law Partners.
   actions:
   - text: Agendar una consulta
-    href: /Schedule
+    href: /es/Schedule
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: Contácteme
-    href: /contact
+    href: /es/contact
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
 steps:
 - id: resume
@@ -69,7 +69,7 @@ cta:
   actions:
   - variant: primary
     text: Agendar una consulta
-    href: /Schedule
+    href: /es/Schedule
 blog:
   id: blog
   title: Explore nuestros últimos análisis legales

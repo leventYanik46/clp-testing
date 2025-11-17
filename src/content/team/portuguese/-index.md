@@ -44,7 +44,7 @@ sections:
     actions:
     - variant: primary
       text: Fale comigo
-      href: /contact
+      href: /pt/contact
       target: _blank
     - variant: primary
       text: Ver bio →

@@ -44,7 +44,7 @@ sections:
     actions:
     - variant: primary
       text: Contácteme
-      href: /contact
+      href: /fr/contact
       target: _blank
     - variant: primary
       text: Ver biografía →

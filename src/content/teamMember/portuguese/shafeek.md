@@ -20,7 +20,7 @@ profile:
   - Ele possui licença para exercer a advocacia na Virgínia e no Distrito de Columbia.
   actions:
   - text: Fale comigo
-    href: /contact
+    href: /pt/contact
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent
       text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg
       w-full sm:w-auto
@@ -73,7 +73,7 @@ cta:
   actions:
   - variant: primary
     text: Fale comigo
-    href: /
+    href: /pt/
 blog:
   id: blog
   title: Explore nossas últimas análises jurídicas

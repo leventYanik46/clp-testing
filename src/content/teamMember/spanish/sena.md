@@ -21,7 +21,7 @@ profile:
     href: https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0Z6CRTA1TWJbfYHXdAeI69TxlYGLCNK34Tdyhm2oDBFHKX963S6-LS-59UpZ-nY2JIie4Fofv4
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: Contácteme
-    href: /contact
+    href: /es/contact
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
 steps:
 - id: resume
@@ -72,7 +72,7 @@ cta:
   actions:
   - variant: primary
     text: Agendar una consulta
-    href: /Schedule
+    href: /es/Schedule
 blog:
   id: blog
   title: Explore nuestros últimos análisis legales

@@ -44,7 +44,7 @@ sections:
     actions:
     - variant: primary
       text: Me contacter
-      href: /contact
+      href: /fr/contact
       target: _blank
     - variant: primary
       text: Voir la bio →

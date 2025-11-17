@@ -14,14 +14,14 @@ hero:
   actions:
     - variant: primary
       text: Prendre rendez-vous
-      href: /Schedule
+      href: /fr/schedule
       class: w-full sm:mb-0
     - text: Évaluation gratuite
-      href: /evaluations
+      href: /fr/evaluations
       variant: primary
       class: w-full sm:mb-0 hidden lg:block
     - text: Contactez-nous
-      href: /contact
+      href: /fr/contact
       variant: primary
       class: w-full sm:mb-0 lg:hidden
 practiceAreas:
@@ -124,13 +124,13 @@ testimonials:
 steps:
   title: Obtenez la représentation juridique que vous méritez dès aujourd’hui
   items:
-    - title: 'Étape 1 : <span class="font-medium">Remplissez le <a href="/contact" class="hover:text-primary underline font-bold"> formulaire Nous contacter</a></span>'
+    - title: 'Étape 1 : <span class="font-medium">Remplissez le <a href="/fr/contact" class="hover:text-primary underline font-bold"> formulaire Nous contacter</a></span>'
       description: Fournissez les détails de vos besoins juridiques via notre formulaire de contact. Notre équipe examinera votre demande et vous orientera vers le bon expert.
       icon: tabler:file-text
-    - title: 'Étape 2 : <span class="font-medium">Planifiez une <a href="/evaluations" class="hover:text-primary underline font-bold"> évaluation gratuite </a></span>'
+    - title: 'Étape 2 : <span class="font-medium">Planifiez une <a href="/fr/evaluations" class="hover:text-primary underline font-bold"> évaluation gratuite </a></span>'
       description: Si votre dossier nécessite une pré-évaluation détaillée, complétez notre formulaire d’évaluation gratuite. Notre équipe juridique examinera les informations et pourra demander des éléments supplémentaires pour bien comprendre votre situation.
       icon: tabler:calendar-event
-    - title: 'Étape 3 : <span class="font-medium"><a href="/Schedule" class="hover:text-primary underline font-bold"> Réservez une consultation </a></span>'
+    - title: 'Étape 3 : <span class="font-medium"><a href="/fr/schedule" class="hover:text-primary underline font-bold"> Réservez une consultation </a></span>'
       description: Rencontrez nos avocats pour une consultation personnalisée. Que vous ayez besoin d’aide en droit des sociétés, contentieux, immigration ou planification successorale, nous vous guiderons dans vos options.
       icon: tabler:scale
     - title: Prêt !
@@ -148,5 +148,5 @@ cta:
   actions:
     - variant: primary
       text: Nous contacter
-      href: /contact
+      href: /fr/contact
 ---

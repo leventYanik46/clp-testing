@@ -20,7 +20,7 @@ profile:
   - Il est autorisé à exercer en Virginie et dans le District de Columbia.
   actions:
   - text: Me contacter
-    href: /contact
+    href: /fr/contact
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent
       text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg
       w-full sm:w-auto
@@ -71,7 +71,7 @@ cta:
   actions:
   - variant: primary
     text: Me contacter
-    href: /
+    href: /fr/
 blog:
   id: blog
   title: Découvrez nos analyses juridiques récentes

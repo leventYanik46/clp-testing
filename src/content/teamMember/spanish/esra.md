@@ -16,10 +16,10 @@ profile:
   - Fluida en turco e inglés, la Sra. Bulan aprovecha su trasfondo bicultural y su criterio legal para abogar por inmigrantes y sus familias con empatía, claridad y determinación. Su compromiso es que cada cliente sea escuchado, protegido y esté plenamente informado durante todo su proceso legal.
   actions:
   - text: Agendar una consulta
-    href: /Schedule
+    href: /es/Schedule
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: Contácteme
-    href: /contact
+    href: /es/contact
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
 steps:
 - id: resume
@@ -70,7 +70,7 @@ cta:
   actions:
   - variant: primary
     text: Agendar una consulta
-    href: /Schedule
+    href: /es/Schedule
 blog:
   id: blog
   title: Explore nuestros últimos análisis legales

@@ -13,10 +13,10 @@ profile:
   - İngilizce, Türkçe, Fransızca ve Felemenkçe bilen Şahin, dil ve kültür engellerini kolaylıkla aşarak karmaşık uluslararası hukuki meselelerde müvekkillerine etkili danışmanlık sunmaktadır. Akademik başarısı, uluslararası deneyimi ve çok dilli yetkinliği sayesinde Capitol Law Partners için paha biçilemez bir değerdir.
   actions:
   - text: Danışmanlık Randevusu Al
-    href: /Schedule
+    href: /tr/Schedule
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: İletişime Geç
-    href: /contact
+    href: /tr/contact
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
 steps:
 - id: resume
@@ -69,7 +69,7 @@ cta:
   actions:
   - variant: primary
     text: Danışmanlık Randevusu Al
-    href: /Schedule
+    href: /tr/Schedule
 blog:
   id: blog
   title: En Son Hukuki İçeriklerimizi Keşfedin

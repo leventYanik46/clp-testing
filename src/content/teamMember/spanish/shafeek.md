@@ -20,7 +20,7 @@ profile:
   - Tiene licencia para ejercer en Virginia y el Distrito de Columbia.
   actions:
   - text: Contácteme
-    href: /contact
+    href: /es/contact
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
 steps:
 - id: resume
@@ -69,7 +69,7 @@ cta:
   actions:
   - variant: primary
     text: Contácteme
-    href: /
+    href: /es/
 blog:
   id: blog
   title: Explore nuestros últimos análisis legales

@@ -14,14 +14,14 @@ hero:
   actions:
   - variant: primary
     text: Agendar una consulta
-    href: /Schedule
+    href: /es/schedule
     class: w-full sm:mb-0
   - text: Evaluación gratuita
-    href: /evaluations
+    href: /es/evaluations
     variant: primary
     class: w-full sm:mb-0 hidden lg:block
   - text: Contáctenos
-    href: /contact
+    href: /es/contact
     variant: primary
     class: w-full sm:mb-0 lg:hidden
 practiceAreas:
@@ -130,7 +130,7 @@ steps:
   - title: 'Paso 2: <span class="font-medium">Agende una <a href="/evaluations" class="hover:text-primary underline font-bold"> evaluación gratuita</a></span>'
     description: Si su caso requiere una preevaluación más detallada, complete nuestro formulario de evaluación gratuita. Nuestro equipo revisará cuidadosamente la información y podría contactarlo para obtener datos o documentos adicionales.
     icon: tabler:calendar-event
-  - title: 'Paso 3: <span class="font-medium"><a href="/Schedule" class="hover:text-primary underline font-bold"> Reserve una consulta</a></span>'
+  - title: 'Paso 3: <span class="font-medium"><a href="/es/schedule" class="hover:text-primary underline font-bold"> Reserve una consulta</a></span>'
     description: Reúnase con nuestros abogados experimentados para recibir una consulta personalizada. Ya necesite ayuda con derecho corporativo, litigios, inmigración o planificación patrimonial, lo guiaremos por sus opciones legales.
     icon: tabler:scale
   - title: ¡Listo!
@@ -148,5 +148,5 @@ cta:
   actions:
   - variant: primary
     text: Contáctenos
-    href: /contact
+    href: /es/contact
 ---

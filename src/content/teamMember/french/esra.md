@@ -16,12 +16,12 @@ profile:
   - Bilingue en turc et en anglais, Me Bulan s’appuie sur sa biculturalité et sa rigueur juridique pour défendre les immigrés et leurs familles avec empathie, clarté et détermination. Elle s’engage à ce que ses clients soient entendus, protégés et pleinement informés tout au long de leur parcours juridique.
   actions:
   - text: Planifier une consultation
-    href: /Schedule
+    href: /fr/Schedule
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent
       text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg
       w-full sm:w-auto
   - text: Me contacter
-    href: /contact
+    href: /fr/contact
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent
       text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg
       w-full sm:w-auto
@@ -74,7 +74,7 @@ cta:
   actions:
   - variant: primary
     text: Planifier une consultation
-    href: /Schedule
+    href: /fr/Schedule
 blog:
   id: blog
   title: Découvrez nos analyses juridiques récentes

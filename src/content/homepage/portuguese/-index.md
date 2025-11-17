@@ -14,14 +14,14 @@ hero:
   actions:
   - variant: primary
     text: Agendar uma consulta
-    href: /Schedule
+    href: /pt/schedule
     class: w-full sm:mb-0
   - text: Avaliação gratuita
-    href: /evaluations
+    href: pt/evaluations
     variant: primary
     class: w-full sm:mb-0 hidden lg:block
   - text: Fale conosco
-    href: /contact
+    href: pt/contact
     variant: primary
     class: w-full sm:mb-0 lg:hidden
 practiceAreas:
@@ -124,13 +124,13 @@ testimonials:
 steps:
   title: Tenha hoje a representação jurídica que você merece
   items:
-  - title: 'Etapa 1: <span class="font-medium">Preencha o formulário <a href="/contact" class="hover:text-primary underline font-bold"> Fale Conosco</a></span>'
+  - title: 'Etapa 1: <span class="font-medium">Preencha o formulário <a href="/pt/contact" class="hover:text-primary underline font-bold"> Fale Conosco</a></span>'
     description: Comece fornecendo detalhes sobre suas questões jurídicas em nosso formulário de contato. Nossa equipe analisará sua solicitação e a conectará ao especialista adequado.
     icon: tabler:file-text
-  - title: 'Etapa 2: <span class="font-medium">Agende uma <a href="/evaluations" class="hover:text-primary underline font-bold"> Avaliação Gratuita </a></span>'
+  - title: 'Etapa 2: <span class="font-medium">Agende uma <a href="/pt/evaluations" class="hover:text-primary underline font-bold"> Avaliação Gratuita </a></span>'
     description: Se o seu caso exigir uma pré-avaliação mais detalhada, preencha nosso formulário de avaliação gratuita. Nossa equipe jurídica analisará cuidadosamente as informações e poderá solicitar dados ou documentos adicionais para compreender totalmente sua situação.
     icon: tabler:calendar-event
-  - title: 'Etapa 3: <span class="font-medium"><a href="/Schedule" class="hover:text-primary underline font-bold"> Agende uma consulta </a></span>'
+  - title: 'Etapa 3: <span class="font-medium"><a href="/pt/schedule" class="hover:text-primary underline font-bold"> Agende uma consulta </a></span>'
     description: Reúna-se com nossos advogados experientes para uma consulta personalizada. Seja para direito corporativo, contencioso, imigração ou planejamento sucessório, vamos orientar suas opções jurídicas.
     icon: tabler:scale
   - title: Pronto!
@@ -148,5 +148,5 @@ cta:
   actions:
   - variant: primary
     text: Fale conosco
-    href: /contact
+    href: pt/contact
 ---

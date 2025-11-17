@@ -20,7 +20,7 @@ profile:
   - Virginia ve Columbia Bölgesi’nde (Washington, D.C.) avukatlık yapma lisansına sahiptir.
   actions:
   - text: İletişime Geç
-    href: /contact
+    href: /tr/contact
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
 steps:
 - id: resume
@@ -69,7 +69,7 @@ cta:
   actions:
   - variant: primary
     text: İletişime Geç
-    href: /
+    href: /tr/
 blog:
   id: blog
   title: En Son Hukuki İçeriklerimizi Keşfedin

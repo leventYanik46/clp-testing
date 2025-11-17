@@ -44,7 +44,7 @@ sections:
         actions:
           - variant: primary
             text: İletişime Geç
-            href: /contact
+            href: /tr/contact
             target: _blank
           - variant: primary
             text: Biyografiyi Gör →

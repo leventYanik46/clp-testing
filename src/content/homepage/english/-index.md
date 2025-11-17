@@ -190,7 +190,7 @@ steps:
       provided and may contact you for additional details or documentation to ensure
       a thorough understanding of your situation.
     icon: tabler:calendar-event
-  - title: 'Step 3: <span class="font-medium"><a href="/Schedule" class="hover:text-primary
+  - title: 'Step 3: <span class="font-medium"><a href="/schedule" class="hover:text-primary
       underline font-bold"> Book a Consultation </a></span>'
     description: Meet with our experienced attorneys for a personalized consultation.
       Whether you need assistance with corporate law, litigation, immigration, or

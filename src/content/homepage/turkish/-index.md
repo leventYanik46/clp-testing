@@ -14,14 +14,14 @@ hero:
   actions:
   - variant: primary
     text: Danışmanlık Randevusu Alın
-    href: /Schedule
+    href: /tr/schedule
     class: w-full sm:mb-0
   - text: Ücretsiz Değerlendirme
-    href: /evaluations
+    href: /tr/evaluations
     variant: primary
     class: w-full sm:mb-0 hidden lg:block
   - text: Bize Ulaşın
-    href: /contact
+    href: /tr/contact
     variant: primary
     class: w-full sm:mb-0 lg:hidden
 practiceAreas:
@@ -124,13 +124,13 @@ testimonials:
 steps:
   title: Hak Ettiğiniz Hukuki Temsiliyete Bugün Ulaşın
   items:
-  - title: 'Adım 1: <span class="font-medium"><a href="/contact" class="hover:text-primary underline font-bold"> Bize Ulaşın</a> Formunu Doldurun</span>'
+  - title: 'Adım 1: <span class="font-medium"><a href="/tr/contact" class="hover:text-primary underline font-bold"> Bize Ulaşın</a> Formunu Doldurun</span>'
     description: Hukuki ihtiyaçlarınızı iletişim formumuzdan paylaşın. Ekibimiz talebinizi inceleyip sizi doğru uzmanla buluşturur.
     icon: tabler:file-text
-  - title: 'Adım 2: <span class="font-medium"><a href="/evaluations" class="hover:text-primary underline font-bold"> Ücretsiz Değerlendirme </a> Planlayın</span>'
+  - title: 'Adım 2: <span class="font-medium"><a href="/tr/evaluations" class="hover:text-primary underline font-bold"> Ücretsiz Değerlendirme </a> Planlayın</span>'
     description: Dosyanız daha detaylı bir ön inceleme gerektiriyorsa ücretsiz değerlendirme formumuzu doldurun. Hukuk ekibimiz bilgileri dikkatle inceler ve gerekirse ek evrak talep eder.
     icon: tabler:calendar-event
-  - title: 'Adım 3: <span class="font-medium"><a href="/Schedule" class="hover:text-primary underline font-bold"> Danışmanlık Randevusu Oluşturun </a></span>'
+  - title: 'Adım 3: <span class="font-medium"><a href="/tr/schedule" class="hover:text-primary underline font-bold"> Danışmanlık Randevusu Oluşturun </a></span>'
     description: Deneyimli avukatlarımızla birebir görüşerek ister kurumsal hukuk, ister göçmenlik, dava veya miras planlaması olsun seçeneklerinizi birlikte değerlendirin.
     icon: tabler:scale
   - title: Hazırız!
@@ -148,5 +148,5 @@ cta:
   actions:
   - variant: primary
     text: Bize Ulaşın
-    href: /contact
+    href: /tr/contact
 ---
