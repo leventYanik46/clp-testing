@@ -98,7 +98,7 @@ export const headerDataTr = {
       text: 'Uygulama Alanları',
       links: [
         {
-          text: 'Genel Hukuk Danışmanlığı ve Danışmanlık Hizmetleri',
+          text: 'Hukuk Danişmanlığı',
           href: getPermalink('/tr/practice-area/general-counsel-services'),
         },
         {
@@ -501,9 +501,9 @@ export const footerDataTr = {
       ],
     },
     {
-      title: 'Uygulama Alanları',
+      title: 'Çalışma Alanları',
       links: [
-        { text: 'Genel Hukuk Danışmanlığı Hizmetleri', href: getPermalink('/practice-area/general-counsel-services') },
+        { text: 'nışmanlığı Hizmetleri', href: getPermalink('/practice-area/general-counsel-services') },
         { text: 'Ticaret ve Şirketler Hukuku', href: getPermalink('/practice-area/business-corporate-law') },
         { text: 'Vasiyet ve Miras Hukuku', href: getPermalink('/practice-area/estate-planning') },
         { text: 'Gayrimenkul Hukuku', href: getPermalink('/practice-area/real-estate') },

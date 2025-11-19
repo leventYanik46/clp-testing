@@ -1,5 +1,23 @@
 ---
 import { Icon } from 'astro-icon/components';
+import type { ContentEntryMap } from "astro:content";
+import { getListPage } from "~/utils/lib/contentParser.astro";
+import { supportedLang } from "~/utils/lib/languageParser";
+export function getStaticPaths() {
+  const paths = supportedLang.map((lang) => ({
+    params: { lang: lang || undefined },
+  }));
+  return paths;
+}
+
+const { lang } = Astro.params;
+
+const aboutPage = await getListPage("about", lang as keyof ContentEntryMap);
+if (!aboutPage || aboutPage.length === 0 || !aboutPage[0].data) {
+  throw new Error("About content not found for language: " + lang);
+}
+
+const { metadata, hero, heroImage, practiceAreas, values, locations, contact } = aboutPage[0].data;
 ---
 
 <section class="bg-blue-50 not-prose">

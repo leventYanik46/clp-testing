@@ -138,19 +138,20 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
         <label class="sr-only" for="language-switcher">
           Switch language
         </label>
-        <select
-          id="language-switcher"
-          class="border rounded px-2 py-1 text-sm bg-white"
-          onchange="if(this.value) window.location.href=this.value"
-          aria-label="Switch language"
-        >
-          <option value="/">🌐</option>
-          <option value="/">En</option>
-          <option value="/tr">Tr</option>
-          <option value="/es">Es</option>
-          <option value="/pt">Pt</option>
-          <option value="/fr">Fr</option>
-        </select>
+         <select
+           id="language-switcher"
+           class="border rounded px-2 py-1 text-sm bg-white"
+           onchange="if(this.value) window.location.href=this.value"
+           aria-label="Switch language"
+           value={lang ? `/${lang}` : '/'}
+         >
+           <option value="/tr" disabled selected>🇹🇷 Tr</option>
+            <option value="/tr">🇹🇷 Tr</option>
+           <option value="/">🇺🇸 En</option>
+           <option value="/es">🇪🇸 Es</option>
+           <option value="/pt">🇵🇹 Pt</option>
+           <option value="/fr">🇫🇷 Fr</option> 
+         </select>
       </form>
       {
         actions?.length ? (

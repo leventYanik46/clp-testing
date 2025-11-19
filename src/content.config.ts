@@ -1,3 +1,10 @@
+const noteCollection = defineCollection({
+  loader: glob({ pattern: '**/index.{md,mdx}', base: 'src/content/note' }),
+  schema: z.object({
+    title: z.string(),
+    text: z.string(),
+  }),
+});
 import { glob } from 'astro/loaders';
 import { z, defineCollection } from 'astro:content';
 
@@ -424,4 +431,5 @@ export const collections = {
   practiceArea: practiceAreaCollection,
   notFound: notFoundCollection,
   announcement: announcementCollection,
+  note: noteCollection,
 };

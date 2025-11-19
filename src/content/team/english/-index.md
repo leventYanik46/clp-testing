@@ -70,7 +70,7 @@ sections:
       src: ~/assets/images/esra-bw.png
       alt: Blueprint Image
   - title: Kemal Sahin
-    tagline: Law Clerk
+    tagline: Attorney at Law
     subtitle: Let's Work Together
     bottomtag: General Counsel Advisory | Intellectual Property Law
     actions:
