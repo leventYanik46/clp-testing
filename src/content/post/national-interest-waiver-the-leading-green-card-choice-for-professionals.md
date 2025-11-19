@@ -2,6 +2,7 @@
 title: "National Interest Waiver: The Leading Green Card Choice for Professionals"
 excerpt: Discover the National Interest Waiver (NIW) application a subcategory
   of the second preference employment-based Green Card EB-2.
+  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 category: Immigration
 lang: en
 tags:
