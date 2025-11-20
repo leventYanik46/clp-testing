@@ -6,11 +6,11 @@ profile:
   id: about
   columns: 2
   name: Kemal Şahin
-  role: Hukuk Danışmanı
+  role: Avukat (Attorney At Law)
   bio:
-  - Kemal Şahin, Capitol Law Partners PLLC’de hukuk danışmanı olarak görev yapmaktadır. Boston College Hukuk Fakültesi mezunu olan Şahin, kamu uluslararası hukuku, anayasa hukuku, insan hakları ve ifade özgürlüğü alanlarında yirmi yılı aşkın deneyimiyle müvekkillerine derin bir uzmanlık sunmaktadır. Hem medeni hukuk hem de common law sistemlerinde çalışmış olması, onu karşılaştırmalı hukuk konularında benzersiz bir danışman haline getirmektedir.
-  - Şahin, Avrupa Konseyi’nde hukuk danışmanı olarak görev yapmış ve burada yargı eğitimi programları ile hukuk reformu girişimlerinde önemli bir rol üstlenmiştir. Çalışmaları, demokratik kurumların ve sivil özgürlüklerin güçlendirilmesine odaklanmıştır.
-  - İngilizce, Türkçe, Fransızca ve Felemenkçe bilen Şahin, dil ve kültür engellerini kolaylıkla aşarak karmaşık uluslararası hukuki meselelerde müvekkillerine etkili danışmanlık sunmaktadır. Akademik başarısı, uluslararası deneyimi ve çok dilli yetkinliği sayesinde Capitol Law Partners için paha biçilemez bir değerdir.
+  - Kemal Şahin, Capitol Law Partners PLLC’de avukat olarak görev yapmaktadır. İstanbul, Massachusetts ve Connecticut barolarına kabul edilmiştir. Şahin, vasiyetname hazırlama, küçük işletme uyuşmazlıkları ve göçmenlik başta olmak üzere çeşitli alanlarda müvekkillerine pratik ve çözüm odaklı hukuki destek sunar.
+  - Şahin’in yaklaşımı, karmaşık hukuki sorunları sadeleştirerek müvekkillerinin hedeflerine ulaşmasını sağlamaktır. Avrupa Konseyi’nde hukuk danışmanı olarak görev almış, yargı eğitimi ve hukuk reformu projelerinde önemli katkılar sunmuştur.
+  - İngilizce, Türkçe, Fransızca ve Felemenkçe bilen Şahin, çok dilli ve kültürlerarası iletişim becerileriyle uluslararası ve sınır ötesi davalarda müvekkillerine etkin temsil sağlar.
   actions:
   - text: Danışmanlık Randevusu Al
     href: /tr/schedule
@@ -33,9 +33,9 @@ steps:
 - id: resume
   title: Baro Üyelikleri
   items:
-  - title: Massachusetts (Beklemede)
+  - title: Massachusetts Barosu
     icon: tabler:certificate
-  - title: Connecticut (Beklemede)
+  - title: Connecticut Barosu
     icon: tabler:certificate
   - title: İstanbul Barosu
     icon: tabler:certificate

@@ -8,23 +8,15 @@ profile:
   id: about
   columns: 2
   name: Kemal Sahin
-  role: Law Clerk
+  role: Attorney At law
   bio:
-  - Kemal Sahin is a law clerk at Capitol Law Partners PLLC. A graduate of Boston
-    College Law School, Mr. Sahin brings over two decades of legal experience to the
-    firm, offering clients deep expertise in public international law, constitutional
-    law, human rights, and freedom of expression. He has worked across both civil
-    and common law systems, making him uniquely qualified to advise on comparative
-    legal matters.
-  - Mr. Sahin has served as a legal consultant to the Council of Europe, where he
-    played a vital role in judicial training programs and legal reform initiatives.
-    His work has focused on strengthening democratic institutions and civil liberties
-    in emerging legal systems.
-  - Fluent in English, Turkish, French, and Dutch, Mr. Sahin bridges language and
-    cultural barriers with ease, making him particularly effective in advising clients
-    on complex, cross-border legal matters. His combination of academic excellence,
-    international experience, and multilingual fluency make him an invaluable asset
-    to Capitol Law Partners.
+  - Kemal Sahin is an attorney at Capitol Law Partners PLLC, admitted to practice in Istanbul, 
+    Massachusetts, and Connecticut. His practice focuses on will drafting, small business disputes, and immigration matters. Drawing on more than two decades of legal experience, Mr. Sahin offers clients a practical, solutions-oriented approach across a range of personal and business needs. 
+  - Mr. Sahin previously served as a legal consultant to the Council of Europe, contributing to systems
+    judicial training programs and legal reform efforts. His background in both civil and common law    
+    supports his ability to handle matters with international or comparative elements.
+  - Fluent in English, Turkish, French, and Dutch, Mr. Sahin works effectively with clients from 
+    diverse cultural and linguistic backgrounds. His cross-border experience and multilingual skills enhance his ability to provide clear, reliable counsel.
   actions:
   - text: Schedule a Consultation
     href: /schedule
@@ -54,9 +46,9 @@ steps:
 - id: resume
   title: Bar Admissions
   items:
-  - title: Massachusetts (Pending)
+  - title: Massachusetts Bar Association
     icon: tabler:certificate
-  - title: Connecticut (Pending)
+  - title: Connecticut Bar Association
     icon: tabler:certificate
   - title: Istanbul Bar Association
     icon: tabler:certificate

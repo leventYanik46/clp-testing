@@ -19,11 +19,11 @@ profile:
   - Grâce à ses compétences multilingues et à sa profonde compréhension interculturelle, M. Turkoglu guide ses clients à travers la complexité du système d’immigration américain avec clarté, compassion et précision.
   actions:
   - text: Prendre rendez-vous
-    href: /schedule
+    href: /fr/schedule
     variant: primary
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: Me contacter
-    href: /contact
+    href: /fr/contact
     variant: primary
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
 steps:
@@ -73,7 +73,7 @@ cta:
   actions:
   - variant: primary
     text: Prendre rendez-vous
-    href: /schedule
+    href: /fr/schedule
 blog:
   title: Découvrez nos dernières analyses juridiques
   information: Restez informé grâce à des articles d’experts sur l’immigration, le droit des sociétés et la protection des données.

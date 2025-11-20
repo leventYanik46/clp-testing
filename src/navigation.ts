@@ -72,9 +72,6 @@ export const headerData = {
         { text: 'Shafeek Seddiq', 
           href: getPermalink('/our-team/shafeek'),
         },
-        { text: 'Kemal Sahin', 
-          href: getPermalink('/our-team/kemal'),
-        },
         { text: 'S. Selman Kilic', 
           href: getPermalink('/our-team/selman'),
         },
@@ -83,6 +80,9 @@ export const headerData = {
         },
         { text: 'Mehmet Y. Turkoglu', 
           href: getPermalink('/our-team/mehmet'),
+        },
+        { text: 'Kemal Sahin', 
+          href: getPermalink('/our-team/kemal'),
         },
       ],
     },
@@ -156,10 +156,6 @@ export const headerDataTr = {
           href: getPermalink('/tr/our-team/shafeek'),
         },
         { 
-          text: 'Kemal Şahin', 
-          href: getPermalink('/tr/our-team/kemal'),
-        },
-        { 
           text: 'S. Selman Kılıç', 
           href: getPermalink('/tr/our-team/selman'),
         },
@@ -170,6 +166,10 @@ export const headerDataTr = {
         { 
           text: 'Mehmet Y. Turkoglu', 
           href: getPermalink('/tr/our-team/mehmet'),
+        },
+        { 
+          text: 'Kemal Şahin', 
+          href: getPermalink('/tr/our-team/kemal'),
         },
       ],
     },
@@ -259,20 +259,20 @@ export const headerDataEs= {
           href: getPermalink('/es/our-team/shafeek'),
         },
         {
-          text: 'Kemal Sahin',
-          href: getPermalink('/es/our-team/kemal'),
-        },
-        {
           text: 'S. Selman Kilic',
           href: getPermalink('/es/our-team/selman'),
         },
-          {
-            text: 'Mehmet Y. Turkoglu',
-            href: getPermalink('/es/our-team/mehmet'),
-          },
         {
           text: 'Esra Nur Bulan',
           href: getPermalink('/es/our-team/esra'),
+        },
+        {
+          text: 'Mehmet Y. Turkoglu',
+          href: getPermalink('/es/our-team/mehmet'),
+        },
+        {
+          text: 'Kemal Sahin',
+          href: getPermalink('/es/our-team/kemal'),
         },
       ],
     },
@@ -347,15 +347,14 @@ export const headerDataFr = {
         { text: 'Shafeek Seddiq',
           href: getPermalink('/fr/our-team/shafeek')
         },
-        { text: 'Kemal Sahin',
-          href: getPermalink('/fr/our-team/kemal') },
-
         { text: 'S. Selman Kilic',
           href: getPermalink('/fr/our-team/selman') },
-          { text: 'Mehmet Y. Turkoglu',
-            href: getPermalink('/fr/our-team/mehmet') },
         { text: 'Esra Nur Bulan',
           href: getPermalink('/fr/our-team/esra') },
+        { text: 'Mehmet Y. Turkoglu',
+          href: getPermalink('/fr/our-team/mehmet') },
+        { text: 'Kemal Sahin',
+          href: getPermalink('/fr/our-team/kemal') },
       ],
     },
     {
@@ -434,15 +433,14 @@ export const headerDataPt = {
         { text: 'Shafeek Seddiq', 
           href: getPermalink('/pt/our-team/shafeek') 
         },
-        { text: 'Kemal Sahin', 
-          href: getPermalink('/pt/our-team/kemal') },
-
         { text: 'S. Selman Kilic', 
           href: getPermalink('/pt/our-team/selman') },
-          { text: 'Mehmet Y. Turkoglu', 
-            href: getPermalink('/pt/our-team/mehmet') },
         { text: 'Esra Nur Bulan', 
           href: getPermalink('/pt/our-team/esra') },
+        { text: 'Mehmet Y. Turkoglu', 
+          href: getPermalink('/pt/our-team/mehmet') },
+        { text: 'Kemal Sahin', 
+          href: getPermalink('/pt/our-team/kemal') },
       ],
     },
     {
@@ -470,9 +468,9 @@ export const footerData = {
         { text: 'Meet Our Team', href: getPermalink('/team')},
   { text: 'Cagatay Ersoy', href: getPermalink('/our-team/cagatay') },
   { text: 'Sena Sahin', href: getPermalink('/our-team/sena') },
-  { text: 'Kemal Sahin', href: getPermalink('/our-team/kemal') },
   { text: 'S. Selman Kilic', href: getPermalink('/our-team/selman') },
   { text: 'Mehmet Y. Turkoglu', href: getPermalink('/our-team/mehmet') },
+  { text: 'Kemal Sahin', href: getPermalink('/our-team/kemal') },
 
       ],
     },
@@ -517,7 +515,13 @@ export const footerData = {
     </strong> 
     <br>
     <br>
+    <span style="font-size: 0.875rem;">Designed & Developed by <strong>Levent Yanik</strong></span>
+    <br>
+    <br>
     © Copyright Capitol Law Partners LLC · All Rights Reserved.
+    <br>
+    <br>
+    
   `,
 };
 export const footerDataTr = {
@@ -535,9 +539,9 @@ export const footerDataTr = {
         { text: 'Ekibimizle Tanışın', href: getPermalink('/team') },
   { text: 'Çağatay Ersoy', href: getPermalink('/our-team/cagatay') },
   { text: 'Sena Şahin', href: getPermalink('/our-team/sena') },
-  { text: 'Kemal Şahin', href: getPermalink('/our-team/kemal') },
   { text: 'S. Selman Kılıç', href: getPermalink('/our-team/selman') },
-  { text: 'Mehmet Y. Turkoglu', href: getPermalink('/our-team/mehmet') }
+  { text: 'Mehmet Y. Turkoglu', href: getPermalink('/our-team/mehmet') },
+  { text: 'Kemal Şahin', href: getPermalink('/our-team/kemal') }
       ],
     },
     {
@@ -576,12 +580,17 @@ export const footerDataTr = {
   ],
   footNote: `
     <strong>
-    Avukat Reklamı. Bu web sitesindeki içerik yalnızca genel bilgilendirme amacıyla hazırlanmıştır,<br>
-    ve resmi bir hukuki tavsiye veya avukat/müvekkil ilişkisi kurulması olarak yorumlanmamalıdır.
+    Avukat Reklamı. Bu web sitesindeki içerik yalnızca genel bilgilendirme içindir,<br> ve resmi bir hukuki tavsiye veya avukat/müvekkil ilişkisi kurulması olarak yorumlanmamalıdır. 
     </strong> 
     <br>
     <br>
+    <span style="font-size: 0.875rem;">Yazılım & Tasarım: <strong>Levent Yanik</strong></span>
+    <br>
+    <br>
     © Telif Hakkı Capitol Law Partners LLC · Tüm Hakları Saklıdır.
+    <br>
+    <br>
+    
   `,
 };
 
@@ -600,9 +609,9 @@ export const footerDataSpanish = {
         { text: 'Conozca a Nuestro Equipo', href: getPermalink('/es/team') },
         { text: 'Cagatay Ersoy', href: getPermalink('/es/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/es/our-team/sena') },
-        { text: 'Kemal Sahin', href: getPermalink('/es/our-team/kemal') },
   { text: 'S. Selman Kilic', href: getPermalink('/es/our-team/selman') },
   { text: 'Mehmet Y. Turkoglu', href: getPermalink('/es/our-team/mehmet') },
+        { text: 'Kemal Sahin', href: getPermalink('/es/our-team/kemal') },
       ],
     },
     {
@@ -641,12 +650,17 @@ export const footerDataSpanish = {
   ],
   footNote: `
     <strong>
-    Publicidad de abogados. El contenido de este sitio web se ofrece solo con fines informativos,<br>
-    y no debe interpretarse como asesoría legal formal ni como el establecimiento de una relación abogado/cliente.
-    </strong>
+    Publicidad de abogados. El contenido de este sitio web se ofrece solo con fines informativos,<br> y no debe interpretarse como asesoramiento legal formal ni como establecimiento de una relación abogado/cliente. 
+    </strong> 
+    <br>
+    <br>
+    <span style="font-size: 0.875rem;">Diseñado y desarrollado por <strong>Levent Yanik</strong></span>
     <br>
     <br>
     © Copyright Capitol Law Partners LLC · Todos los derechos reservados.
+    <br>
+    <br>
+    
   `,
 };
 
@@ -666,9 +680,9 @@ export const footerDataFr = {
         { text: 'Rencontrez notre équipe', href: getPermalink('/fr/team') },
         { text: 'Cagatay Ersoy', href: getPermalink('/fr/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/fr/our-team/sena') },
-        { text: 'Kemal Sahin', href: getPermalink('/fr/our-team/kemal') },
   { text: 'S. Selman Kilic', href: getPermalink('/fr/our-team/selman') },
   { text: 'Mehmet Y. Turkoglu', href: getPermalink('/fr/our-team/mehmet') },
+        { text: 'Kemal Sahin', href: getPermalink('/fr/our-team/kemal') },
       ],
     },
     {
@@ -707,12 +721,17 @@ export const footerDataFr = {
   ],
   footNote: `
     <strong>
-    Publicité d’avocat. Le contenu de ce site est fourni uniquement à titre informatif,<br>
-    et ne doit pas être interprété comme un conseil juridique formel ni comme l’établissement d’une relation avocat/client.
-    </strong>
+    Publicité d’avocat. Le contenu de ce site est fourni uniquement à titre informatif,<br> et ne doit pas être interprété comme un conseil juridique formel ni comme l’établissement d’une relation avocat/client. 
+    </strong> 
+    <br>
+    <br>
+    <span style="font-size: 0.875rem;">Conçu et développé par <strong>Levent Yanik</strong></span>
     <br>
     <br>
     © Copyright Capitol Law Partners LLC · Tous droits réservés.
+    <br>
+    <br>
+    
   `,
 };
 export const footerDataPt = {
@@ -730,9 +749,9 @@ export const footerDataPt = {
         { text: 'Conheça Nossa Equipe', href: getPermalink('/pt/team') },
         { text: 'Cagatay Ersoy', href: getPermalink('/pt/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/pt/our-team/sena') },
-        { text: 'Kemal Sahin', href: getPermalink('/pt/our-team/kemal') },
   { text: 'S. Selman Kilic', href: getPermalink('/pt/our-team/selman') },
   { text: 'Mehmet Y. Turkoglu', href: getPermalink('/pt/our-team/mehmet') },
+        { text: 'Kemal Sahin', href: getPermalink('/pt/our-team/kemal') },
 
       ],
     },
@@ -772,11 +791,17 @@ export const footerDataPt = {
   ],
   footNote: `
     <strong>
-    Publicidade de advogado. O conteúdo deste site é voltado apenas para fins informativos gerais,<br>
-    e não deve ser interpretado como aconselhamento jurídico formal nem como estabelecimento de relação advogado/cliente.
+    Publicidade de Advogado. O conteúdo deste site é destinado apenas para informações gerais,<br> e não deve ser interpretado como aconselhamento jurídico formal ou criação de uma relação advogado/cliente.
     </strong>
     <br>
     <br>
-    © Copyright Capitol Law Partners LLC · Todos os direitos reservados.
+    <span style="font-size: 0.875rem;">Design & Desenvolvimento por <strong>Levent Yanik</strong></span>
+    <br>
+    <br>
+    © Copyright Capitol Law Partners LLC · Todos os Direitos Reservados.
+    <br>
+    <br>
+
+    
   `,
 };

@@ -1,6 +1,6 @@
 ---
 metadata:
-  title: Conozca a nuestro equipo
+  title: Conozca a Nuestro Equipo
   description: Conozca a nuestro equipo y agende una cita con nuestros expertos.
 sections:
 - wrapper: flex flex-wrap justify-center gap-4
@@ -24,7 +24,7 @@ sections:
   - title: Sena Sahin
     tagline: Abogada
     subtitle: Trabajemos juntas
-    bottomtag: Litigios | Derecho Corporativo | Derecho Migratorio
+    bottomtag: Litigios Comerciales | Planificación Patrimonial | Litigios Federales
     actions:
     - variant: primary
       text: Agendar una cita
@@ -44,7 +44,7 @@ sections:
     actions:
     - variant: primary
       text: Contácteme
-      href: /fr/contact
+      href: /es/contact
       target: _blank
     - variant: primary
       text: Ver biografía →
@@ -56,7 +56,7 @@ sections:
   - title: Esra Nur Bulan
     tagline: Abogada
     subtitle: Trabajemos juntas
-    bottomtag: Litigios de Inmigración | Inmigración
+    bottomtag: Derecho Humanitario | Derecho Migratorio
     actions:
     - variant: primary
       text: Contácteme
@@ -88,11 +88,11 @@ sections:
   - title: S. Selman Kilic
     tagline: Abogado
     subtitle: Trabajemos juntos
-    bottomtag: Litigios | Derecho Corporativo | Derecho Migratorio
+    bottomtag: Defensa contra Deportación | Litigios Migratorios | Derecho Corporativo
     actions:
     - variant: primary
       text: Contácteme
-      href: https://wa.me/12024402272
+      href: /es/contact
       target: _blank
     - variant: primary
       text: Ver biografía →

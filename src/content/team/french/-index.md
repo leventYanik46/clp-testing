@@ -32,7 +32,7 @@ sections:
       target: _blank
     - variant: primary
       text: Voir la bio →
-      href: /fr/our-team/fr/sena
+      href: /fr/our-team/sena
       target: _blank
     image:
       src: ~/assets/images/Sena-bw.jpg

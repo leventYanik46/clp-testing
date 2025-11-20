@@ -24,7 +24,7 @@ sections:
       - title: Sena Şahin
         tagline: Avukat
         subtitle: Birlikte Çalışalım
-        bottomtag: Dava | Şirketler Hukuku | Göçmenlik Hukuku
+        bottomtag: İş Davası | Miras Planlaması | Federal Dava
         actions:
           - variant: primary
             text: Randevu planlayın
@@ -56,7 +56,7 @@ sections:
       - title: Esra Nur Bulan
         tagline: Avukat
         subtitle: Birlikte Çalışalım
-        bottomtag: Göçmenlik Davaları | Göçmenlik
+        bottomtag: İnsani Hukuk | Göçmenlik Hukuku
         actions:
           - variant: primary
             text: İletişime Geç
@@ -88,11 +88,11 @@ sections:
       - title: S. Selman Kılıç
         tagline: Avukat
         subtitle: Birlikte Çalışalım
-        bottomtag: Dava | Şirketler Hukuku | Göçmenlik Hukuku
+        bottomtag: Sınır Dışı Savunması | Göçmenlik Davası | Şirketler Hukuku
         actions:
           - variant: primary
             text: İletişime Geç
-            href: https://wa.me/12024402272
+            href: /tr/contact
             target: _blank
           - variant: primary
             text: Biyografiyi Gör →

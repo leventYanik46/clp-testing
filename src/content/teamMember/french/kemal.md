@@ -6,11 +6,11 @@ profile:
   id: about
   columns: 2
   name: Kemal Sahin
-  role: Assistant juridique
+  role: Avocat (Attorney At Law)
   bio:
-  - Kemal Sahin est assistant juridique chez Capitol Law Partners PLLC. Diplômé de Boston College Law School, il apporte plus de deux décennies d’expérience juridique, offrant aux clients une expertise approfondie en droit international public, droit constitutionnel, droits humains et liberté d’expression. Il a travaillé dans des systèmes de civil law et de common law, ce qui le rend particulièrement qualifié pour conseiller sur des questions juridiques comparées.
-  - M. Sahin a été consultant juridique pour le Conseil de l’Europe, où il a joué un rôle clé dans des programmes de formation judiciaire et des initiatives de réforme juridique. Son travail s’est concentré sur le renforcement des institutions démocratiques et des libertés civiles dans des systèmes juridiques émergents.
-  - Maîtrisant l’anglais, le turc, le français et le néerlandais, M. Sahin franchit aisément les barrières linguistiques et culturelles, ce qui le rend particulièrement efficace pour conseiller des clients sur des dossiers juridiques complexes et transfrontaliers. Sa combinaison d’excellence académique, d’expérience internationale et de polyvalence linguistique fait de lui un atout précieux pour Capitol Law Partners.
+  - Kemal Sahin est avocat chez Capitol Law Partners PLLC, admis aux barreaux d’Istanbul, du Massachusetts et du Connecticut. Il offre des conseils juridiques pratiques et orientés vers la solution dans des domaines tels que la rédaction de testaments, les litiges de petites entreprises et l’immigration.
+  - Son approche vise à simplifier les questions juridiques complexes afin d’aider ses clients à atteindre leurs objectifs. Il a travaillé comme consultant juridique au Conseil de l’Europe, contribuant à des projets de formation judiciaire et de réforme du droit.
+  - Parlant anglais, turc, français et néerlandais, il met à profit ses compétences multilingues et interculturelles pour représenter efficacement ses clients dans des affaires internationales et transfrontalières.
   actions:
   - text: Planifier une consultation
     href: /fr/schedule
@@ -26,9 +26,9 @@ steps:
 - id: resume
   title: Formation
   items:
-  - title: Boston College Law School <br /><span class="text-sm font-normal">(2023) – LL.M.</span>
+  - title: Faculté de droit du Boston College <br /><span class="text-sm font-normal">(2023) – LL.M.</span>
     icon: tabler:school
-  - title: University of Malta <br /><span class="text-sm font-normal">(2003) – Master of Art</span>
+  - title: Université de Malte <br /><span class="text-sm font-normal">(2003) – Master en Arts</span>
     icon: tabler:school
   - title: Faculté de droit de l’Université d’Istanbul <br /><span class="text-sm font-normal">(1994) – LL.B.</span>
     icon: tabler:school
@@ -37,9 +37,9 @@ steps:
 - id: resume
   title: Barreaux
   items:
-  - title: Massachusetts (En cours)
+  - title: Barreau du Massachusetts
     icon: tabler:certificate
-  - title: Connecticut (En cours)
+  - title: Barreau du Connecticut
     icon: tabler:certificate
   - title: Barreau d’Istanbul
     icon: tabler:certificate

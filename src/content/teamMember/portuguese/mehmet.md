@@ -19,11 +19,11 @@ profile:
   - Com habilidades multilíngues e profundo conhecimento intercultural, o Sr. Turkoglu orienta clientes pelas complexidades do sistema de imigração dos EUA com clareza, compaixão e precisão.
   actions:
   - text: Agendar Consulta
-    href: /schedule
+    href: /pt/schedule
     variant: primary
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: Fale Comigo
-    href: /contact
+    href: /pt/contact
     variant: primary
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
 steps:
@@ -73,7 +73,7 @@ cta:
   actions:
   - variant: primary
     text: Agendar Consulta
-    href: /schedule
+    href: /pt/schedule
 blog:
   title: Explore nossos últimos insights jurídicos
   information: Fique por dentro com artigos de especialistas sobre imigração, direito empresarial e privacidade de dados.

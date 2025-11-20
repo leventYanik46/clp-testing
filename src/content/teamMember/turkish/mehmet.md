@@ -19,11 +19,11 @@ profile:
   - Çok dilli yetkinliği ve derin kültürlerarası anlayışı sayesinde, Turkoglu ABD göçmenlik sisteminin karmaşıklıklarında müvekkillerine açıklık, şefkat ve hassasiyetle rehberlik eder.
   actions:
   - text: Danışmanlık Al
-    href: /schedule
+    href: /tr/schedule
     variant: primary
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: İletişime Geç
-    href: /contact
+    href: /tr/contact
     variant: primary
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
 steps:
@@ -73,7 +73,7 @@ cta:
   actions:
   - variant: primary
     text: Danışmanlık Al
-    href: /schedule
+    href: /tr/schedule
 blog:
   title: En son hukuki analizlerimizi keşfedin
   information: Göçmenlik, şirketler hukuku ve veri gizliliği üzerine uzman makalelerle güncel kalın.

@@ -24,7 +24,7 @@ sections:
   - title: Sena Sahin
     tagline: Advogada
     subtitle: Vamos trabalhar juntos
-    bottomtag: Contencioso | Direito Societário | Direito de Imigração
+    bottomtag: Litígio Empresarial | Planejamento Patrimonial | Litígio Federal
     actions:
     - variant: primary
       text: Agendar uma consulta
@@ -56,7 +56,7 @@ sections:
   - title: Esra Nur Bulan
     tagline: Advogada
     subtitle: Vamos trabalhar juntos
-    bottomtag: Contencioso de Imigração | Imigração
+    bottomtag: Direito Humanitário | Direito de Imigração
     actions:
     - variant: primary
       text: Fale comigo
@@ -88,11 +88,11 @@ sections:
   - title: S. Selman Kilic
     tagline: Advogado
     subtitle: Vamos trabalhar juntos
-    bottomtag: Contencioso | Direito Societário | Direito de Imigração
+    bottomtag: Defesa contra Deportação | Litígio de Imigração | Direito Corporativo
     actions:
     - variant: primary
       text: Fale comigo
-      href: https://wa.me/12024402272
+      href: /pt/contact
       target: _blank
     - variant: primary
       text: Ver bio →

@@ -6,11 +6,11 @@ profile:
   id: about
   columns: 2
   name: Kemal Sahin
-  role: Assistente jurídico
+  role: Advogado (Attorney At Law)
   bio:
-  - Kemal Sahin é assistente jurídico na Capitol Law Partners PLLC. Formado pela Boston College Law School, o Sr. Sahin reúne mais de duas décadas de experiência jurídica, oferecendo aos clientes profunda expertise em direito internacional público, direito constitucional, direitos humanos e liberdade de expressão. Ele atuou em sistemas de civil law e common law, o que o torna especialmente qualificado para aconselhar em temas jurídicos comparados.
-  - O Sr. Sahin atuou como consultor jurídico do Conselho da Europa, desempenhando papel fundamental em programas de treinamento judicial e iniciativas de reforma legal. Seu trabalho tem se concentrado em fortalecer instituições democráticas e liberdades civis em sistemas jurídicos emergentes.
-  - Fluente em inglês, turco, francês e holandês, o Sr. Sahin supera barreiras linguísticas e culturais com facilidade, sendo particularmente eficaz ao orientar clientes em questões jurídicas complexas e transfronteiriças. Sua combinação de excelência acadêmica, experiência internacional e fluência multilíngue o torna um recurso inestimável para a Capitol Law Partners.
+  - Kemal Sahin é advogado na Capitol Law Partners PLLC, admitido nas ordens de advogados de Istambul, Massachusetts e Connecticut. Oferece assessoria prática e orientada para soluções em áreas como elaboração de testamentos, disputas de pequenas empresas e imigração.
+  - Sua abordagem visa simplificar questões jurídicas complexas para ajudar os clientes a alcançar seus objetivos. Atuou como consultor jurídico no Conselho da Europa, contribuindo para projetos de formação judicial e reforma legal.
+  - Fala inglês, turco, francês e holandês, utilizando suas habilidades multilíngues e multiculturais para representar clientes de forma eficaz em questões internacionais e transfronteiriças.
   actions:
   - text: Agendar uma consulta
     href: /pt/schedule
@@ -26,25 +26,22 @@ steps:
 - id: resume
   title: Formação
   items:
-  - title: Boston College Law School <br /><span class="text-sm font-normal">(2023)
-      – LL.M.</span>
+  - title: Faculdade de Direito do Boston College <br /><span class="text-sm font-normal">(2023) – LL.M.</span>
     icon: tabler:school
-  - title: University of Malta <br /><span class="text-sm font-normal">(2003) – Master
-      of Art</span>
+  - title: Universidade de Malta <br /><span class="text-sm font-normal">(2003) – Mestrado em Artes</span>
     icon: tabler:school
-  - title: Istanbul University Faculty of Law <br /><span class="text-sm font-normal">(1994)
-      – LL.B.</span>
+  - title: Faculdade de Direito da Universidade de Istambul <br /><span class="text-sm font-normal">(1994) – LL.B.</span>
     icon: tabler:school
   classes:
     container: max-w-3xl
 - id: resume
   title: Ordens de advocacia
   items:
-  - title: Massachusetts (Pending)
+  - title: Ordem dos Advogados de Massachusetts
     icon: tabler:certificate
-  - title: Connecticut (Pending)
+  - title: Ordem dos Advogados de Connecticut
     icon: tabler:certificate
-  - title: Istanbul Bar Association
+  - title: Ordem dos Advogados de Istambul
     icon: tabler:certificate
   classes:
     container: max-w-3xl

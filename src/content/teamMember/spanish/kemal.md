@@ -6,11 +6,11 @@ profile:
   id: about
   columns: 2
   name: Kemal Sahin
-  role: Pasante jurídico
+  role: Abogado (Attorney At Law)
   bio:
-  - Kemal Sahin es pasante jurídico en Capitol Law Partners PLLC. Graduado de Boston College Law School, el Sr. Sahin aporta más de dos décadas de experiencia legal, brindando a los clientes un profundo conocimiento en derecho internacional público, derecho constitucional, derechos humanos y libertad de expresión. Ha trabajado tanto en sistemas de derecho civil como de common law, lo que lo convierte en un asesor ideal para temas comparados.
-  - El Sr. Sahin se ha desempeñado como consultor legal del Consejo de Europa, donde tuvo un rol clave en programas de capacitación judicial e iniciativas de reforma legal. Su trabajo se ha enfocado en fortalecer las instituciones democráticas y las libertades civiles en sistemas jurídicos emergentes.
-  - Fluido en inglés, turco, francés y neerlandés, el Sr. Sahin salva con facilidad las barreras lingüísticas y culturales, lo que lo hace especialmente efectivo para asesorar en asuntos legales transfronterizos. Su combinación de excelencia académica, experiencia internacional y dominio de varios idiomas es un gran activo para Capitol Law Partners.
+  - Kemal Sahin es abogado en Capitol Law Partners PLLC, admitido en los colegios de abogados de Estambul, Massachusetts y Connecticut. Brinda asesoría práctica y orientada a soluciones en áreas como redacción de testamentos, disputas de pequeñas empresas e inmigración.
+  - Su enfoque se centra en simplificar problemas legales complejos para ayudar a los clientes a alcanzar sus objetivos. Ha trabajado como consultor legal en el Consejo de Europa, contribuyendo a proyectos de formación judicial y reforma legal.
+  - Habla inglés, turco, francés y neerlandés, y utiliza sus habilidades multilingües y multiculturales para representar eficazmente a clientes en asuntos internacionales y transfronterizos.
   actions:
   - text: Agendar una consulta
     href: /es/schedule
@@ -33,9 +33,9 @@ steps:
 - id: resume
   title: Colegiaturas
   items:
-  - title: Massachusetts (en trámite)
+  - title: Massachusetts Bar Association
     icon: tabler:certificate
-  - title: Connecticut (en trámite)
+  - title: Connecticut Bar Association
     icon: tabler:certificate
   - title: Colegio de Abogados de Estambul
     icon: tabler:certificate

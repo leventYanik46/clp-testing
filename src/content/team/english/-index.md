@@ -24,7 +24,7 @@ sections:
   - title: Sena Sahin
     tagline: Attorney at Law
     subtitle: Let's Work Together
-    bottomtag: Litigation | Corporate Law | Immigration Law
+    bottomtag: Business Litigation | Estate Planning | Federal Litigation
     actions:
     - variant: primary
       text: Schedule an appointment
@@ -56,7 +56,7 @@ sections:
   - title: Esra Nur Bulan
     tagline: Attorney at Law
     subtitle: Let's Work Together
-    bottomtag: Immigration Litigation | Immigration
+    bottomtag: Humanitarian Law | Immigration Law
     actions:
     - variant: primary
       text: Contact Me
@@ -88,11 +88,11 @@ sections:
   - title: S. Selman Kilic
     tagline: Attorney at Law
     subtitle: Let's Work Together
-    bottomtag: Law Litigation | Corporate Law | Immigration Law
+    bottomtag: Removal Defense | Immigration Litigation | Corporate Law
     actions:
     - variant: primary
       text: Contact Me
-      href: https://wa.me/12024402272
+      href: /contact
       target: _blank
     - variant: primary
       text: See Bio →
