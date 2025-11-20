@@ -44,8 +44,8 @@ steps:
     icon: tabler:certificate
   - title: Colegio de Abogados de Estambul
     icon: tabler:certificate
-    - title: Colegio de Abogados de Nueva Jersey
-      icon: tabler:certificate
+  - title: Colegio de Abogados de Nueva Jersey
+    icon: tabler:certificate
   classes:
     container: max-w-3xl
 testimonials:
