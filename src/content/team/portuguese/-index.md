@@ -145,7 +145,7 @@ sections:
     subtitle: Ebrar T.
     tagline: Gerente de Casos
   - title: null
-    subtitle: Said Murat
+    subtitle: Said M.
     tagline: Diretor de Marketing
   - title: null
     subtitle: Nimet Y.

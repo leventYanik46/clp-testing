@@ -18,7 +18,7 @@ attorneys:
 - title: Travaillons ensemble
   subtitle: Prenez rendez-vous avec Sena Sahin
   tagline: Sena Sahin
-  bottomtag: Contentieux | Droit des sociétés | Droit de l’immigration
+  bottomtag: Contentieux commercial | Planification successorale | Contentieux fédéral
   actions:
   - variant: primary
     text: Prendre rendez-vous

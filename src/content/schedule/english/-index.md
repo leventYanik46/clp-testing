@@ -18,7 +18,7 @@ attorneys:
 - title: Let's Work Together
   subtitle: Schedule an Appointment with Sena Sahin
   tagline: Sena Sahin
-  bottomtag: Litigation | Corporate Law | Immigration Law
+  bottomtag: Business Litigation | Estate Planning | Federal Litigation
   actions:
   - variant: primary
     text: Schedule an appointment

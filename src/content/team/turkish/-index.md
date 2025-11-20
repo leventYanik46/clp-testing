@@ -145,7 +145,7 @@ sections:
         subtitle: Ebrar T.
         tagline: Dosya Yöneticisi
       - title: null
-        subtitle: Said Murat
+        subtitle: Said M.
         tagline: Pazarlama Direktörü
       - title: null
         subtitle: Nimet Y.

@@ -145,7 +145,7 @@ sections:
     subtitle: Ebrar T.
     tagline: Responsable de dossiers
   - title: null
-    subtitle: Said Murat
+    subtitle: Said M.
     tagline: Directeur marketing
   - title: null
     subtitle: Nimet Y.

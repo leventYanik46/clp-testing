@@ -48,6 +48,9 @@ practiceAreas:
     - title: Propriété intellectuelle
       description: Protection de vos idées, marques et créations via marques, droits d’auteur et résolution efficace des litiges.
       icon: tabler:file-certificate
+    - title: Dommages corporels
+      description: Représentation des personnes blessées dans des accidents (auto, travail, responsabilité des locaux) pour obtenir l'indemnisation que vous méritez.
+      icon: tabler:ambulance
 spotlights:
   - props:
       isReversed: true

@@ -18,7 +18,7 @@ attorneys:
 - title: Vamos trabalhar juntos
   subtitle: Agende uma consulta com Sena Sahin
   tagline: Sena Sahin
-  bottomtag: Contencioso | Direito Societário | Direito de Imigração
+  bottomtag: Litígios Comerciais | Planejamento Patrimonial | Litígios Federais
   actions:
   - variant: primary
     text: Agendar uma consulta

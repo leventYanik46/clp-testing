@@ -11,7 +11,7 @@ profile:
     src: ~/assets/images/selman-bio.jpeg
     alt: Selman Kilic
   name: S. Selman Kilic
-  role: Associate
+  role: Associate Attorney
   bio:
   - S. Selman Kilic earned his LL.M. from the University of Minnesota Law School and
     holds a Bachelor of Laws from Galatasaray University, one of Turkey’s most prestigious
@@ -52,7 +52,7 @@ steps:
 - id: resume
   title: Bar Admissions
   items:
-  - title: New York (Pending)
+  - title: New York Bar
     icon: tabler:certificate
   classes:
     container: max-w-3xl

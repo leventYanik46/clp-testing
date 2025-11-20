@@ -11,7 +11,7 @@ profile:
     loading: eager
     class: w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto
   name: Sena Sahin
-  role: Advogada
+  role: Cofundadora e Sócia-Diretora
   bio:
   - Sena Sahin é sócia da Capitol Law Partners PLLC, licenciada em Washington, D.C., Pensilvânia e Texas, e formada em Direito pela South Texas College of Law Houston. Fluente em inglês e turco, ela oferece orientação focada no cliente e orientada a resultados em litígios cíveis, consultoria corporativa e questões de privacidade de dados.
   - Em contencioso, a Sra. Sahin defendeu seguradoras e empregadores em casos de lesões pessoais, responsabilidade de instalações e responsabilidade profissional, alcançando resultados estratégicos em escritórios nacionais. Como consultora jurídica externa, fornece orientação proativa em contratos, conformidade e gestão de riscos para empresas de diversos setores.

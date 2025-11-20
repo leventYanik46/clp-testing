@@ -18,7 +18,7 @@ attorneys:
 - title: Trabajemos juntos
   subtitle: Agende una cita con Sena Sahin
   tagline: Sena Sahin
-  bottomtag: Litigios | Derecho Corporativo | Derecho Migratorio
+  bottomtag: Litigios Comerciales | Planificación Patrimonial | Litigios Federales
   actions:
   - variant: primary
     text: Agendar una cita

@@ -11,7 +11,7 @@ profile:
     loading: eager
     class: w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto
   name: Cagatay Ersoy
-  role: Avukat
+  role: Kurucu ve Yönetici Ortak
   bio:
   - Cagatay Ersoy, Capitol Law Partners PLLC’nin ortağıdır. Ülkenin önde gelen Ivy League kurumlarından biri olan Columbia Hukuk Fakültesi mezunu olan Ersoy, derin akademik eğitimi, uluslararası dava tecrübesi ve pratik, sonuç odaklı hukuki çözümleri bir araya getiren nadir bir uzmanlığa sahiptir. Uygulama alanları arasında ticaret ve şirketler hukuku, iş ve aile temelli göçmenlik, marka hukuku ve uluslararası yatırım tahkimidir.
   - Ersoy, ABD’de ve uluslararası alanda girişimcilere, yeni kurulan şirketlere ve büyüyen işletmelere stratejik hukuki danışmanlık sağlamaktadır. Şirket kuruluşu, sözleşme müzakereleri, birleşme ve devralmalar veya küresel iş gücü göçmenliği konularında danışmanlık yaparak işletmelerin karmaşık hukuki süreçleri güvenle ve netlikle yönetmelerine yardımcı olur. Özellikle E-2, L-1, EB-1 ve EB-2/NIW vizeleri gibi iş temelli göçmenlik stratejileri ile evlilik yoluyla yeşil kart ve nişanlı vizesi gibi aile temelli başvurular konusunda uzmandır.
@@ -43,6 +43,8 @@ steps:
   - title: New York Barosu
     icon: tabler:certificate
   - title: İstanbul Barosu
+    icon: tabler:certificate
+  - title: New Jersey Barosu
     icon: tabler:certificate
   classes:
     container: max-w-3xl

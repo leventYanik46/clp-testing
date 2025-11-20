@@ -6,7 +6,7 @@ profile:
   id: about
   columns: 2
   name: S. Selman Kilic
-  role: Associado
+  role: Associado Advogado
   bio:
   - S. Selman Kilic concluiu seu LL.M. na University of Minnesota Law School e possui bacharelado em Direito pela Universidade de Galatasaray, uma das instituições mais prestigiadas da Turquia. Antes de ingressar na Capitol Law Partners, o Sr. Kilic adquiriu experiência na Doyle & Broumand LLP em Nova York, com foco em litígios cíveis e transações imobiliárias.
   - No início da carreira, o Sr. Kilic atuou no escritório Turkekul, em Istambul, assessorando clientes corporativos em uma ampla gama de questões jurídicas, incluindo contratos comerciais, conformidade com privacidade de dados, propriedade intelectual e licenciamento de tecnologia.
@@ -37,7 +37,7 @@ steps:
 - id: resume
   title: Ordens de advocacia
   items:
-  - title: New York (Pending)
+  - title: Ordem dos Advogados de Nova Iorque
     icon: tabler:certificate
   classes:
     container: max-w-3xl

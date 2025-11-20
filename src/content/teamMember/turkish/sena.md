@@ -11,7 +11,7 @@ profile:
     loading: eager
     class: w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto
   name: Sena Şahin
-  role: Avukat
+  role: Kurucu Ortak ve Yönetici Ortak
   bio:
   - Sena Şahin, Capitol Law Partners PLLC’de ortaktır; Washington, D.C., Pensilvanya ve Teksas’ta lisanslıdır ve South Texas College of Law Houston mezunudur. İngilizce ve Türkçe bilen Şahin, medeni davalar, kurumsal danışmanlık ve veri gizliliği konularında müvekkil odaklı, sonuç odaklı hukuki danışmanlık sunmaktadır.
   - Dava alanında Şahin, sigorta şirketlerini ve işverenleri kişisel yaralanma, işyeri ve mesleki sorumluluk davalarında savunmuş, ulusal düzeyde faaliyet gösteren firmalarda stratejik sonuçlar elde etmiştir. Dış danışman olarak ise farklı sektörlerdeki işletmelere sözleşmeler, uyumluluk ve risk yönetimi konularında proaktif hukuki rehberlik sağlamaktadır.

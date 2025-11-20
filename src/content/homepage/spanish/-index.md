@@ -48,6 +48,9 @@ practiceAreas:
   - title: Propiedad Intelectual
     description: Protección de sus ideas, marcas y obras creativas mediante marcas registradas, derechos de autor y una resolución efectiva de disputas.
     icon: tabler:file-certificate
+  - title: Lesiones Personales
+    description: Representación de personas lesionadas en accidentes, incluidos accidentes automovilísticos, laborales y reclamos por responsabilidad de locales, luchando por la compensación que merece.
+    icon: tabler:ambulance
 spotlights:
 - props:
     isReversed: true

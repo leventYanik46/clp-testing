@@ -18,7 +18,7 @@ attorneys:
   - title: Birlikte Çalışalım
     subtitle: Sena Şahin ile Randevu Planlayın
     tagline: Sena Şahin
-    bottomtag: Dava | Şirketler Hukuku | Göçmenlik Hukuku
+    bottomtag: Ticari Davalar | Miras Planlaması | Federal Davalar
     actions:
       - variant: primary
         text: Randevu planlayın

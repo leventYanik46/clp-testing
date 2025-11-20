@@ -48,6 +48,9 @@ practiceAreas:
   - title: Fikri Mülkiyet Hukuku
     description: Fikirlerinizi, markalarınızı ve yaratıcı eserlerinizi marka tescili, telif hakları ve etkin uyuşmazlık çözümüyle korur.
     icon: tabler:file-certificate
+  - title: Kişisel Yaralanma
+    description: Trafik, iş kazaları ve işyeri/saha sorumluluğu da dahil kazalarda yaralanan bireyler için temsil; hak ettiğiniz tazminat için mücadele.
+    icon: tabler:ambulance
 spotlights:
 - props:
     isReversed: true

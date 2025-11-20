@@ -12,7 +12,7 @@ profile:
     loading: eager
     class: w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto
   name: Sena Sahin
-  role: Attorney At Law
+  role: Co-Founder & Managing Partner
   bio:
   - Sena Sahin is a partner at Capitol Law Partners PLLC, licensed in Washington,
     D.C., Pennsylvania, and Texas, and a J.D. graduate of South Texas College of Law

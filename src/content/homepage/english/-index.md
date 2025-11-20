@@ -60,6 +60,10 @@ practiceAreas:
     description: Protection for your ideas, brands, and creative works through trademarks,
       copyrights, and effective dispute resolution.
     icon: tabler:file-certificate
+  - title: Personal Injury
+    description: Representation for individuals injured in accidents, including auto, workplace, and
+      premises liability claims—fighting for the compensation you deserve.
+    icon: tabler:ambulance
 spotlights:
 - props:
     isReversed: true

@@ -11,7 +11,7 @@ profile:
     loading: eager
     class: w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto
   name: Cagatay Ersoy
-  role: Avocat
+  role: Cofondateur et associé gérant
   bio:
   - Cagatay Ersoy est associé chez Capitol Law Partners PLLC. Diplômé de Columbia Law School, l’une des principales institutions de l’Ivy League, M. Ersoy offre à ses clients une combinaison rare de formation académique approfondie, d’expérience en contentieux international et d’orientation pratique vers des solutions juridiques efficaces. Sa pratique se concentre sur le droit des affaires et des sociétés, l’immigration basée sur l’emploi et la famille, le droit des marques et l’arbitrage international d’investissement.
   - M. Ersoy fournit un conseil juridique stratégique aux startups, entrepreneurs et entreprises en croissance aux États-Unis et à l’international. Qu’il s’agisse de création d’entité, de négociations contractuelles, de fusions-acquisitions ou d’immigration de main-d’œuvre mondiale, il aide les entreprises à naviguer des environnements juridiques complexes avec confiance et clarté. Il est particulièrement compétent en stratégies d’immigration professionnelle, y compris les visas E-2, L-1, EB-1 et EB-2/NIW, ainsi que les demandes familiales comme les cartes vertes par mariage et les visas de fiancé(e).
@@ -47,6 +47,8 @@ steps:
   - title: Barreau de New York
     icon: tabler:certificate
   - title: Barreau d’Istanbul
+    icon: tabler:certificate
+  - title: Barreau du New Jersey
     icon: tabler:certificate
   classes:
     container: max-w-3xl

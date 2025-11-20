@@ -31,7 +31,7 @@ steps:
 - id: resume
   title: Baro Üyelikleri
   items:
-  - title: New York (Beklemede)
+  - title: New York Barosu
     icon: tabler:certificate
   classes:
     container: max-w-3xl

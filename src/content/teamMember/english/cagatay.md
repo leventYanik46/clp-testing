@@ -12,7 +12,7 @@ profile:
     loading: eager
     class: w-full h-auto rounded-lg shadow-lg md:max-w-xl lg:max-w-2xl mx-auto
   name: Cagatay Ersoy
-  role: Attorney At Law
+  role: Co-Founder & Managing Partner
   bio:
   - Cagatay Ersoy is a partner at Capitol Law Partners PLLC. A graduate of Columbia
     Law School, one of the nation’s premier Ivy League institutions, Mr. Ersoy offers
@@ -68,6 +68,8 @@ steps:
   title: Bar Admissions
   items:
   - title: New York Bar Association
+    icon: tabler:certificate
+  - title: New Jersey Bar Association
     icon: tabler:certificate
   - title: Istanbul Bar Association
     icon: tabler:certificate
