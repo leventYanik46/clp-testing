@@ -20,10 +20,12 @@ if (!teampage || teampage.length === 0 || !teampage[0].data) {
 }
 
 const { metadata, sections } = teampage[0].data;
+const filteredSections =
+  sections?.filter((section) => section.wrapper?.trim() !== 'w-full grid grid-cols-1 md:grid-cols-3 gap-4') ?? [];
 ---
 
 <Layout metadata={metadata}>
-  {sections.map((section) => (
+  {filteredSections.map((section) => (
     <div class={section.wrapper}>
       {section.members.map((member) => (
         <TeamCard {...member} />

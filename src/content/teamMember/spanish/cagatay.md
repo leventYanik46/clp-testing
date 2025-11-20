@@ -20,7 +20,7 @@ profile:
   - Domina tanto las tradiciones de derecho civil como de common law, lo que le aporta una perspectiva global y un enfoque meticuloso en cada asunto que maneja. Sus clientes se benefician de una visión verdaderamente internacional combinada con la practicidad necesaria para concretar acuerdos y resolver disputas con eficiencia.
   actions:
   - text: Agendar una consulta
-    href: /es/Schedule
+    href: /es/schedule
     variant: primary
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: Contácteme
@@ -74,7 +74,7 @@ cta:
   actions:
   - variant: primary
     text: Agendar una consulta
-    href: /es/Schedule
+    href: /es/schedule
 blog:
   title: Explore nuestros últimos análisis legales
   information: Manténgase informado con artículos expertos sobre inmigración, derecho corporativo y privacidad de datos.

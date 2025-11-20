@@ -20,7 +20,7 @@ profile:
   - Fluente nas tradições de civil law e common law, o Sr. Ersoy traz uma perspectiva global e uma abordagem meticulosa a cada assunto que conduz. Seus clientes se beneficiam de um olhar jurídico verdadeiramente internacional — aliado à visão prática necessária para fechar negócios e resolver disputas com eficiência.
   actions:
   - text: Agendar uma consulta
-    href: /pt/Schedule
+    href: /pt/schedule
     variant: primary
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent
       text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg
@@ -78,7 +78,7 @@ cta:
   actions:
   - variant: primary
     text: Agendar uma consulta
-    href: /pt/Schedule
+    href: /pt/schedule
 blog:
   title: Explore nossas últimas análises jurídicas
   information: Mantenha-se informado com artigos especializados sobre imigração, direito corporativo e privacidade de dados.

@@ -16,7 +16,7 @@ profile:
   - Türkçe ve İngilizce’ye hakim olan Bulan, iki kültürlü geçmişi ve hukuki bilgisiyle göçmenler ve aileleri için empati, netlik ve kararlılıkla savunuculuk yapmaktadır. Müvekkillerinin sürecin her aşamasında duyulmasını, korunmasını ve bilgilendirilmesini sağlamaya kararlıdır.
   actions:
   - text: Danışmanlık Randevusu Al
-    href: /tr/Schedule
+    href: /tr/schedule
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: İletişime Geç
     href: /tr/contact
@@ -70,7 +70,7 @@ cta:
   actions:
   - variant: primary
     text: Danışmanlık Randevusu Al
-    href: /tr/Schedule
+    href: /tr/schedule
 blog:
   id: blog
   title: En Son Hukuki İçeriklerimizi Keşfedin

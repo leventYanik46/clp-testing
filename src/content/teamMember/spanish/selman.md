@@ -13,7 +13,7 @@ profile:
   - El Sr. Kilic mantiene un gran interés en instituciones financieras, gobierno corporativo y los desafíos legales que enfrentan el comercio electrónico y las plataformas digitales. Es fluido en turco, inglés y francés, aprovechando su habilidad multilingüe y su experiencia transfronteriza para atender a la diversa clientela internacional de la firma con precisión y sensibilidad cultural.
   actions:
   - text: Agendar una consulta
-    href: /es/Schedule
+    href: /es/schedule
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: Contácteme
     href: /es/contact
@@ -63,7 +63,7 @@ cta:
   actions:
   - variant: primary
     text: Agendar una consulta
-    href: /es/Schedule
+    href: /es/schedule
 blog:
   id: blog
   title: Explore nuestros últimos análisis legales

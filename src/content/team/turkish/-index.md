@@ -69,19 +69,22 @@ sections:
         image:
           src: ~/assets/images/esra-bw.png
           alt: Plan görseli
-      - title: Kemal Şahin
-        tagline: Stajyer Avukat
+      - title: Mehmet Y. Turkoglu
+        tagline: Avukat
         subtitle: Birlikte Çalışalım
-        bottomtag: Genel Hukuk Müşavirliği | Fikri Mülkiyet Hukuku
+        bottomtag: Sığınma | Aile Birleşimi | Vatandaşlık | Çalışma Temelli Göçmenlik
         actions:
           - variant: primary
             text: İletişime Geç
-            href: https://wa.me/12024402272
+            href: /tr/contact
             target: _blank
           - variant: primary
             text: Biyografiyi Gör →
-            href: /tr/our-team/kemal
+            href: /tr/our-team/mehmet
             target: _blank
+        image:
+          src: ~/assets/images/Mehmet-bio.jpg
+          alt: Mehmet Y. Turkoglu
       - title: S. Selman Kılıç
         tagline: Avukat
         subtitle: Birlikte Çalışalım
@@ -94,6 +97,22 @@ sections:
           - variant: primary
             text: Biyografiyi Gör →
             href: /tr/our-team/selman
+            target: _blank
+        image:
+          src: ~/assets/images/selman-bio.jpeg
+          alt: S. Selman Kılıç
+      - title: Kemal Şahin
+        tagline: Stajyer Avukat
+        subtitle: Birlikte Çalışalım
+        bottomtag: Genel Hukuk Müşavirliği | Fikri Mülkiyet Hukuku
+        actions:
+          - variant: primary
+            text: İletişime Geç
+            href: https://wa.me/12024402272
+            target: _blank
+          - variant: primary
+            text: Biyografiyi Gör →
+            href: /tr/our-team/kemal
             target: _blank
   - wrapper: w-full
     members:
@@ -119,6 +138,18 @@ sections:
       - title: null
         subtitle: Yasin D.
         tagline: Dosya Yöneticisi
+      - title: null
+        subtitle: Rana B.
+        tagline: Dosya Yöneticisi
+      - title: null
+        subtitle: Ebrar T.
+        tagline: Dosya Yöneticisi
+      - title: null
+        subtitle: Said Murat
+        tagline: Pazarlama Direktörü
+      - title: null
+        subtitle: Nimet Y.
+        tagline: Kreatif Direktör
   - wrapper: w-full
     members:
       - title: null
@@ -129,15 +160,4 @@ sections:
             text: İletişime Geç
             href: https://wa.me/12024402272
             target: _blank
-  - wrapper: w-full grid grid-cols-1 md:grid-cols-3 gap-4
-    members:
-      - title: null
-        subtitle: Melike A.
-        tagline: Hukuk Asistanı
-      - title: null
-        subtitle: Feray H.
-        tagline: Hukuk Asistanı
-      - title: null
-        subtitle: Scott King
-        tagline: Pazarlama Direktörü
 ---

@@ -100,7 +100,7 @@ cta:
   actions:
   - variant: primary
     text: Schedule a Consultation
-    href: /Schedule
+    href: /schedule
 blog:
   id: blog
   title: Explore our latest legal insights

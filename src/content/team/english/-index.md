@@ -68,20 +68,23 @@ sections:
       target: _blank
     image:
       src: ~/assets/images/esra-bw.png
-      alt: Blueprint Image
-  - title: Kemal Sahin
-    tagline: Attorney at Law
+      alt: Blueprint Image    
+  - title: Mehmet Y. Turkoglu
+    tagline: Attorney At Law
     subtitle: Let's Work Together
-    bottomtag: General Counsel Advisory | Intellectual Property Law
+    bottomtag: Asylum | Family-Based | Naturalization | Employment-Based Immigration
     actions:
     - variant: primary
       text: Contact Me
-      href: https://wa.me/12024402272
+      href: /contact
       target: _blank
     - variant: primary
       text: See Bio →
-      href: /our-team/kemal
+      href: /our-team/mehmet
       target: _blank
+    image:
+      src: ~/assets/images/Mehmet-bio.jpg
+      alt: Mehmet Y. Turkoglu
   - title: S. Selman Kilic
     tagline: Attorney at Law
     subtitle: Let's Work Together
@@ -94,6 +97,22 @@ sections:
     - variant: primary
       text: See Bio →
       href: /our-team/selman
+      target: _blank
+    image:
+      src: ~/assets/images/selman-bio.jpeg
+      alt: Selman Kilic
+  - title: Kemal Sahin
+    tagline: Attorney at Law
+    subtitle: Let's Work Together
+    bottomtag: General Counsel Advisory | Intellectual Property Law
+    actions:
+    - variant: primary
+      text: Contact Me
+      href: https://wa.me/12024402272
+      target: _blank
+    - variant: primary
+      text: See Bio →
+      href: /our-team/kemal
       target: _blank
 - wrapper: w-full
   members:
@@ -119,6 +138,18 @@ sections:
   - title: null
     subtitle: Yasin D.
     tagline: Case Manager
+  - title: null
+    subtitle: Rana B.
+    tagline: Case Manager
+  - title: null
+    subtitle: Ebrar T.
+    tagline: Case Manager    
+  - title: null
+    subtitle: Said Murat
+    tagline: Marketing Director
+  - title: null
+    subtitle: Nimet Y.
+    tagline: Creative Director    
 - wrapper: w-full
   members:
   - title: null
@@ -129,15 +160,4 @@ sections:
       text: Contact Me
       href: https://wa.me/12024402272
       target: _blank
-- wrapper: w-full grid grid-cols-1 md:grid-cols-3 gap-4
-  members:
-  - title: null
-    subtitle: Melike A.
-    tagline: Legal Assistant
-  - title: null
-    subtitle: Feray H.
-    tagline: Legal Assistant
-  - title: null
-    subtitle: Scott King
-    tagline: Marketing Director
 ---

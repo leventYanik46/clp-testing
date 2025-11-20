@@ -70,15 +70,15 @@
   to   = "/locations"
   status = 301
 
-# Scheduling → /Schedule
+# Scheduling → /schedule
 [[redirects]]
   from = "/consultation-appointment/"
-  to   = "/Schedule"
+  to   = "/schedule"
   status = 301
 
 [[redirects]]
   from = "/ucretsiz-danismanlik-randevusu/"
-  to   = "/Schedule"
+  to   = "/schedule"
   status = 301
 
 # Language toggles → homepage

@@ -76,7 +76,7 @@ cta:
   actions:
   - variant: primary
     text: Planifier une consultation
-    href: /fr/Schedule
+    href: /fr/schedule
 blog:
   id: blog
   title: Découvrez nos analyses juridiques récentes

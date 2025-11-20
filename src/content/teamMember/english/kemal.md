@@ -27,7 +27,7 @@ profile:
     to Capitol Law Partners.
   actions:
   - text: Schedule a Consultation
-    href: /Schedule
+    href: /schedule
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent
       text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg
       w-full sm:w-auto
@@ -100,7 +100,7 @@ cta:
   actions:
   - variant: primary
     text: Schedule a Consultation
-    href: /Schedule
+    href: /schedule
 blog:
   id: blog
   title: Explore our latest legal insights

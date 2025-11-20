@@ -4,9 +4,12 @@ metadata:
   description: Discover S. Selman Kilic’s expertise in civil litigation, real estate
     transactions, corporate governance, and digital platform challenges. Multilingual
     legal associate fluent in Turkish, English, and French.
-profile:
+profile:  
   id: about
   columns: 2
+  image:
+    src: ~/assets/images/selman-bio.jpeg
+    alt: Selman Kilic
   name: S. Selman Kilic
   role: Associate
   bio:
@@ -25,7 +28,7 @@ profile:
     and cultural awareness.
   actions:
   - text: Schedule a Consultation
-    href: /Schedule
+    href: /schedule
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent
       text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg
       w-full sm:w-auto
@@ -72,7 +75,7 @@ testimonials:
       smooth process. I am very satisfied with the service I received and recommend.
       Thank you
     name: Muhammet Turan
-    image:
+    image:  
       src: ~/assets/images/testimonial-4.png
       alt: Muhammet Turan testimonial
   - title: '"Easier and stress-free"'
@@ -91,7 +94,7 @@ cta:
   actions:
   - variant: primary
     text: Schedule a Consultation
-    href: /Schedule
+    href: /schedule
 blog:
   id: blog
   title: Explore our latest legal insights

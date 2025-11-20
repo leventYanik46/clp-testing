@@ -69,19 +69,22 @@ sections:
     image:
       src: ~/assets/images/esra-bw.png
       alt: Imagen de plano
-  - title: Kemal Sahin
-    tagline: Pasante Jurídico
+  - title: Mehmet Y. Turkoglu
+    tagline: Abogado
     subtitle: Trabajemos juntos
-    bottomtag: Asesoría General | Propiedad Intelectual
+    bottomtag: Asilo | Basado en la familia | Naturalización | Inmigración basada en el empleo
     actions:
     - variant: primary
       text: Contácteme
-      href: https://wa.me/12024402272
+      href: /es/contact
       target: _blank
     - variant: primary
       text: Ver biografía →
-      href: /es/our-team/kemal
+      href: /es/our-team/mehmet
       target: _blank
+    image:
+      src: ~/assets/images/Mehmet-bio.jpg
+      alt: Mehmet Y. Turkoglu
   - title: S. Selman Kilic
     tagline: Abogado
     subtitle: Trabajemos juntos
@@ -94,6 +97,22 @@ sections:
     - variant: primary
       text: Ver biografía →
       href: /es/our-team/selman
+      target: _blank
+    image:
+      src: ~/assets/images/selman-bio.jpeg
+      alt: S. Selman Kilic
+  - title: Kemal Sahin
+    tagline: Pasante Jurídico
+    subtitle: Trabajemos juntos
+    bottomtag: Asesoría General | Propiedad Intelectual
+    actions:
+    - variant: primary
+      text: Contácteme
+      href: https://wa.me/12024402272
+      target: _blank
+    - variant: primary
+      text: Ver biografía →
+      href: /es/our-team/kemal
       target: _blank
 - wrapper: w-full
   members:
@@ -119,6 +138,18 @@ sections:
   - title: null
     subtitle: Yasin D.
     tagline: Gestor de casos
+  - title: null
+    subtitle: Rana B.
+    tagline: Gestor de casos
+  - title: null
+    subtitle: Ebrar T.
+    tagline: Gestor de casos
+  - title: null
+    subtitle: Said Murat
+    tagline: Director de marketing
+  - title: null
+    subtitle: Nimet Y.
+    tagline: Directora creativa
 - wrapper: w-full
   members:
   - title: null
@@ -129,15 +160,4 @@ sections:
       text: Contácteme
       href: https://wa.me/12024402272
       target: _blank
-- wrapper: w-full grid grid-cols-1 md:grid-cols-3 gap-4
-  members:
-  - title: null
-    subtitle: Melike A.
-    tagline: Asistente legal
-  - title: null
-    subtitle: Feray H.
-    tagline: Asistente legal
-  - title: null
-    subtitle: Scott King
-    tagline: Director de marketing
 ---

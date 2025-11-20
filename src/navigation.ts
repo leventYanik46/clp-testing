@@ -48,6 +48,10 @@ export const headerData = {
           text: 'Immigration Law',
           href: getPermalink('/practice-area/immigration-law'),
         },
+        {
+          text: 'Personal Injury Law',
+          href: getPermalink('/practice-area/personal-injury-law'),
+        },
       ],
     },
     {
@@ -66,15 +70,20 @@ export const headerData = {
           href: getPermalink('/our-team/sena'),
         },
         { text: 'Shafeek Seddiq', 
-          href: getPermalink('/our-team/shafeek') 
+          href: getPermalink('/our-team/shafeek'),
         },
         { text: 'Kemal Sahin', 
-          href: getPermalink('/our-team/kemal') },
-
+          href: getPermalink('/our-team/kemal'),
+        },
         { text: 'S. Selman Kilic', 
-          href: getPermalink('/our-team/selman') },
+          href: getPermalink('/our-team/selman'),
+        },
         { text: 'Esra Nur Bulan', 
-          href: getPermalink('/our-team/esra') },
+          href: getPermalink('/our-team/esra'),
+        },
+        { text: 'Mehmet Y. Turkoglu', 
+          href: getPermalink('/our-team/mehmet'),
+        },
       ],
     },
     {
@@ -98,11 +107,11 @@ export const headerDataTr = {
       text: 'Uygulama Alanları',
       links: [
         {
-          text: 'Hukuk Danişmanlığı',
+          text: 'Genel Hukuk Müşavirliği ve Danışmanlık',
           href: getPermalink('/tr/practice-area/general-counsel-services'),
         },
         {
-          text: 'Ticaret ve Şirketler Hukuku',
+          text: 'İş ve Şirketler Hukuku',
           href: getPermalink('/tr/practice-area/business-corporate-law'),
         },
         {
@@ -120,6 +129,10 @@ export const headerDataTr = {
         {
           text: 'Göçmenlik Hukuku',
           href: getPermalink('/tr/practice-area/immigration-law'),
+        },
+        {
+          text: 'Kişisel Yaralanma Hukuku',
+          href: getPermalink('/tr/practice-area/personal-injury-law'),
         },
       ],
     },
@@ -153,6 +166,10 @@ export const headerDataTr = {
         { 
           text: 'Esra Nur Bulan', 
           href: getPermalink('/tr/our-team/esra'),
+        },
+        { 
+          text: 'Mehmet Y. Turkoglu', 
+          href: getPermalink('/tr/our-team/mehmet'),
         },
       ],
     },
@@ -216,6 +233,10 @@ export const headerDataEs= {
           text: 'Derecho Migratorio',
           href: getPermalink('/es/practice-area/immigration-law'),
         },
+        {
+          text: 'Lesiones Personales',
+          href: getPermalink('/es/practice-area/personal-injury-law'),
+        },
       ],
     },
     {
@@ -245,6 +266,10 @@ export const headerDataEs= {
           text: 'S. Selman Kilic',
           href: getPermalink('/es/our-team/selman'),
         },
+          {
+            text: 'Mehmet Y. Turkoglu',
+            href: getPermalink('/es/our-team/mehmet'),
+          },
         {
           text: 'Esra Nur Bulan',
           href: getPermalink('/es/our-team/esra'),
@@ -298,6 +323,10 @@ export const headerDataFr = {
           text: 'Droit de l’immigration',
           href: getPermalink('/fr/practice-area/immigration-law'),
         },
+        {
+          text: 'Préjudice Corporel',
+          href: getPermalink('/fr/practice-area/personal-injury-law'),
+        },
       ],
     },
     {
@@ -323,6 +352,8 @@ export const headerDataFr = {
 
         { text: 'S. Selman Kilic',
           href: getPermalink('/fr/our-team/selman') },
+          { text: 'Mehmet Y. Turkoglu',
+            href: getPermalink('/fr/our-team/mehmet') },
         { text: 'Esra Nur Bulan',
           href: getPermalink('/fr/our-team/esra') },
       ],
@@ -379,6 +410,10 @@ export const headerDataPt = {
           text: 'Direito de Imigração',
           href: getPermalink('/pt/practice-area/immigration-law'),
         },
+        {
+          text: 'Direito de Lesões Pessoais',
+          href: getPermalink('/pt/practice-area/personal-injury-law'),
+        },
       ],
     },
     {
@@ -404,6 +439,8 @@ export const headerDataPt = {
 
         { text: 'S. Selman Kilic', 
           href: getPermalink('/pt/our-team/selman') },
+          { text: 'Mehmet Y. Turkoglu', 
+            href: getPermalink('/pt/our-team/mehmet') },
         { text: 'Esra Nur Bulan', 
           href: getPermalink('/pt/our-team/esra') },
       ],
@@ -431,10 +468,11 @@ export const footerData = {
       title: 'Our Team',
       links: [
         { text: 'Meet Our Team', href: getPermalink('/team')},
-        { text: 'Cagatay Ersoy', href: getPermalink('/our-team/cagatay') },
-        { text: 'Sena Sahin', href: getPermalink('/our-team/sena') },
-        { text: 'Kemal Sahin', href: getPermalink('/our-team/kemal') },
-        { text: 'S. Selman Kilic', href: getPermalink('/our-team/selman') },
+  { text: 'Cagatay Ersoy', href: getPermalink('/our-team/cagatay') },
+  { text: 'Sena Sahin', href: getPermalink('/our-team/sena') },
+  { text: 'Kemal Sahin', href: getPermalink('/our-team/kemal') },
+  { text: 'S. Selman Kilic', href: getPermalink('/our-team/selman') },
+  { text: 'Mehmet Y. Turkoglu', href: getPermalink('/our-team/mehmet') },
 
       ],
     },
@@ -446,7 +484,8 @@ export const footerData = {
         { text: 'Trusts & Estates', href: getPermalink('/practice-area/estate-planning') },
         { text: 'Real Estate', href: getPermalink('/practice-area/real-estate') },
         { text: 'Intellectual Property Law', href: getPermalink('/practice-area/ip-law') },
-        { text: 'Immigration Law', href: getPermalink('/practice-area/immigration-law') },
+  { text: 'Immigration Law', href: getPermalink('/practice-area/immigration-law') },
+  { text: 'Personal Injury Law', href: getPermalink('/practice-area/personal-injury-law') },
       ],
     },
     {
@@ -494,10 +533,11 @@ export const footerDataTr = {
       title: 'Ekibimiz',
       links: [
         { text: 'Ekibimizle Tanışın', href: getPermalink('/team') },
-        { text: 'Çağatay Ersoy', href: getPermalink('/our-team/cagatay') },
-        { text: 'Sena Şahin', href: getPermalink('/our-team/sena') },
-        { text: 'Kemal Şahin', href: getPermalink('/our-team/kemal') },
-        { text: 'S. Selman Kılıç', href: getPermalink('/our-team/selman') },
+  { text: 'Çağatay Ersoy', href: getPermalink('/our-team/cagatay') },
+  { text: 'Sena Şahin', href: getPermalink('/our-team/sena') },
+  { text: 'Kemal Şahin', href: getPermalink('/our-team/kemal') },
+  { text: 'S. Selman Kılıç', href: getPermalink('/our-team/selman') },
+  { text: 'Mehmet Y. Turkoglu', href: getPermalink('/our-team/mehmet') }
       ],
     },
     {
@@ -508,7 +548,8 @@ export const footerDataTr = {
         { text: 'Vasiyet ve Miras Hukuku', href: getPermalink('/practice-area/estate-planning') },
         { text: 'Gayrimenkul Hukuku', href: getPermalink('/practice-area/real-estate') },
         { text: 'Fikri Mülkiyet Hukuku', href: getPermalink('/practice-area/ip-law') },
-        { text: 'Göçmenlik Hukuku', href: getPermalink('/practice-area/immigration-law') },
+  { text: 'Göçmenlik Hukuku', href: getPermalink('/practice-area/immigration-law') },
+  { text: 'Kişisel Yaralanma Hukuku', href: getPermalink('/practice-area/personal-injury-law') },
       ],
     },
     {
@@ -560,7 +601,8 @@ export const footerDataSpanish = {
         { text: 'Cagatay Ersoy', href: getPermalink('/es/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/es/our-team/sena') },
         { text: 'Kemal Sahin', href: getPermalink('/es/our-team/kemal') },
-        { text: 'S. Selman Kilic', href: getPermalink('/es/our-team/selman') },
+  { text: 'S. Selman Kilic', href: getPermalink('/es/our-team/selman') },
+  { text: 'Mehmet Y. Turkoglu', href: getPermalink('/es/our-team/mehmet') },
       ],
     },
     {
@@ -571,7 +613,8 @@ export const footerDataSpanish = {
         { text: 'Fideicomisos y Sucesiones', href: getPermalink('/es/practice-area/estate-planning') },
         { text: 'Derecho Inmobiliario', href: getPermalink('/es/practice-area/real-estate') },
         { text: 'Propiedad Intelectual', href: getPermalink('/es/practice-area/ip-law') },
-        { text: 'Derecho Migratorio', href: getPermalink('/es/practice-area/immigration-law') },
+  { text: 'Derecho Migratorio', href: getPermalink('/es/practice-area/immigration-law') },
+  { text: 'Lesiones Personales', href: getPermalink('/es/practice-area/personal-injury-law') },
       ],
     },
     {
@@ -624,7 +667,8 @@ export const footerDataFr = {
         { text: 'Cagatay Ersoy', href: getPermalink('/fr/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/fr/our-team/sena') },
         { text: 'Kemal Sahin', href: getPermalink('/fr/our-team/kemal') },
-        { text: 'S. Selman Kilic', href: getPermalink('/fr/our-team/selman') },
+  { text: 'S. Selman Kilic', href: getPermalink('/fr/our-team/selman') },
+  { text: 'Mehmet Y. Turkoglu', href: getPermalink('/fr/our-team/mehmet') },
       ],
     },
     {
@@ -635,7 +679,8 @@ export const footerDataFr = {
         { text: 'Trusts et successions', href: getPermalink('/fr/practice-area/estate-planning') },
         { text: 'Droit immobilier', href: getPermalink('/fr/practice-area/real-estate') },
         { text: 'Propriété intellectuelle', href: getPermalink('/fr/practice-area/ip-law') },
-        { text: 'Droit de l’immigration', href: getPermalink('/fr/practice-area/immigration-law') },
+  { text: 'Droit de l’immigration', href: getPermalink('/fr/practice-area/immigration-law') },
+  { text: 'Préjudice Corporel', href: getPermalink('/fr/practice-area/personal-injury-law') },
       ],
     },
     {
@@ -686,7 +731,8 @@ export const footerDataPt = {
         { text: 'Cagatay Ersoy', href: getPermalink('/pt/our-team/cagatay') },
         { text: 'Sena Sahin', href: getPermalink('/pt/our-team/sena') },
         { text: 'Kemal Sahin', href: getPermalink('/pt/our-team/kemal') },
-        { text: 'S. Selman Kilic', href: getPermalink('/pt/our-team/selman') },
+  { text: 'S. Selman Kilic', href: getPermalink('/pt/our-team/selman') },
+  { text: 'Mehmet Y. Turkoglu', href: getPermalink('/pt/our-team/mehmet') },
 
       ],
     },
@@ -698,7 +744,8 @@ export const footerDataPt = {
         { text: 'Trusts e Sucessões', href: getPermalink('/pt/practice-area/estate-planning') },
         { text: 'Direito Imobiliário', href: getPermalink('/pt/practice-area/real-estate') },
         { text: 'Propriedade Intelectual', href: getPermalink('/pt/practice-area/ip-law') },
-        { text: 'Direito de Imigração', href: getPermalink('/pt/practice-area/immigration-law') },
+  { text: 'Direito de Imigração', href: getPermalink('/pt/practice-area/immigration-law') },
+  { text: 'Direito de Lesões Pessoais', href: getPermalink('/pt/practice-area/personal-injury-law') },
       ],
     },
     {

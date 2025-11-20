@@ -20,7 +20,7 @@ profile:
   - Hem medeni hukuk hem de common law geleneklerinde yetkin olan Ersoy, her davaya küresel bir bakış açısı ve titiz bir yaklaşım getirir. Müvekkilleri, uluslararası hukuk perspektifinden ve pratik, etkili çözüm üretme becerisinden faydalanır.
   actions:
   - text: Danışmanlık Randevusu Al
-    href: /tr/Schedule
+    href: /tr/schedule
     variant: primary
     class: inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:text-lg w-full sm:w-auto
   - text: İletişime Geç
@@ -74,7 +74,7 @@ cta:
   actions:
   - variant: primary
     text: Danışmanlık Randevusu Al
-    href: /tr/Schedule
+    href: /tr/schedule
 blog:
   title: En Son Hukuki İçeriklerimizi Keşfedin
   information: Göçmenlik, şirketler hukuku ve veri gizliliği üzerine uzman makalelerle güncel kalın.

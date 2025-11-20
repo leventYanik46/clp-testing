@@ -17,7 +17,7 @@ hero:
   actions:
   - variant: primary
     text: Schedule A Consultation
-    href: /Schedule
+    href: /schedule
     class: w-full sm:mb-0
   - text: Free Evaluation
     href: /evaluations

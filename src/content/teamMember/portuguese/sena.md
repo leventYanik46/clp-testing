@@ -78,7 +78,7 @@ cta:
   actions:
   - variant: primary
     text: Agendar uma consulta
-    href: /pt/Schedule
+    href: /pt/schedule
 blog:
   id: blog
   title: Explore nossas últimas análises jurídicas

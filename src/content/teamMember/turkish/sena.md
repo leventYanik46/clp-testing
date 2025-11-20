@@ -72,7 +72,7 @@ cta:
   actions:
   - variant: primary
     text: Danışmanlık Randevusu Al
-    href: /tr/Schedule
+    href: /tr/schedule
 blog:
   id: blog
   title: En Son Hukuki İçeriklerimizi Keşfedin

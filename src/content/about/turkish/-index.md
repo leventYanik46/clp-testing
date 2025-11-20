@@ -5,13 +5,13 @@ metadata:
 hero:
   tagline: Hakkımızda
   title: Zor olanı kolaylaştırıyoruz
-  subtitleHtml: '<strong>Capitol Law Partners</strong> olarak misyonumuz basit: Zor olanı kolaylaştırmak. Hukukla uğraşmak göz korkutucu gelebilir—ister bir girişim başlatıyor, ister küçük bir işletme yönetiyor, ister kişisel bir hukuki meseleyle karşı karşıya olun. Bu yüzden ekibimiz, her hukuki zorluğu netlik, <strong>özgüven</strong> ve pratik çözümlerle aşmanız için size rehberlik etmeye kendini adamıştır. Samimi, ulaşılabilir bir yaklaşımı beklediğiniz titiz uzmanlıkla birleştiriyor, her cevabın anlaşılır ve uygulanabilir olmasını sağlıyoruz.<br /><br />Bireylerden girişimlere ve köklü şirketlere kadar, hizmetlerimizi her hedefe özel uyarlıyoruz. İster bir yeniliği korumak, ister bir mülkü güvenceye almak, ister bir iş kurmak isteyin; size kişisel ilgi, saygı ve en iyi yolu bulmaya adanmış bir ortak sunuyoruz.'
+  subtitleHtml: '<strong>Capitol Law Partners</strong> olarak misyonumuz basit: Zor olanı kolaylaştırmak. Hukukla uğraşmak göz korkutucu gelebilir—ister bir girişim başlatıyor, ister küçük bir işletme yönetiyor, ister kişisel bir hukuki meseleyle karşı karşıya olun. Bu yüzden ekibimiz, her hukuki zorluğu netlik, <strong>özgüven</strong> ve pratik çözümlerle aşmanız için size rehberlik etmeye kendini adamıştır. Samimi, ulaşılabilir bir yaklaşımı beklediğiniz titiz uzmanlıkla birleştiriyor, her cevabın anlaşılır ve uygulanabilir olmasını sağlıyoruz.<br /><br />Bireylerden startaplara ve köklü şirketlere kadar, hizmetlerimizi her hedefe özel uyarlıyoruz. İster bir yeniliği korumak, ister bir mülkü güvenceye almak, ister bir iş kurmak isteyin; size kişisel ilgi, saygı ve en iyi yolu bulmaya adanmış bir cozum ortagi sunuyoruz.'
 heroImage:
   src: ~/assets/images/courthouse.jpg
   alt: Adliye merdivenleri görseli
 practiceAreas:
   title: Çalışma Alanlarımız
-  subtitle: İhtiyacınıza özel uzman hukuki çözümler. Şirketler hukukundan göçmenliğe ve miras planlamasına kadar, avukatlarımız çıkarlarınızı korumak için stratejik rehberlik ve kararlı savunuculuk sunar.
+  subtitle: İhtiyacınıza özel uzman hukuki çözümler. Şirketler hukukundan göçmenliğe ve miras planlamasına kadar, avukatlarımız hak ve özgürlüklerinizi korumak için stratejik rehberlik ve kararlı savunuculuk sunar.
   items:
   - title: İş ve Şirketler Hukuku
     description: Her ölçekteki işletmeye, kuruluş ve sözleşmelerden birleşme, devralma ve uyuşmazlıklara kadar kapsamlı danışmanlık.
