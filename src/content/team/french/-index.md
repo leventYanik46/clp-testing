@@ -6,7 +6,7 @@ sections:
 - wrapper: flex flex-wrap justify-center gap-4
   members:
   - title: Cagatay Ersoy
-    tagline: Avocat
+    tagline: AvocaCofondateur et associé gérantt
     subtitle: Travaillons ensemble
     bottomtag: Immigration d’affaires | Droit des affaires | Droit des marques
     actions:
@@ -22,7 +22,7 @@ sections:
       src: ~/assets/images/cagatay-bw.png
       alt: Prendre rendez-vous
   - title: Sena Sahin
-    tagline: Avocate
+    tagline: Cofondatrice et associée gérante
     subtitle: Travaillons ensemble
     bottomtag: Contentieux | Droit des sociétés | Droit de l’immigration
     actions:
@@ -38,7 +38,7 @@ sections:
       src: ~/assets/images/Sena-bw.jpg
       alt: Prendre rendez-vous
   - title: Shafeek Seddiq
-    tagline: Avocat
+    tagline: Avocat Conseil
     subtitle: Travaillons ensemble
     bottomtag: Trusts et successions | Droit des affaires | Conseil juridique externe
     actions:

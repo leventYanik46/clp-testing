@@ -212,18 +212,20 @@ export const getStaticPathsBlogPost = async () => {
   if (!isBlogEnabled || !isBlogPostRouteEnabled) return [];
   const posts = await fetchPosts();
   const defaultLang = config.settings.default_language;
+  const defaultLangInSubdir = config.settings.default_language_in_subdir;
   return posts.flatMap((post) => {
     const postLang = post.lang;
     const langs = Array.isArray(postLang) ? postLang : postLang ? [postLang] : [defaultLang];
-
-    // Map language codes to route prefixes ('' for default to keep root paths)
-    const prefixes = langs.map((code) => (code === defaultLang ? '' : code));
+    const prefixes = langs.map((code) => {
+      if (code === defaultLang && !defaultLangInSubdir) return '';
+      return code;
+    });
 
     return prefixes.map((prefix) => ({
       params: {
         blog: prefix ? `${prefix}/${post.permalink}` : post.permalink,
       },
-      props: { post, lang: prefix === '' ? defaultLang : prefix },
+      props: { post, lang: prefix === '' ? defaultLang : prefix, pathPrefix: prefix },
     }));
   });
 };

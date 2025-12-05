@@ -6,7 +6,7 @@ sections:
   - wrapper: flex flex-wrap justify-center gap-4
     members:
       - title: Çağatay Ersoy
-        tagline: Avukat
+        tagline: Kurucu ve Yönetici Ortak
         subtitle: Birlikte Çalışalım
         bottomtag: İş Göçmenliği | İş Hukuku | Marka Hukuku
         actions:
@@ -22,7 +22,7 @@ sections:
           src: ~/assets/images/cagatay-bw.png
           alt: Randevu planlayın
       - title: Sena Şahin
-        tagline: Avukat
+        tagline: Kurucu ve Yönetici Ortak
         subtitle: Birlikte Çalışalım
         bottomtag: İş Davası | Miras Planlaması | Federal Dava
         actions:
@@ -38,7 +38,7 @@ sections:
           src: ~/assets/images/Sena-bw.jpg
           alt: Randevu planlayın
       - title: Shafeek Seddiq
-        tagline: Avukat
+        tagline: Danışman Avukat
         subtitle: Birlikte Çalışalım
         bottomtag: Vasiyetler & Miras | İş Hukuku | Genel Hukuk Müşavirliği
         actions:

@@ -5,8 +5,8 @@ metadata:
   ignoreTitleTemplate: true
 hero:
   title:
-    highlight: Güvenilir Ortağınız
-    rest: Hukuki Çözümlerinizde
+    highlight: Hukuki Çözümlerinizde
+    rest: Güvenilir Ortağınız 
   subtitleHtml: <span class="hidden sm:inline">Alanında saygın savunucularınız—</span><strong>İş büyümesi, göçmenlik başarısı ve miras planlamasında</strong> size zamanla kanıtlanmış uzmanlığımız ve sarsılmaz bağlılığımızla öncelik veriyoruz.
   image:
     src: ~/assets/images/high-resolution-photo-of-us-capitol-l.png
@@ -147,7 +147,7 @@ blog:
   information: Hukuki içgörüler, pratik ipuçları ve zamanında güncellemeler için blogumuzu ziyaret edin; karmaşık soruları güvenli kararlara dönüştürmenize yardımcı olalım.
 cta:
   titleHtml: Capitol <span class="sm:whitespace-nowrap">Law Partners</span>
-  subtitleHtml: Uzmanlığımızın hukuki konularınızda yaratacağı farkı keşfedin. <br class="hidden md:inline" />Hemen bize ulaşın!
+  subtitleHtml: Uzmanlığımızın hukuki konularınızda yaratacağı farkı keşfedin. <br class="hidden md:inline" />&nbsp;Hemen bize ulaşın!
   actions:
   - variant: primary
     text: Bize Ulaşın

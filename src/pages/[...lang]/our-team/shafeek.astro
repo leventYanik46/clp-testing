@@ -30,7 +30,7 @@ if (lang === 'tr') langFolder = 'turkish';
 if (lang === 'es') langFolder = 'spanish';
 if (lang === 'pt') langFolder = 'portuguese';
 if (lang === 'fr') langFolder = 'french';
-const entry = await getEntry('teamMember', `${langFolder}/sena`);
+const entry = await getEntry('teamMember', `${langFolder}/shafeek`);
 if (!entry) throw new Error('Team member not found for language: ' + lang);
 const { metadata, profile, steps, testimonials, cta, blog } = entry.data;
 
@@ -85,7 +85,7 @@ const resolveHref = (href: string) => (/^(https?:|mailto:|tel:)/.test(href) ? hr
   {cta && <CallToAction {...cta} />}
 
   {blog && (
-    <BlogLatestPosts id={blog.id} title={blog.title} information={blog.information}>
+    <BlogLatestPosts id={blog.id} title={blog.title} information={blog.information} lang={lang}>
       <Fragment slot="bg">
         <div class={blog.bgClass}></div>
       </Fragment>

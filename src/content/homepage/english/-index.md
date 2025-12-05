@@ -12,7 +12,7 @@ hero:
     You with Commitment and Time-Honored Expertise in <strong>Business Growth, Immigration
     Success and Estate Planning.</strong>
   image:
-    src: ~/assets/images/high-resolution-photo-of-us-capitol-l.png
+    src: ~/assets/images/high-resolution-photo-of-us-capitol-l.jpeg
     alt: Us capitol building image
   actions:
   - variant: primary
@@ -214,7 +214,7 @@ blog:
 cta:
   titleHtml: Capitol <span class="sm:whitespace-nowrap">Law Partners</span>
   subtitleHtml: Discover the difference our expertise can make in your legal matters.
-    <br class="hidden md:inline" />Contact us today!
+    <br class="hidden md:inline" />&nbsp;Contact us today!
   actions:
   - variant: primary
     text: Contact Us
