@@ -11,8 +11,33 @@ export const headerData = {
       text: 'Practice Areas',
       links: [
         {
-          text: 'example-service',
-          href: getPermalink('/practice-area/example-service'),
+          text: 'General Counsel & Advisory Services',
+          href: getPermalink('/practice-area/general-counsel-services'),
+        },
+        {
+          text: 'Business & Corporate Law',
+          href: getPermalink('/practice-area/business-corporate-law'),
+        },
+
+        {
+          text: 'Trusts & Estates',
+          href: getPermalink('/practice-area/estate-planning'),
+        },
+        {
+          text: 'Real Estate',
+          href: getPermalink('/practice-area/real-estate'),
+        },
+        {
+          text: 'Intellectual Property Law',
+          href: getPermalink('/practice-area/ip-law'),
+        },
+        {
+          text: 'Immigration Law',
+          href: getPermalink('/practice-area/immigration-law'),
+        },
+        {
+          text: 'Personal Injury Law',
+          href: getPermalink('/practice-area/personal-injury-law'),
         },
       ],
     },
